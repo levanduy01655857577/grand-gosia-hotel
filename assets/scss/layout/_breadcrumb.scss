@@ -2,7 +2,7 @@
     @import '../abstracts/variable';
     .wrapBreadCrumb {
         position: relative;
-        padding-top: 128px
+        margin-top: 128px
     }
     
     .wrapImgBreadcrumb {
@@ -14,7 +14,7 @@
         left: 0;
         width: 100%;
         @include translate(0, -50%);
-        top: 60%;
+        top: 50%;
     }
     
     .navListBreadcrumb {
@@ -85,9 +85,9 @@
         }
     }
     
-    @media (max-width: 1024px) {
+    @media (max-width: 1199px) {
         .wrapBreadCrumb {
-            padding-top: 80px;
+            margin-top: 80px;
             .navListBreadcrumb {
                 margin-top: 5px;
             }
@@ -108,7 +108,7 @@
         }
     }
     
-    @media(max-width:768px) {
+    @media(max-width:767px) {
         .wrapBreadCrumb {
             .titleCategory4 {
                 font-size: 30px;
@@ -126,7 +126,7 @@
         }
     }
     
-    @media(max-width:576px) {
+    @media(max-width:575px) {
         .wrapBreadCrumb {
             .wrapImgBreadcrumb {
                 padding-top: 56%;

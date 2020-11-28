@@ -2368,7 +2368,7 @@ select option {
 
 .wrapBreadCrumb {
   position: relative;
-  padding-top: 128px;
+  margin-top: 128px;
 }
 
 .wrapImgBreadcrumb {
@@ -2384,7 +2384,7 @@ select option {
   -moz-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
-  top: 60%;
+  top: 50%;
 }
 
 .navListBreadcrumb {
@@ -2468,9 +2468,9 @@ select option {
   right: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1199px) {
   .wrapBreadCrumb {
-    padding-top: 80px;
+    margin-top: 80px;
   }
   .wrapBreadCrumb .navListBreadcrumb {
     margin-top: 5px;
@@ -2495,7 +2495,7 @@ select option {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .wrapBreadCrumb .titleCategory4 {
     font-size: 30px;
     padding: 0 0 10px 0;
@@ -2509,7 +2509,7 @@ select option {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .wrapBreadCrumb .wrapImgBreadcrumb {
     padding-top: 56%;
   }
@@ -2581,8 +2581,8 @@ select option {
 
 .titleCategory2 {
   color: #a07743;
-  line-height: 34px;
-  font-size: 24px;
+  line-height: 56px;
+  font-size: 40px;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -2610,6 +2610,13 @@ select option {
   text-align: center;
 }
 
+@media (max-width: 1199px) {
+  .titleCategory2 {
+    line-height: 46px;
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 991px) {
   .titleCategory1 {
     line-height: 34px;
@@ -2624,6 +2631,30 @@ select option {
     width: 10px;
     height: 10px;
     left: 20px;
+  }
+  .titleCategory2 {
+    line-height: 46px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .titleCategory2 {
+    line-height: 46px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .titleCategory2 {
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 320px) {
+  .titleCategory2 {
+    font-size: 27px;
+    line-height: 35px;
   }
 }
 
@@ -5604,5 +5635,357 @@ a,
   .btnBookingMobile .btn-booking {
     height: 45px;
     line-height: 45px;
+  }
+}
+
+.wrapNewsDetail {
+  padding: 60px 0;
+}
+
+.wrapImgPostNewsDetail {
+  margin: 15px 0;
+}
+
+.imgPostNewsDetail {
+  width: 100%;
+  height: auto;
+}
+
+.showTextPostNewsDetail {
+  color: #000;
+  font-size: 18px;
+  line-height: 24px;
+  overflow-x: auto;
+}
+
+.showTextPostNewsDetail img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapShare {
+  margin-top: 10px;
+}
+
+@media (max-width: 991px) {
+  .wrapNewsDetail {
+    padding: 30px 0;
+  }
+  .wrapShare {
+    margin-top: 0;
+  }
+  .colNewsListOthers {
+    margin-top: 30px;
+  }
+}
+
+.elementSlideLatestNews {
+  margin-top: 15px;
+  padding: 0;
+}
+
+.wrapLatestNews {
+  padding: 60px 0;
+}
+
+.wrapImgItemLatestNews {
+  display: block;
+}
+
+.wrapCategoryAndUserPostItemLatestNews {
+  margin-bottom: 30px;
+}
+
+.titleHeadingLatestNews {
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  max-height: 56px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.linkTitleLatestNews {
+  display: block;
+  margin-top: 15px;
+}
+
+.linkTitleLatestNews:hover {
+  text-decoration: none;
+}
+
+.linkTitleLatestNews:hover .titleHeadingLatestNews {
+  color: #e8d7c2;
+}
+
+.descriptionLatestNews {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  max-height: 76px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+  margin: 10px 0 0 0;
+}
+
+.rowLatestNews {
+  margin: 0 -7.5px;
+}
+
+@media (max-width: 991px) {
+  .descriptionLatestNews {
+    text-align: left;
+  }
+  .titleHeadingLatestNews {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    max-height: 56px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .elementSlideLatestNews {
+    margin-top: 15px;
+  }
+  .wrapLatestNews {
+    padding: 30px 0;
+  }
+}
+
+.btn {
+  height: 45px;
+  line-height: 43px;
+  padding: 0 12px;
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  transition: all 0.35s linear;
+  -webkit-transition: all 0.35s linear;
+  -moz-transition: all 0.35s linear;
+  -ms-transition: all 0.35s linear;
+  -o-transition: all 0.35s linear;
+}
+
+.btn1 {
+  color: #fff;
+  background: #a07743;
+  border-color: #a07743;
+}
+
+.btn1:hover {
+  color: #a07743;
+  background: #fff;
+  border-color: #a07743;
+}
+
+.btn-text {
+  cursor: pointer;
+  color: #a07743;
+  font-weight: 500;
+  border-bottom: 2px solid #a07743;
+  transition: all 0.35s linear;
+  -webkit-transition: all 0.35s linear;
+  -moz-transition: all 0.35s linear;
+  -ms-transition: all 0.35s linear;
+  -o-transition: all 0.35s linear;
+}
+
+.btn-text .fa {
+  margin: 0 3px;
+}
+
+.btn-text:hover {
+  color: #000;
+  border-color: #000;
+}
+
+#ShareofNews {
+  display: flex;
+  margin-top: 5px;
+}
+
+#ShareofNews .titleShare {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.showTextPostNewsDetail p,
+.showTextPostNewsDetail div {
+  text-align: justify;
+}
+
+.showTextPostNewsDetail p {
+  margin-bottom: 15px;
+}
+
+.secInfoLike .sec-title {
+  margin: 0;
+}
+
+.secInfoLike .sec-title .title {
+  z-index: 0;
+}
+
+@media (max-width: 991px) {
+  .secInfoLike {
+    padding: 30px 0;
+  }
+}
+
+.titlePageSpecial {
+  display: none;
+}
+
+.titleCategory1 {
+  color: #a07743;
+  line-height: 46px;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  margin: 0;
+  padding-left: 80px;
+}
+
+.titleCategory1:before {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  content: '';
+}
+
+.titleCategory1:after {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  position: absolute;
+  left: 35px;
+  top: 50%;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  content: '';
+}
+
+.titleCategory2 {
+  color: #a07743;
+  line-height: 56px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  font-weight: 700;
+}
+
+.titleCategory3 {
+  color: #a07743;
+  line-height: 28px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+.titleCategory4 {
+  color: #ffff;
+  line-height: 46px;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  display: table;
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .titleCategory2 {
+    line-height: 46px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .titleCategory1 {
+    line-height: 34px;
+    font-size: 24px;
+    padding-left: 45px;
+  }
+  .titleCategory1:before {
+    width: 5px;
+    height: 5px;
+  }
+  .titleCategory1:after {
+    width: 10px;
+    height: 10px;
+    left: 20px;
+  }
+  .titleCategory2 {
+    line-height: 46px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .titleCategory2 {
+    line-height: 46px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .titleCategory2 {
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 320px) {
+  .titleCategory2 {
+    font-size: 27px;
+    line-height: 35px;
   }
 }

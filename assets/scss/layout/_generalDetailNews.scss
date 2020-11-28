@@ -1,0 +1,35 @@
+#ShareofNews {
+    display: flex;
+    margin-top: 5px;
+    .titleShare {
+        font-family: $title-fontfamily;
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 5px;
+    }
+}
+
+.showTextPostNewsDetail {
+    p,
+    div {
+        text-align: justify;
+    }
+    p {
+        margin-bottom: 15px;
+    }
+}
+
+.secInfoLike {
+    .sec-title {
+        margin: 0;
+        .title {
+            z-index: 0;
+        }
+    }
+}
+
+@media(max-width:991px) {
+    .secInfoLike {
+        padding: 30px 0;
+    }
+}

@@ -1,6 +1,5 @@
 @import '../abstracts/variable';
 @import '../abstracts/mixin';
-
 .wrapNewsDetail {
     padding: 60px 0;
 }
@@ -15,11 +14,10 @@
 }
 
 .showTextPostNewsDetail {
-    color: $color7;
-    font-size: 16px;
-    line-height: 22px;
+    color: $color8;
+    font-size: 18px;
+    line-height: 24px;
     overflow-x: auto;
-
     img {
         max-width: 100%;
         height: auto;
@@ -34,11 +32,9 @@
     .wrapNewsDetail {
         padding: 30px 0;
     }
-
     .wrapShare {
         margin-top: 0;
     }
-
     .colNewsListOthers {
         margin-top: 30px;
     }
@@ -49,4 +45,5 @@
     margin-top: 15px;
     padding: 0;
 }
+
 // end list news others
