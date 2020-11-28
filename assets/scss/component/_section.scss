@@ -1,0 +1,124 @@
+/* section */
+
+.sec {
+    padding: 40px 0;
+    &.has-bg-src {
+        padding: $p-section 0;
+    }
+}
+
+// .sec-content {
+//     overflow: hidden;
+// }
+// .sec-slider {
+//     overflow: hidden;
+// }
+.sec-title {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    .blur-title {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        // top: -45px;
+        top: 10px;
+        left: 0;
+        right: 0;
+        font-size: 6em;
+        color: #f8f8f8;
+        font-weight: 900;
+        font-style: italic;
+        font-family: $title-fontfamily;
+    }
+    .title {
+        margin: 0;
+        font-size: 2em;
+        font-weight: 400;
+        text-transform: uppercase;
+        // position: relative;
+        letter-spacing: 0.5px;
+        position: relative;
+        z-index: 2;
+        letter-spacing: 2px;
+    }
+    .sub-title {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        font-family: $body-fontfamily;
+        position: relative;
+        z-index: 2;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: uppercase;
+        font-size: 1.4em;
+        font-weight: 400;
+    }
+    .separator {
+        margin: 15px auto 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+    .desc {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+// .sec-text-light {
+//     color: #fff;
+//     .separator {
+//         background: #fff;
+//     }
+// }
+.separator {
+    width: 90px;
+    height: 2px;
+    // margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: $color1;
+}
+
+@media (min-width: 768px) {
+    .sec {
+        padding: $p-section 0;
+        &.has-bg-src {
+            padding: 90px 0;
+        }
+    }
+    .sec-title {
+        .title {
+            font-size: 2.6em;
+        }
+        .sub-title {
+            width: 70%;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .sec-title {
+        .sub-title {
+            width: 60%;
+        }
+        .desc {
+            width: 80%;
+        }
+    }
+}
+
+.sec-related {
+    padding-top: 0;
+}
+
+@media(max-width:576px) {
+    .sec {
+        padding: 30px 0;
+    }
+}
+
+
+/* end section */

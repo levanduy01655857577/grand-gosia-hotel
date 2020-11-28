@@ -1,0 +1,148 @@
+    @import '../abstracts/mixin';
+    @import '../abstracts/variable';
+    .wrapBreadCrumb {
+        position: relative;
+        padding-top: 128px
+    }
+    
+    .wrapImgBreadcrumb {
+        padding-top: 400px;
+    }
+    
+    .wrapTextBreadcrumb {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        @include translate(0, -50%);
+        top: 60%;
+    }
+    
+    .navListBreadcrumb {
+        background: none;
+        display: table;
+        margin: 10px auto auto auto;
+    }
+    
+    .olListBreqadcrumb {
+        margin: 0;
+        background: none;
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+    
+    .itemListBreadcrumb.active,
+    .linkListBreadcrumb {
+        font-size: 18px;
+        line-height: 26px;
+        color: $color7;
+        text-transform: capitalize;
+    }
+    
+    .linkListBreadcrumb {
+        @include transition(0.5s);
+        &:hover {
+            color: $color1;
+            text-decoration: none;
+        }
+    }
+    
+    .itemListBreadcrumb {
+        display: inline;
+        +.itemListBreadcrumb {
+            padding-left: 15px;
+            &::before {
+                font-family: "FontAwesome";
+                content: "\f061";
+                font-weight: 900;
+                color: $color7;
+                padding-right: 15px;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+    
+    .wrapVectorTitleBreadcrumb {
+        position: relative;
+        width: 80px;
+        margin: auto;
+        &:before,
+        &:after {
+            position: absolute;
+            bottom: 3px;
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-color: $color1;
+            @include borderRadius(100%);
+        }
+        &:before {
+            left: 0;
+        }
+        &:after {
+            right: 0;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .wrapBreadCrumb {
+            padding-top: 80px;
+            .navListBreadcrumb {
+                margin-top: 5px;
+            }
+            .titlePageCurrentBreadcrumb {
+                padding: 0 0 15px 0;
+                font-size: 24px;
+                line-height: 38px;
+                &:before {
+                    content: none;
+                }
+                &:after {
+                    bottom: 0;
+                    left: 50%;
+                    @include translate(-50%, 0);
+                    top: auto;
+                }
+            }
+        }
+    }
+    
+    @media(max-width:768px) {
+        .wrapBreadCrumb {
+            .titleCategory4 {
+                font-size: 30px;
+                padding: 0 0 10px 0;
+                line-height: 30px;
+                margin: 0 auto;
+            }
+            .wrapTextBreadcrumb {
+                .itemListBreadcrumb.active,
+                .linkListBreadcrumb {
+                    font-size: 15px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+    
+    @media(max-width:576px) {
+        .wrapBreadCrumb {
+            .wrapImgBreadcrumb {
+                padding-top: 56%;
+            }
+            .titleCategory4 {
+                font-size: 18px;
+                padding: 0;
+                line-height: 25px;
+                margin: 0 auto;
+            }
+            .wrapTextBreadcrumb {
+                .itemListBreadcrumb.active,
+                .linkListBreadcrumb {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }

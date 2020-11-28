@@ -1,0 +1,185 @@
+
+// 1% boostrap button
+// 2% image cover full div có height, width
+// 3% ie: slide img cover --> background cover
+
+%body-fontfamily {
+    font-family: $body-fontfamily;
+}
+
+%title-fontfamily {
+    font-family: $title-fontfamily;
+}
+
+%transition {
+    @include transition(all $time-hover);
+}
+
+%transition-1s {
+    @include transition(all 1s);
+}
+
+%scaleImg {
+    @include transform(scale(1.1));
+}
+
+%hoverScaleImg {
+    img {
+        @extend %transition;
+    }
+    &:hover img {
+        @include transform(scale(1.1));
+    }
+}
+
+%img-cover {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+%bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+%bg-paralax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+%overlay-full {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+%border-radius-50 {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+%border-radius-0 {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+%btn-square {
+    @include square($btn-height);
+}
+
+%block-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+}
+
+%block-center-y {
+    position: absolute;
+    top: 50%;
+    @include transform(translateY(-50%));
+}
+
+%block-center-x {
+    position: absolute;
+    left: 50%;
+    @include transform(translateX(-50%));
+}
+
+// flex wrap equal column
+// %flex-wrap-2-col {
+%flex-2 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    >* {
+        width: 50%;
+        float: left;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+// flex wrap equal column
+%flex-4 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    >* {
+        width: 25%;
+        float: left;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+%lineclamp-1 {
+    display: block;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+// pre lineclamp-n
+%lineclamp-n {
+    // display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    // -webkit-line-clamp: 2;
+}
+
+%unlineclamp {
+    max-height: 1000px !important;
+    white-space: pre-wrap !important;
+    -webkit-line-clamp: inherit !important;
+}
+
+%unlineclamp-1 {
+    max-height: 1000px !important;
+    white-space: pre-wrap !important;
+}
+
+%unlineclamp-n {
+    max-height: 1000px !important;
+    -webkit-line-clamp: inherit !important;
+}
+
+
+// %text-decorator {
+//     position: relative;
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         left: 0;
+//         width: 110%;
+//         background: $color-main-1;
+//         z-index: -1;
+//         height: 32%;
+//         top: 48%;
+//     }
+// }
+
+%text-vertical {
+    white-space:nowrap;
+        @include transform(rotate(-90deg));
+    /*InternetExplorer*/
+    // filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    // -webkit-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}

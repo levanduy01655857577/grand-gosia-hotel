@@ -1,0 +1,397 @@
+// Chỉnh sửa mặc định của trình duyệt: margin, font...
+
+@font-face {
+    font-family: 'Arima Madurai';
+    font-weight: 500;
+    src: url(../fonts/ArimaMadurai-Medium.ttf);
+}
+@font-face {
+    font-family: 'Arima Madurai';
+    font-weight: 900;
+    src: url(../fonts/ArimaMadurai-Black.ttf);
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+
+* {
+    outline: 0 !important;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $body-fontfamily;
+    font-size: 15px;
+    // letter-spacing: 0.005em;
+    line-height: 1.4;
+    font-weight: 400;
+    color: $color-body-text;
+    word-wrap: break-word; // break line for long link
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+.body-fontfamily {
+    font-family: $body-fontfamily;
+}
+
+.title-fontfamily {
+    font-family: $title-fontfamily;;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: $title-fontfamily;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1 {
+    margin: 0;
+}
+
+.h1-main {
+    position: fixed;
+    top: -500px;
+}
+
+a {
+    color: $color1;
+    outline: 0 !important;
+    text-decoration: none !important;
+    &:hover, &:focus {
+        color: $color2;
+    }
+}
+
+img {
+    max-width: 100%;
+    // width: 100%;
+    // height: auto;
+    border: 0 !important;
+    outline: 0 !important;
+    vertical-align: middle;
+}
+
+ul {
+    padding: 0;
+}
+
+ol {
+    margin-left: 15px;
+}
+
+/* custom scrollbar */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    // border-radius: 999px;
+    // -webkit-border-radius: 999px;
+    // -moz-border-radius: 999px;
+    // -ms-border-radius: 999px;
+    // -o-border-radius: 999px;
+}
+::-webkit-scrollbar-thumb {
+    background: $color1;
+    // border-radius: 999px;
+    // -webkit-border-radius: 999px;
+    // -moz-border-radius: 999px;
+    // -ms-border-radius: 999px;
+    // -o-border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+    // background: rgba(248, 88, 88, 0.4);
+    background: $color1;
+}
+
+/* end custom scrollbar */
+
+
+/* custom arrows from input number */
+
+// input::-webkit-outer-spin-button,
+// input::-webkit-inner-spin-button {
+//   -webkit-appearance: none; //Chrome, Safari, Edge, Opera
+//   margin: 0;
+// }
+
+// input[type=number] { 
+//   -moz-appearance:textfield; //Firefox
+// }
+
+/* end custom arrows from input number */
+
+
+/* common */
+
+a,
+.slider .slick-arrow {
+    @extend %transition;
+}
+
+.d-block {
+    display: block !important
+}
+
+.d-none {
+    display: none !important
+}
+
+.bg-success {
+    background: $color-success !important;
+}
+
+.bg-warning {
+    background: $color-warning !important;
+}
+
+.bg-error {
+    background: $color-error !important;
+}
+
+.bg-cancel {
+    background: $color-cancel !important;
+}
+
+.bg-gray {
+    background: $bg-gray !important;
+}
+
+.text-success {
+    color: $color-success !important;
+}
+
+.text-warning {
+    color: $color-warning !important;
+}
+
+.text-error {
+    color: $color-error !important;
+}
+
+// .bg-cover {
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+.br {
+    display: inline-block !important
+}
+
+.vr {
+    min-height: 22px;
+    border-left: 1px solid;
+}
+
+.pt-0 {
+    padding-top: 0 !important;
+}
+
+.mail-break,
+a[href^='mailto'] {
+    word-break: break-all;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.has-bg-src {
+    position: relative;
+    &::before {
+        content: "";
+        @extend %overlay-full;
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+
+.wrap-img-cover {
+    overflow: hidden;
+    img {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+    }
+}
+
+// dùng với background (set cho wrap-img), image
+.wrap-img {
+	position: relative;
+	transition: all .35s ease-in-out;
+    max-width: 100%;
+    overflow: hidden;
+    img {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        @extend %block-center;
+    }
+}
+
+.wrap-more {
+    margin-top: 30px;
+}
+
+// .commin-soon {
+//     height: 150px;
+// }
+
+// .shortcut {
+//     // margin-bottom: 30px;
+//     .shortcut-content {
+//         overflow: hidden;
+//     }
+//     .wrap-more {
+//         margin: 0;
+//         position: relative;
+//         &::before {
+//             content: "";
+//             position: absolute;
+//             // top: -40px;
+//             top: -20px;
+//             bottom: 100%;
+//             left: 0;
+//             right: 0;
+//             background-image: linear-gradient(rgba(#fff, 0), #fff);
+//         }
+//     }
+//     &.more {
+//         .shortcut-content {
+//             height: auto !important;
+//         }
+//         .wrap-more {
+//             margin-top: 10px;
+//         }
+//     }
+// }
+
+// .price {
+//     .price-old {
+//         // font-size: 0.85em;
+//         font-size: 0.7em;
+//         margin-left: 5px;
+//         text-decoration: line-through;
+//         @include opacity(0.5);
+//     }
+// }
+
+.quantity {
+    display: flex;
+    >* {
+        border: 0;
+        text-align: center;
+        display: inline-block;
+        @include square(32px);
+        @extend %border-radius-0;
+    }
+    button {
+        background: #efefef;
+        &:hover {
+            background: $color1;
+        }
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none; //Chrome, Safari, Edge, Opera
+      margin: 0;
+    }
+
+    input[type=number] { 
+      -moz-appearance:textfield; //Firefox
+    }
+}
+
+.pagination {
+    margin: 30px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    a {
+        float: left;
+        padding: 0;
+        margin: 0 2px;
+        height: 40px;
+        width: 40px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $color1;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        transition: all 0.35s linear;
+        -webkit-transition: all 0.35s linear;
+        -moz-transition: all 0.35s linear;
+        -ms-transition: all 0.35s linear;
+        -o-transition: all 0.35s linear;
+        &:hover, &:focus, &.active {
+            color: $color2;
+            background: $color1;
+        }
+        &.disabled {
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+            -webkit-filter: alpha(opacity=50);
+            cursor: not-allowed;
+            // color: $color1;
+            background: transparent !important;
+          }
+    }
+}
+
+
+// ie brower
+.ie .bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    img {
+        display: none;;
+    }
+}
+
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none!important;
+    }
+}
+
+@media (min-width: 1300px) {
+    .container {
+        width: 1200px;
+    }
+}
+/* end common */

@@ -1,0 +1,46 @@
+
+.btn {
+    height: $btn-height;
+    line-height: $btn-height - 2px;
+    padding: 0 12px;
+    // font-size: 14px;
+    font-size: 1em;
+    font-weight: 600;
+    // letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    @include border-radius(0);
+    @include transition(all .35s linear);
+}
+
+@mixin btn0($color, $bg-color, $border-color) {
+    color: $color;
+    background: $bg-color;
+    border-color: $border-color;
+}
+
+.btn1 {
+    @include btn0(#fff, $color1, $color1);
+    &:hover {
+        @include btn0($color1, #fff, $color1);
+    }
+}
+
+.btn-text {
+    cursor: pointer;
+    color: $color1;
+    font-weight: 500;
+    // text-transform: uppercase;
+    border-bottom: 2px solid $color1;
+    @include transition(all .35s linear);
+    .fa {
+        margin: 0 3px;
+    }
+    &:hover {
+        color: #000;
+        border-color: #000;
+    }
+}

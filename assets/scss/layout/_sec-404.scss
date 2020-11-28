@@ -1,0 +1,17 @@
+.sec-404 {
+    text-align: center;
+    .title {
+        font-size: 36px;
+    }
+    img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .sec-404 .title {
+        font-size: 60px;
+    }
+}

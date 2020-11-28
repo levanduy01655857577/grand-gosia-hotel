@@ -1,0 +1,94 @@
+/* form-horizontal */
+// $border-color:#f1f1f1;
+$border-color: #efefef;
+
+.book-form-horizontal .position {
+    // position: relative;
+    // margin-top: -70px;
+    // @extend %block-center-x;
+    // top: calc(100vw / 16 * 9 * 0.5);
+}
+
+.book-form-horizontal {
+    .form {
+        background: #fff;
+    }
+    .form-left {
+        padding: 30px;
+        border: 1px solid $border-color;
+    }
+    .input-group {
+        display: inline-flex;
+        align-items: center;
+    }
+    .form-group {
+        margin: 0;
+    }
+    .form-control {
+        padding: 0;
+        height: 37px;
+    }
+    .title {
+        // text-align: center;
+        display: block;
+        margin: 0;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .btn-book {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .date .input-group .input-group-icon {
+        display: none;
+    }
+}
+
+// @media (min-width: 992px) {
+//     .book-form-horizontal {
+//         .form {
+//             display: flex;
+//             .form-left {
+//                 width: 80%;
+//             }
+//             .form-right {
+//                 width: 20%;
+//             }
+//         }
+//     }
+// }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .book-form-horizontal {
+        .title {
+            font-size: 13px;
+            letter-spacing: -0.7px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .book-form-horizontal .title {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .book-form-horizontal .form-left>.row>div:not(:last-child) {
+        border-right: 1px solid $border-color;
+    }
+}
+
+@media (min-width: 1200px) {
+    .book-form-horizontal {
+        .date .input-group .input-group-icon {
+            display: block;
+        }
+    }
+}
+
+
+/* end form-horizontal */

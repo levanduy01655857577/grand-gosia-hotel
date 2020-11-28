@@ -1,0 +1,41 @@
+.captcha,
+.captcha-img {
+    display: flex;
+    align-items: center;
+}
+
+.captcha {
+    img {
+        height: 100%;
+        width: auto;
+        max-width: unset;
+    }
+    .captcha-img {
+        .code {
+            height: $btn-height;
+            margin: 0 5px;
+        }
+        .refresh img {
+            height: 32px;
+            width: 32px;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .captcha .captcha-img .code {
+        margin: 0 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .captcha .captcha-img .code {
+        margin: 0 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sec-contact .right {
+        padding-left: 0;
+    }
+}

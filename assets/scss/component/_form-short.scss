@@ -1,0 +1,89 @@
+/* form book short */
+
+.booking-form-short .position {
+    position: fixed;
+    top: 100px;
+    right: 15px;
+    // z-index: 1001;
+    z-index: 999;
+    @include box-shadow(-1px 1px 6px #ccc);
+}
+
+@media (max-width: 1024px) {
+    .booking-form-short .position {
+        top: 85px
+    }
+}
+
+.booking-form-short {
+    @include transition(all 0.4s);
+    @include box-shadow(-1px 1px 6px #ccc);
+    // background: #fff;
+    // .form {
+    //     max-width: 400px;
+    //     padding: 15px;
+    //     background: #fff;
+    // }
+	// .btn-book {
+    //     padding: 0 20px;
+    //     width: 100%;
+	// }
+    // .row {
+    //     margin: 0 -7.5px;
+    //     >div {
+    //         padding: 0 7.5px;
+    //     }
+    // }
+    // input {
+    //     background: #000 !important;
+    //     color: #fff;
+    //     text-align: center;
+    // }
+    // label {
+    //     width: 100%;
+    //     font-size: 14px;
+    //     text-transform: uppercase;
+    //     font-weight: bold;
+    //     color: #7b7b7b;
+    //     letter-spacing: 0.2px;
+    //     margin-bottom: 10px;
+    //     text-align: center;
+    //     line-height: 1;
+    // }
+    // .btn-open-short-form {
+    //     display: none;
+    // }
+    // &.hidden-check-date {
+    //     .form {
+    //         padding: 0 !important;
+    //     }
+    //     .scroll-hidden {
+    //         display: none;
+    //     }
+    // }   
+    // .overlay {
+    //     position: fixed;
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     z-index: 998;
+    //     background: rgba(0, 0, 0, 0.15);
+    //     display: block;
+    // }
+}
+
+// @media (max-width: 575px) {
+//     .booking-form-short {
+//         .position {
+//             margin-left: 15px;
+//         }
+//         .row > .col-sm-6 {
+//             width: 50%;
+//             float: left;
+//         }
+//     }
+// }
+
+
+/* end form book short */

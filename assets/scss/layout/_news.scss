@@ -1,0 +1,61 @@
+@import "../_pre-scss.scss";
+.news {
+    position: relative;
+    z-index: 1;
+    .item {
+        margin-top: 30px;
+        overflow: hidden;
+        .wrap-img {
+            // &::before {
+            // 	content: "";
+            // 	position: absolute;
+            // 	top: 0;
+            // 	right: 0;
+            // 	bottom: 0;
+            // 	left: 0;
+            // }
+            padding-top: 66.67%;
+        }
+        .content {
+            background: #fff;
+            padding: 15px;
+            position: relative;
+            .newstime {
+                display: block;
+                @include circel(65px);
+                background-color: $color1;
+                font-size: 80%;
+                color: #515561;
+                letter-spacing: 0.5px;
+                position: absolute;
+                top: -50px;
+                @extend %block-center-x;
+                padding: 10px;
+                span {
+                    display: block;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 1;
+                    &:nth-child(2) {
+                        font-size: 22px;
+                    }
+                }
+            }
+            .title {
+                margin: 5px 0 0 0;
+                // font-size: 20px;
+                margin-top: 10px;
+                font-weight: 600;
+                height: 48px;
+                @include lineclamp-n(20px, 24px, 2);
+            }
+        }
+    }
+}
+
+.news .list-item .item {
+    background: $color5;
+    .content {
+        margin: -15px 15px 15px 15px;
+    }
+}

@@ -1,0 +1,88 @@
+/* breadcrunb */
+.wrap-breadcrumb {
+	position: relative;
+	height: 300px;
+	width: 100%;
+	background: url(../../assets/images/bg-breadcrumb.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(25, 25, 25, 0.3);
+	}
+}
+.breadcrumb {
+	background: transparent;
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	.active {
+		&:before {
+			content: "";
+		}
+		color: #fff;
+		display: block;
+		padding-top: 15px;
+		font-weight: 400;
+		line-height: 1;
+		@include lineclamp-max(2,48px);
+	}
+	li {
+		a {
+			color: #fff;
+			&:hover {
+				color: $color-main-1;
+			}
+		}
+	}
+	.sub-title {
+		font-size: 15px;
+		font-weight: 500;
+		letter-spacing: 2.8px;
+	}
+}
+
+.page-news-detail .breadcrumb .active {
+	font-size: 36px;
+	@include lineclamp-max(2,36px);
+}
+
+@media (max-width: 767px) {
+	.breadcrumb {
+		.active { 
+			padding-top: 7.5px;
+			@include lineclamp-max(2,28px);
+		}
+	}
+
+	.page-news-detail .breadcrumb .active {
+		font-size: 24px;
+		@include lineclamp-max(2,24px);
+	}
+}
+
+// has form horizontal
+.has-form-horizontal {
+	.wrap-breadcrumb {
+		height: 400px;
+	}
+	.breadcrumb {
+		margin-bottom: 100px;
+	}
+}
+
+@media (max-width: 767px) {
+	.has-form-horizontal .wrap-breadcrumb {
+		height: 350px;
+	}
+}
+
+/* end breadcrumb */

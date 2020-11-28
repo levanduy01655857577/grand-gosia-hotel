@@ -1,0 +1,79 @@
+/* HTML
+<div class="custom-select">
+    <select name="" id="">
+        <option value="">Chọn loại hợp đồng</option>
+        <option value="">HĐ 1 tháng</option>
+        <option value="">HĐ 2 tháng</option>
+        <option value="">HĐ 3 tháng</option>
+        <option value="">HĐ 4 tháng</option>
+        <option value="">HĐ 5 tháng</option>
+        <option value="">HĐ 6 tháng</option>
+        <option value="">HĐ 1 năm</option>
+      </select>
+</div> */
+
+$select-selected-color: #fff;
+$select-selected-bg: #fff;
+$select-selected-color: #000;
+$select-selected-icon: #000;
+
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    // font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: $select-selected-bg;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: $select-selected-icon transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent $select-selected-icon transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: $select-selected-color;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: $select-selected-bg;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    box-shadow: 0px 1px 7px 0px #ccc;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
