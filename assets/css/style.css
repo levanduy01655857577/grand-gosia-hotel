@@ -4184,7 +4184,6 @@ a,
   top: 10px;
   right: 0;
   margin: 0;
-  padding: 0 1.25vw;
 }
 
 #bookform .form {
@@ -4247,7 +4246,7 @@ a,
 }
 
 .secRoomRela .news .item .wrap-img {
-  padding-top: 75%;
+  padding-top: 56%;
 }
 
 .secRoomRela .wrapPriceSlide {
@@ -4263,7 +4262,7 @@ a,
 }
 
 .secDeluxeSlide .news .item .wrap-img {
-  padding-top: 100%;
+  padding-top: 56%;
 }
 
 .secDeluxeSlide .itemlike {
@@ -4453,7 +4452,7 @@ a,
   }
   .secDeluxeSlide .news .item .wrap-img,
   .secRoomRela .news .item .wrap-img {
-    padding-top: 100%;
+    padding-top: 56%;
   }
   .secDeluxeDouble {
     padding: 40px 0;
@@ -4521,6 +4520,13 @@ a,
   .secComfort .wrapComfort .sec-title::after {
     width: 75px;
     height: 1px;
+  }
+}
+
+@media (max-width: 320px) {
+  .secRoomRela .room-price-info .price {
+    font-size: 25px;
+    letter-spacing: -1.5px;
   }
 }
 
