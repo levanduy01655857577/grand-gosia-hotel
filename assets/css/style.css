@@ -4258,7 +4258,17 @@ a,
 }
 
 .secDeluxeDouble .wrapItem .detailRoom li {
-  padding: 5px 0;
+  padding: 2px 0;
+}
+
+.secDeluxeDouble .wrapShare {
+  display: flex;
+}
+
+.secDeluxeDouble .wrapShare .titleShare {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .secDeluxeSlide .news .item .wrap-img {
@@ -4401,7 +4411,7 @@ a,
     padding: 5px 0;
   }
   .secDeluxeDouble .rowContentRoom .detailRoom li {
-    padding: 2px 0;
+    padding: 0;
   }
 }
 
@@ -4455,7 +4465,7 @@ a,
     padding-top: 56%;
   }
   .secDeluxeDouble {
-    padding: 40px 0;
+    padding: 40px 0 45px 0;
   }
   .secDeluxeDouble .rowContentRoom {
     position: relative;
@@ -4477,9 +4487,6 @@ a,
   }
   #bookform .form .has-icon .form-control .booking-info .info span {
     font-size: 12px;
-  }
-  .secDeluxeDouble {
-    padding: 40px 0;
   }
   .secDeluxeDouble .content-room-right,
   .secDeluxeDouble .content-room-left {
