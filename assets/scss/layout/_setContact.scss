@@ -1,0 +1,235 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+@import "../layout/titles";
+.wrapContact {
+    padding: 60px 0;
+    .contentCategory {
+        margin: 0;
+    }
+    #Share {
+        padding-top: 5px;
+    }
+    .wrapcaptcha {
+        display: flex;
+        align-items: center;
+    }
+    #directions {
+        border: inherit;
+        border-radius: inherit;
+        label {
+            margin-bottom: 10px;
+            @extend .titleCategory4;
+            color: $color1;
+            display: block;
+        }
+    }
+}
+
+.titleTextContact,
+.titleFrmContact {
+    color: $color1;
+    display: block;
+}
+
+.wrapTexInfoContact {
+    font-size: 18px;
+    line-height: 26px;
+    color: $color7;
+    margin-top: 10px;
+    a {
+        color: $color1;
+        font-weight: 600;
+        @include transition(0.5s);
+        &:hover {
+            color: $color3;
+            text-decoration: none;
+        }
+    }
+    b {
+        color: $color8;
+    }
+    i {
+        color: $color2;
+        margin-right: 5px;
+    }
+}
+
+.listFanpageContatc {
+    margin-top: 15px;
+    a {
+        color: $color8;
+        @include transition(0.5s);
+        display: inline-block;
+        font-size: 18px;
+        margin-left: 15px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:hover {
+            color: $color3;
+            text-decoration: none;
+        }
+    }
+}
+
+.formControlSendMessageContact {
+    @include borderRadius(5px);
+}
+
+#directions {
+    input {
+        @extend .formControlSendMessageContact;
+        border: 1px solid $color9;
+        height: 50px;
+    }
+}
+
+.wrapFrmSendMessage {
+    .form-control {
+        font-size: 18px;
+    }
+    .form-group {
+        margin-bottom: 5px;
+    }
+}
+
+.lblSendMessageContact {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: $color8;
+    margin: 0 0 5px 0;
+    width: 100%;
+}
+
+.contentFrmContact {
+    margin-top: 15px;
+}
+
+// captcha
+.btnSendMessageContact,
+.imageRefreshCaptchaContact,
+.imageCaptchaContact,
+.formControlCodeCaptchaContact {
+    float: left;
+    margin-left: 15px;
+}
+
+.formControlCodeCaptchaContact {
+    margin-left: 0;
+    width: 150px;
+}
+
+.imageRefreshCaptchaContact,
+.imageCaptchaContact {
+    height: 25px;
+    width: auto;
+    margin-top: 6px;
+}
+
+.btnSendMessageContact {
+    line-height: 34px;
+}
+
+// end captcha
+// map
+.wrapMap {
+    margin-top: 60px;
+    height: 400px;
+}
+
+// end map
+.wrapShare {
+    display: flex;
+    .titleShare {
+        margin-right: 5px;
+        font-weight: 700;
+    }
+}
+
+//Position
+.contentCategory {
+    margin-top: 10px;
+}
+
+#directions {
+    label {
+        color: $color1;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+}
+
+#Message {
+    height: 60px;
+}
+
+.wrapTexInfoContact {
+    p {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 991.8px) {
+    .colFrmContact,
+    .contentFrmContact {
+        margin-top: 30px;
+    }
+    .wrapMap {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 767.8px) {
+    .formControlCodeCaptchaContact {
+        float: none;
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+    .btnSendMessageContact {
+        float: none;
+        margin: 0;
+        padding-left: 10px;
+        clear: both;
+    }
+    .imageCaptchaContact {
+        margin-left: 0;
+    }
+    .wrapMap {
+        height: 250px;
+    }
+    .imageRefreshCaptchaContact,
+    .imageCaptchaContact {
+        margin-top: 7.5px;
+    }
+    .imageRefreshCaptchaContact {
+        margin-right: 10px;
+    }
+    .wrapContact {
+        padding: 30px 0;
+        #Share {
+            padding-top: 10px;
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .wrapContact {
+        .contentFrmContact {
+            margin-top: 10px;
+        }
+        .wrapFrmSendMessage {
+            margin-top: 0;
+            .form-group {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .colFrmContact,
+    .contentFrmContact {
+        margin-top: 15px;
+    }
+    .wrapTexInfoContact {
+        margin-top: 5px;
+    }
+}

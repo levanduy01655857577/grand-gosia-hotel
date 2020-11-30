@@ -1116,3 +1116,116 @@ jQuery(document).ready(function() {
 });
 
 // }, 500);
+
+
+//Map Contact
+
+var CONTACT = {
+    Lat: 12.23708071809997,
+    Lng: 109.19522265297871,
+    Title: "Grand Gosia Hotel",
+    iconFrom: "https://botonblue.com/botonblue/image/from.png",
+    iconTo: "https://botonblue.com/botonblue/image/to.png"
+};
+$(function() {
+    var directionsDisplay = new google.maps.DirectionsRenderer({ suppressMarkers: true });
+    var costaNt = new google.maps.LatLng(CONTACT.Lat, CONTACT.Lng);
+    var directionsService = new google.maps.DirectionsService();
+
+    var myOptions = {
+        zoom: 13,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        center: costaNt
+    }
+    var map = new google.maps.Map(document.getElementById("directions_map"), myOptions);
+
+    var markerCostaNT = new google.maps.Marker({
+        position: costaNt,
+        Map: map,
+        title: CONTACT.Title
+    });
+
+    var infoCostaNT = new google.maps.InfoWindow({
+        content: $('#botonblue-contact-maps').html()
+    });
+
+    google.maps.event.addListener(markerCostaNT, 'click', function() {
+        infoCostaNT.open(map, markerCostaNT);
+    });
+
+    directionsDisplay.setMap(map);
+    directionsDisplay.setPanel(document.getElementById("directionsPanel"));
+
+
+    var input = $("input[type='text'][id$='txtCusAddress']")[0];
+    var autocomplete = new google.maps.places.Autocomplete(input);
+    autocomplete.bindTo('bounds', map);
+
+    var infowindow = new google.maps.InfoWindow();
+    var marker = new google.maps.Marker({
+        map: map,
+        anchorPoint: new google.maps.Point(0, -29)
+    });
+
+
+    $(input).bind('keypress', function(e) {
+        var theEvent = e || window.event;
+        var key = theEvent.keyCode || theEvent.which;
+        key = String.fromCharCode(key);
+        if (theEvent.keyCode === 13) {
+            theEvent.returnValue = false;
+            if (theEvent.preventDefault)
+                theEvent.preventDefault();
+
+            return false;
+        }
+    });
+
+    function calcRoute() {
+        var start = input.value;
+        var end = costaNt;
+        var request = {
+            origin: start,
+            destination: end,
+            travelMode: google.maps.TravelMode.DRIVING
+        };
+        directionsService.route(request, function(response, status) {
+            if (status == google.maps.DirectionsStatus.OK) {
+                directionsDisplay.setDirections(response);
+            }
+        });
+    }
+
+    google.maps.event.addListener(autocomplete, 'place_changed', function() {
+        infowindow.close();
+        marker.setVisible(false);
+        var place = autocomplete.getPlace();
+        if (!place.geometry) {
+            return;
+        }
+        if (place.geometry.viewport) {
+            map.fitBounds(place.geometry.viewport);
+        } else {
+            map.setCenter(place.geometry.location);
+            map.setZoom(17);
+        }
+        marker.setIcon(CONTACT.iconFrom);
+        markerCostaNT.setIcon(CONTACT.iconTo);
+        marker.setPosition(place.geometry.location);
+        marker.setVisible(true);
+
+        var address = '';
+        if (place.address_components) {
+            address = [
+                (place.address_components[0] && place.address_components[0].short_name || ''),
+                (place.address_components[1] && place.address_components[1].short_name || ''),
+                (place.address_components[2] && place.address_components[2].short_name || '')
+            ].join(' ');
+        }
+        infowindow.setContent('<div style="line-height:1.35;overflow:hidden;white-space:nowrap;"><strong>' +
+            input.value + '</strong><br/>' + address + '</div>');
+        infowindow.open(map, marker);
+
+        calcRoute();
+    });
+});
