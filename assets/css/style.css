@@ -6368,6 +6368,14 @@ select option {
   margin-top: 10px;
 }
 
+.wrapContact #directions .form-group {
+  margin-bottom: 10px;
+}
+
+.wrapContact #directions .adp-text {
+  padding: 0 10px !important;
+}
+
 .titleTextContact,
 .titleFrmContact {
   color: #a78e72;
@@ -6432,21 +6440,29 @@ select option {
 }
 
 .wrapFrmSendMessage {
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .wrapFrmSendMessage .form-control, .wrapFrmSendMessage .wrapContact #directions input, .wrapContact #directions .wrapFrmSendMessage input {
-  font-size: 18px;
+  font-size: 16px;
   height: 40px;
 }
 
 .wrapFrmSendMessage .form-group {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.wrapFrmSendMessage .colInputFrmSendMessageLeft {
+  padding-right: 5px;
+}
+
+.wrapFrmSendMessage .colInputFrmSendMessageRight {
+  padding-left: 5px;
 }
 
 .lblSendMessageContact {
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 700;
   color: #000;
   margin: 0 0 5px 0;
@@ -6454,7 +6470,7 @@ select option {
 }
 
 .contentFrmContact {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .btnSendMessageContact,
@@ -6510,11 +6526,12 @@ select option {
 }
 
 #message {
-  min-height: 120px;
+  min-height: 100px;
+  border-radius: 0;
 }
 
 .wrapTexInfoContact p {
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 991.8px) {
@@ -6524,6 +6541,12 @@ select option {
   }
   .wrapMap {
     margin-top: 30px;
+  }
+  .wrapFrmSendMessage .colInputFrmSendMessageLeft {
+    padding-right: 15px;
+  }
+  .wrapFrmSendMessage .colInputFrmSendMessageRight {
+    padding-left: 15px;
   }
 }
 
@@ -6562,10 +6585,13 @@ select option {
 
 @media (max-width: 575px) {
   .wrapContact .wrapFrmSendMessage {
-    margin-top: 0;
+    padding-top: 5px;
   }
   .wrapContact .wrapFrmSendMessage .form-group {
     margin-bottom: 5px;
+  }
+  .formControlCodeCaptchaContact {
+    margin: 0 0 5px 0;
   }
   .colFrmContact,
   .contentFrmContact {
