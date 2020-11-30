@@ -6365,15 +6365,19 @@ select option {
 
 .wrapContact #directions input {
   border: 1px solid #ccc;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .wrapContact #directions .form-group {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .wrapContact #directions .adp-text {
   padding: 0 10px !important;
+}
+
+.wrapContact #directions #directionsPanel {
+  padding-top: 5px;
 }
 
 .titleTextContact,
@@ -6386,7 +6390,7 @@ select option {
   font-size: 16px;
   line-height: 24px;
   color: #ffff;
-  margin-top: 10px;
+  margin-top: 15px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -6440,7 +6444,8 @@ select option {
 }
 
 .wrapFrmSendMessage {
-  padding-top: 10px;
+  padding-top: 15px;
+  margin: 0 7.5px;
 }
 
 .wrapFrmSendMessage .form-control, .wrapFrmSendMessage .wrapContact #directions input, .wrapContact #directions .wrapFrmSendMessage input {
@@ -6452,12 +6457,8 @@ select option {
   margin-bottom: 10px;
 }
 
-.wrapFrmSendMessage .colInputFrmSendMessageLeft {
-  padding-right: 5px;
-}
-
-.wrapFrmSendMessage .colInputFrmSendMessageRight {
-  padding-left: 5px;
+.wrapFrmSendMessage .colInputFrmSendMessage {
+  padding: 0 7.5px;
 }
 
 .lblSendMessageContact {
@@ -6541,12 +6542,6 @@ select option {
   }
   .wrapMap {
     margin-top: 30px;
-  }
-  .wrapFrmSendMessage .colInputFrmSendMessageLeft {
-    padding-right: 15px;
-  }
-  .wrapFrmSendMessage .colInputFrmSendMessageRight {
-    padding-left: 15px;
   }
 }
 

@@ -23,13 +23,16 @@
         input {
             @extend .form-control;
             border: 1px solid $color9;
-            margin-top: 10px;
+            margin-top: 15px;
         }
         .form-group {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         .adp-text {
             padding: 0 10px!important;
+        }
+        #directionsPanel {
+            padding-top: 5px;
         }
     }
 }
@@ -44,7 +47,7 @@
     font-size: 16px;
     line-height: 24px;
     color: $color7;
-    margin-top: 10px;
+    margin-top: 15px;
     font-family: $title-fontfamily;
     a {
         color: $color8;
@@ -83,7 +86,8 @@
 }
 
 .wrapFrmSendMessage {
-    padding-top: 10px;
+    padding-top: 15px;
+    margin: 0 7.5px;
     .form-control {
         font-size: 16px;
         height: 40px;
@@ -91,11 +95,8 @@
     .form-group {
         margin-bottom: 10px;
     }
-    .colInputFrmSendMessageLeft {
-        padding-right: 5px;
-    }
-    .colInputFrmSendMessageRight {
-        padding-left: 5px;
+    .colInputFrmSendMessage {
+        padding: 0 7.5px;
     }
 }
 
@@ -186,14 +187,6 @@
     }
     .wrapMap {
         margin-top: 30px;
-    }
-    .wrapFrmSendMessage {
-        .colInputFrmSendMessageLeft {
-            padding-right: 15px;
-        }
-        .colInputFrmSendMessageRight {
-            padding-left: 15px;
-        }
     }
 }
 
