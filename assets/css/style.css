@@ -6509,8 +6509,8 @@ select option {
   margin-bottom: 15px;
 }
 
-#Message {
-  height: 120px;
+#message {
+  min-height: 120px;
 }
 
 .wrapTexInfoContact p {
