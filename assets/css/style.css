@@ -738,7 +738,7 @@ select option {
   width: 100%;
 }
 
-.form .form-control {
+.form .form-control, .form .wrapContact #directions input, .wrapContact #directions .form input {
   height: 45px;
   border: 1px solid #ccc;
   width: 100%;
@@ -761,7 +761,7 @@ select option {
   -o-border-radius: 0px;
 }
 
-.form .form-control:focus {
+.form .form-control:focus, .form .wrapContact #directions input:focus, .wrapContact #directions .form input:focus {
   border-color: #a07743;
 }
 
@@ -769,7 +769,7 @@ select option {
   height: auto;
 }
 
-.form-control:focus {
+.form-control:focus, .wrapContact #directions input:focus {
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -1481,7 +1481,7 @@ select option {
   margin: 0;
 }
 
-.booking-search .form .form-control {
+.booking-search .form .form-control, .booking-search .form .wrapContact #directions input, .wrapContact #directions .booking-search .form input {
   height: 45px;
   border: 1px solid #ccc;
 }
@@ -1495,7 +1495,7 @@ select option {
   font-weight: 600;
 }
 
-.booking-search .form .dates .item .form-control {
+.booking-search .form .dates .item .form-control, .booking-search .form .dates .item .wrapContact #directions input, .wrapContact #directions .booking-search .form .dates .item input {
   cursor: pointer;
 }
 
@@ -1503,7 +1503,7 @@ select option {
   position: relative;
 }
 
-.booking-search .form .has-icon .form-control {
+.booking-search .form .has-icon .form-control, .booking-search .form .has-icon .wrapContact #directions input, .wrapContact #directions .booking-search .form .has-icon input {
   padding-left: 30px;
   padding-right: 2px;
   line-height: 35px;
@@ -3833,7 +3833,7 @@ a,
   margin: 0;
 }
 
-.booking-search .form .form-control {
+.booking-search .form .form-control, .booking-search .form .wrapContact #directions input, .wrapContact #directions .booking-search .form input {
   height: 45px;
   border: 1px solid #ccc;
 }
@@ -3847,7 +3847,7 @@ a,
   font-weight: 600;
 }
 
-.booking-search .form .dates .item .form-control {
+.booking-search .form .dates .item .form-control, .booking-search .form .dates .item .wrapContact #directions input, .wrapContact #directions .booking-search .form .dates .item input {
   cursor: pointer;
 }
 
@@ -3855,7 +3855,7 @@ a,
   position: relative;
 }
 
-.booking-search .form .has-icon .form-control {
+.booking-search .form .has-icon .form-control, .booking-search .form .has-icon .wrapContact #directions input, .wrapContact #directions .booking-search .form .has-icon input {
   padding-left: 30px;
   padding-right: 2px;
   line-height: 35px;
@@ -4447,10 +4447,10 @@ a,
 }
 
 @media (max-width: 991px) {
-  #bookform .form .has-icon .form-control {
+  #bookform .form .has-icon .form-control, #bookform .form .has-icon .wrapContact #directions input, .wrapContact #directions #bookform .form .has-icon input {
     padding-left: 30px;
   }
-  #bookform .form .has-icon .form-control .booking-info .info span {
+  #bookform .form .has-icon .form-control .booking-info .info span, #bookform .form .has-icon .wrapContact #directions input .booking-info .info span, .wrapContact #directions #bookform .form .has-icon input .booking-info .info span {
     font-size: 13px;
   }
   .secDeluxeDouble .headerDeluxeRight {
@@ -4470,7 +4470,7 @@ a,
   #bookform .form {
     padding: 15px;
   }
-  #bookform .form .has-icon .form-control .booking-info .info span {
+  #bookform .form .has-icon .form-control .booking-info .info span, #bookform .form .has-icon .wrapContact #directions input .booking-info .info span, .wrapContact #directions #bookform .form .has-icon input .booking-info .info span {
     font-size: 14px;
   }
   .secDeluxeSlide {
@@ -4513,10 +4513,10 @@ a,
   #bookform .form {
     min-height: 200px;
   }
-  #bookform .form .has-icon .form-control {
+  #bookform .form .has-icon .form-control, #bookform .form .has-icon .wrapContact #directions input, .wrapContact #directions #bookform .form .has-icon input {
     padding-left: 30px;
   }
-  #bookform .form .has-icon .form-control .booking-info .info span {
+  #bookform .form .has-icon .form-control .booking-info .info span, #bookform .form .has-icon .wrapContact #directions input .booking-info .info span, .wrapContact #directions #bookform .form .has-icon input .booking-info .info span {
     font-size: 12px;
   }
   .secDeluxeDouble .content-room-right,
@@ -5343,7 +5343,7 @@ a,
   margin: 0;
 }
 
-.booking-search .form .form-control {
+.booking-search .form .form-control, .booking-search .form .wrapContact #directions input, .wrapContact #directions .booking-search .form input {
   height: 45px;
   border: 1px solid #ccc;
 }
@@ -5357,7 +5357,7 @@ a,
   font-weight: 600;
 }
 
-.booking-search .form .dates .item .form-control {
+.booking-search .form .dates .item .form-control, .booking-search .form .dates .item .wrapContact #directions input, .wrapContact #directions .booking-search .form .dates .item input {
   cursor: pointer;
 }
 
@@ -5365,7 +5365,7 @@ a,
   position: relative;
 }
 
-.booking-search .form .has-icon .form-control {
+.booking-search .form .has-icon .form-control, .booking-search .form .has-icon .wrapContact #directions input, .wrapContact #directions .booking-search .form .has-icon input {
   padding-left: 30px;
   padding-right: 2px;
   line-height: 35px;
@@ -6119,6 +6119,228 @@ a,
   }
 }
 
+/* form */
+label {
+  color: #555;
+  font-weight: 500;
+}
+
+textarea {
+  resize: vertical;
+}
+
+select option {
+  font-weight: 400;
+  padding: 5px 0;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.form .form-control, .form .wrapContact #directions input, .wrapContact #directions .form input {
+  height: 45px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 4px 12px;
+  font-size: 1em;
+  color: #555;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+.form .form-control:focus, .form .wrapContact #directions input:focus, .wrapContact #directions .form input:focus {
+  border-color: #a07743;
+}
+
+.form textarea.form-control {
+  height: auto;
+}
+
+.form-control:focus, .wrapContact #directions input:focus {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+}
+
+.date .input-group {
+  position: relative;
+}
+
+.date .input-group input {
+  width: 100%;
+  background: transparent;
+}
+
+.date .input-group .input-group-icon {
+  position: absolute;
+  right: 0;
+}
+
+/* Customize the checkbox (the container) */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a background color */
+  /* When the checkbox is checked, add a background */
+  /* Show the checkmark when checked */
+}
+
+.checkbox-container input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  margin: 0;
+}
+
+.checkbox-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #a07743;
+  /* Create the checkmark/indicator (hidden when not checked) */
+}
+
+.checkbox-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  /*Stylethecheckmark/indicator*/
+  left: 5px;
+  top: 1px;
+  width: 7px;
+  height: 11px;
+  border: solid #a07743;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checktext {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 13px;
+}
+
+.radio-container {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio-container.disabled {
+  opacity: 0.6;
+}
+
+.radio-container.disabled::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #a07743;
+  border-radius: 50%;
+}
+
+.radio-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-container .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #a07743;
+}
+
+.custom-input-files input[type=file] {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.custom-input-files label.style1 {
+  color: #fff;
+}
+
+.custom-input-files label.style1 .btn {
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-input-files label.style1 .btn .text {
+  line-height: 1.4em;
+  max-height: 1.4em;
+}
+
+.custom-input-files label.style1 .fa {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+/* end form */
 .wrapContact {
   padding: 60px 0;
 }
@@ -6136,33 +6358,33 @@ a,
   align-items: center;
 }
 
-.wrapContact #directions {
-  border: inherit;
-  border-radius: inherit;
+.wrapContact #directions label {
+  color: #a78e72;
+  display: block;
 }
 
-.wrapContact #directions label {
-  margin-bottom: 10px;
-  color: #a07743;
-  display: block;
+.wrapContact #directions input {
+  border: 1px solid #ccc;
+  margin-top: 10px;
 }
 
 .titleTextContact,
 .titleFrmContact {
-  color: #a07743;
+  color: #a78e72;
   display: block;
 }
 
 .wrapTexInfoContact {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 24px;
   color: #ffff;
   margin-top: 10px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .wrapTexInfoContact a {
-  color: #a07743;
-  font-weight: 600;
+  color: #000;
+  font-weight: 400;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -6171,7 +6393,7 @@ a,
 }
 
 .wrapTexInfoContact a:hover {
-  color: #e8d7c2;
+  color: #a78e72;
   text-decoration: none;
 }
 
@@ -6180,7 +6402,7 @@ a,
 }
 
 .wrapTexInfoContact i {
-  color: #a78e72;
+  color: #000;
   margin-right: 5px;
 }
 
@@ -6209,21 +6431,13 @@ a,
   text-decoration: none;
 }
 
-.formControlSendMessageContact, #directions input {
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+.wrapFrmSendMessage {
+  padding-top: 5px;
 }
 
-#directions input {
-  border: 1px solid #ccc;
-  height: 50px;
-}
-
-.wrapFrmSendMessage .form-control {
+.wrapFrmSendMessage .form-control, .wrapFrmSendMessage .wrapContact #directions input, .wrapContact #directions .wrapFrmSendMessage input {
   font-size: 18px;
+  height: 40px;
 }
 
 .wrapFrmSendMessage .form-group {
@@ -6251,6 +6465,11 @@ a,
   margin-left: 15px;
 }
 
+.btnSendMessageContact {
+  height: 40px;
+  padding: 0 20px;
+}
+
 .formControlCodeCaptchaContact {
   margin-left: 0;
   width: 150px;
@@ -6267,9 +6486,8 @@ a,
   line-height: 34px;
 }
 
-.wrapMap {
-  margin-top: 60px;
-  height: 400px;
+.formControlSendMessageContact {
+  border-radius: 0;
 }
 
 .wrapShare {
@@ -6292,7 +6510,7 @@ a,
 }
 
 #Message {
-  height: 60px;
+  height: 120px;
 }
 
 .wrapTexInfoContact p {
@@ -6343,9 +6561,6 @@ a,
 }
 
 @media (max-width: 575px) {
-  .wrapContact .contentFrmContact {
-    margin-top: 10px;
-  }
   .wrapContact .wrapFrmSendMessage {
     margin-top: 0;
   }

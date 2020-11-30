@@ -1,6 +1,7 @@
 @import '../abstracts/variable';
 @import '../abstracts/mixin';
 @import "../layout/titles";
+@import "../component/form";
 .wrapContact {
     padding: 60px 0;
     .contentCategory {
@@ -14,34 +15,37 @@
         align-items: center;
     }
     #directions {
-        border: inherit;
-        border-radius: inherit;
         label {
-            margin-bottom: 10px;
             @extend .titleCategory4;
-            color: $color1;
+            color: $color2;
             display: block;
+        }
+        input {
+            @extend .form-control;
+            border: 1px solid $color9;
+            margin-top: 10px;
         }
     }
 }
 
 .titleTextContact,
 .titleFrmContact {
-    color: $color1;
+    color: $color2;
     display: block;
 }
 
 .wrapTexInfoContact {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 24px;
     color: $color7;
     margin-top: 10px;
+    font-family: $title-fontfamily;
     a {
-        color: $color1;
-        font-weight: 600;
+        color: $color8;
+        font-weight: 400;
         @include transition(0.5s);
         &:hover {
-            color: $color3;
+            color: $color2;
             text-decoration: none;
         }
     }
@@ -49,7 +53,7 @@
         color: $color8;
     }
     i {
-        color: $color2;
+        color: $color8;
         margin-right: 5px;
     }
 }
@@ -72,21 +76,11 @@
     }
 }
 
-.formControlSendMessageContact {
-    @include borderRadius(5px);
-}
-
-#directions {
-    input {
-        @extend .formControlSendMessageContact;
-        border: 1px solid $color9;
-        height: 50px;
-    }
-}
-
 .wrapFrmSendMessage {
+    padding-top: 5px;
     .form-control {
         font-size: 18px;
+        height: 40px;
     }
     .form-group {
         margin-bottom: 5px;
@@ -115,6 +109,11 @@
     margin-left: 15px;
 }
 
+.btnSendMessageContact {
+    height: 40px;
+    padding: 0 20px;
+}
+
 .formControlCodeCaptchaContact {
     margin-left: 0;
     width: 150px;
@@ -131,14 +130,11 @@
     line-height: 34px;
 }
 
-// end captcha
-// map
-.wrapMap {
-    margin-top: 60px;
-    height: 400px;
+.formControlSendMessageContact {
+    border-radius: 0;
 }
 
-// end map
+// end captcha
 .wrapShare {
     display: flex;
     .titleShare {
@@ -161,7 +157,7 @@
 }
 
 #Message {
-    height: 60px;
+    height: 120px;
 }
 
 .wrapTexInfoContact {
@@ -215,9 +211,6 @@
 
 @media(max-width:575px) {
     .wrapContact {
-        .contentFrmContact {
-            margin-top: 10px;
-        }
         .wrapFrmSendMessage {
             margin-top: 0;
             .form-group {
