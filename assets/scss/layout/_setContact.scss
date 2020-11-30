@@ -7,9 +7,6 @@
     .contentCategory {
         margin: 0;
     }
-    #Share {
-        padding-top: 5px;
-    }
     .wrapcaptcha {
         display: flex;
         align-items: center;
@@ -93,7 +90,7 @@
         height: 40px;
     }
     .form-group {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     .colInputFrmSendMessage {
         padding: 0 7.5px;
@@ -216,30 +213,19 @@
         margin-right: 10px;
     }
     .wrapContact {
-        padding: 30px 0;
-        #Share {
-            padding-top: 10px;
-        }
+        padding: 40px 0;
     }
 }
 
 @media(max-width:575px) {
     .wrapContact {
-        .wrapFrmSendMessage {
-            padding-top: 5px;
-            .form-group {
-                margin-bottom: 5px;
-            }
-        }
-    }
-    .formControlCodeCaptchaContact {
-        margin: 0 0 5px 0;
+        padding: 30px 0;
     }
     .colFrmContact,
     .contentFrmContact {
         margin-top: 15px;
     }
-    .wrapTexInfoContact {
-        margin-top: 5px;
+    .formControlCodeCaptchaContact {
+        margin: 0 0 15px 0;
     }
 }

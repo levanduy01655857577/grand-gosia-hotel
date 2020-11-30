@@ -6349,10 +6349,6 @@ select option {
   margin: 0;
 }
 
-.wrapContact #Share {
-  padding-top: 5px;
-}
-
 .wrapContact .wrapcaptcha {
   display: flex;
   align-items: center;
@@ -6454,7 +6450,7 @@ select option {
 }
 
 .wrapFrmSendMessage .form-group {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .wrapFrmSendMessage .colInputFrmSendMessage {
@@ -6571,28 +6567,19 @@ select option {
     margin-right: 10px;
   }
   .wrapContact {
-    padding: 30px 0;
-  }
-  .wrapContact #Share {
-    padding-top: 10px;
+    padding: 40px 0;
   }
 }
 
 @media (max-width: 575px) {
-  .wrapContact .wrapFrmSendMessage {
-    padding-top: 5px;
-  }
-  .wrapContact .wrapFrmSendMessage .form-group {
-    margin-bottom: 5px;
-  }
-  .formControlCodeCaptchaContact {
-    margin: 0 0 5px 0;
+  .wrapContact {
+    padding: 30px 0;
   }
   .colFrmContact,
   .contentFrmContact {
     margin-top: 15px;
   }
-  .wrapTexInfoContact {
-    margin-top: 5px;
+  .formControlCodeCaptchaContact {
+    margin: 0 0 15px 0;
   }
 }
