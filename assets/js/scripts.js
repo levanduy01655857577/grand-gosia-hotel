@@ -35,7 +35,6 @@ jQuery('#return-to-top').click(function() {
     }, 1000);
 });
 
-
 // Check Date 
 jQuery(function($) {
     $.datepicker.regional['en-GB'] = {
@@ -1046,7 +1045,6 @@ jQuery(document).ready(function() {
             slidesToShow: 1,
         });
     }
-
     // -------------------------------------------------
     // page detail slider
     if ($('.page-detail .top-content .slider').length) {

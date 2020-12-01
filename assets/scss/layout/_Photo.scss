@@ -1,0 +1,38 @@
+    .sec-photo {
+        .sec-title {
+            text-align: left;
+            .title {
+                font-weight: 600;
+                color: $color1;
+                padding: 5px 15px;
+                border-left: 5px solid $color1;
+            }
+        }
+        .wrapimg {
+            img {
+                opacity: 1;
+            }
+        }
+    }
+    
+    @media(max-width:767.8px) {
+        .sec-photo {
+            .sec-title {
+                margin-bottom: 20px;
+            }
+            .pagination {
+                margin: 20px 0 0;
+            }
+        }
+    }
+    
+    @media(max-width:575px) {
+        .sec-photo {
+            .sec-title {
+                margin-bottom: 15px;
+            }
+            .pagination {
+                margin: 15px 0 0;
+            }
+        }
+    }
