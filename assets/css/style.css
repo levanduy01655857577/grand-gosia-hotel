@@ -6844,6 +6844,11 @@ a,
   .sec-photo .sec-title {
     margin-bottom: 15px;
   }
+  .sec-photo .sec-title .title {
+    font-size: 1.8em;
+    padding: 3px 10px;
+    border-left: 4px solid #a07743;
+  }
   .sec-photo .pagination {
     margin: 15px 0 0;
   }

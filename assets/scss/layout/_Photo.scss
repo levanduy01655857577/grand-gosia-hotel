@@ -30,6 +30,11 @@
         .sec-photo {
             .sec-title {
                 margin-bottom: 15px;
+                .title {
+                    font-size: 1.8em;
+                    padding: 3px 10px;
+                    border-left: 4px solid $color1;
+                }
             }
             .pagination {
                 margin: 15px 0 0;
