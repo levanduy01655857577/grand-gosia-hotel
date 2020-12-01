@@ -1,6 +1,6 @@
 @charset "UTF-8";
 a,
-.slider .slick-arrow, .checkbox-container .checkmark, .checkbox-container .checkmark:after, .btn-messenger, .modal-search-room .tab-menu li, .service .item .content {
+.slider .slick-arrow, .checkbox-container .checkmark, .checkbox-container .checkmark:after, .scroll-top, .btn-messenger, .modal-search-room .tab-menu li, .service .item .content {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -23,7 +23,7 @@ a,
   top: 0;
 }
 
-.testi .item .wrap-img-cover {
+.scroll-top .btn, .testi .item .wrap-img-cover {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1095,6 +1095,58 @@ select option {
 @media (min-width: 992px) {
   .sec-contact .right {
     padding-left: 0;
+  }
+}
+
+/* scroll top */
+.scroll-top {
+  position: fixed;
+  bottom: 15px;
+  z-index: 10;
+  right: -100px;
+}
+
+.scroll-top .btn {
+  font-size: 24px;
+  line-height: 36px;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  background: #a07743;
+  border-color: #a07743;
+  color: #fff;
+}
+
+.scroll-top .btn:hover {
+  background: #fff;
+  border-color: #a07743;
+  color: #a07743 !important;
+}
+
+.scroll-top.appear {
+  right: 15px;
+}
+
+#return-to-top {
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  right: 20px;
+  bottom: 80px;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  #return-to-top {
+    bottom: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  #return-to-top {
+    height: 45px;
+    width: 45px;
+    bottom: 100px;
   }
 }
 
