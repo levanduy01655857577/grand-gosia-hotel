@@ -2026,25 +2026,37 @@ select option {
 }
 
 .sec-gallery .item .wrapimg:hover .content {
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  border: 3px solid #fff;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  border: 2px solid #fff;
 }
 
 .sec-gallery .service {
   padding: -15px 0;
 }
 
-.sec-gallery .service .title {
-  font-size: 24px !important;
+.sec-gallery .service .content {
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
-.sec-gallery .service i {
-  font-size: 24px;
-  color: #ffff;
-  padding: 5px;
+.sec-gallery .service .content .body #viewPhoto {
+  display: block;
+  background-color: #a07743;
+  width: 135px;
+  padding: 0 10px;
+  margin: 15px auto;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+  -ms-box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+}
+
+.sec-gallery .service .content .body #viewPhoto:hover {
+  background-color: #ffff !important;
+  color: #a07743;
 }
 
 .sec-gallery .pagination {
