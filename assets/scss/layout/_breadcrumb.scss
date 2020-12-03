@@ -2,7 +2,10 @@
     @import '../abstracts/variable';
     .wrapBreadCrumb {
         position: relative;
-        margin-top: 128px
+        margin-top: 128px;
+        .titleCategory4 {
+            text-align: center;
+        }
     }
     
     .wrapImgBreadcrumb {

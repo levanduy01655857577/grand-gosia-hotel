@@ -16,13 +16,14 @@
 }
 
 .showTextPostNewsDetail {
-    color: $color8;
-    font-size: 18px;
-    line-height: 24px;
-    overflow-x: auto;
+    color: $color10;
+    font-size: 15px;
+    line-height: 1.2;
     margin-top: 15px;
     .titlePostNewsDetail {
-        line-height: 47px;
+        font-size: 2.3em;
+        line-height: 1.1;
+        font-weight: 400;
     }
     img {
         max-width: 100%;
@@ -30,8 +31,8 @@
     }
 }
 
-.wrapShare {
-    margin-top: 10px;
+#ShareofNews {
+    margin: 10px 0 5px 0;
 }
 
 @media (max-width: 991.8px) {
@@ -53,3 +54,21 @@
 }
 
 // end list news others
+@media(max-width:767.8px) {
+    .showTextPostNewsDetail {
+        .titlePostNewsDetail {
+            font-size: 2em;
+        }
+    }
+}
+
+@media(max-width:575.8px) {
+    .showTextPostNewsDetail {
+        .titlePostNewsDetail {
+            font-size: 1.5em;
+        }
+        #ShareofNews {
+            clear: both;
+        }
+    }
+}

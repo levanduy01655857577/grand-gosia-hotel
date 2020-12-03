@@ -221,7 +221,18 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   line-height: 1.2;
@@ -2441,6 +2452,10 @@ select option {
   margin-top: 128px;
 }
 
+.wrapBreadCrumb .titleCategory4 {
+  text-align: center;
+}
+
 .wrapImgBreadcrumb {
   padding-top: 400px;
 }
@@ -3197,12 +3212,6 @@ a,
   }
   .pagelistNews .pagination {
     margin-top: 15px;
-  }
-}
-
-@media (max-width: 375px) {
-  .pagelistNews {
-    padding-top: 0;
   }
 }
 
@@ -4244,13 +4253,21 @@ a,
   background-color: #a07743;
 }
 
+.contentRoom,
+.contentRoomDetail,
+.detailRoom {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
 .contentRoom {
-  padding: 15px 0;
   margin: 0;
+  padding-bottom: 10px;
 }
 
 .contentRoomDetail {
-  padding-bottom: 10px;
   margin: 0;
 }
 
@@ -4365,7 +4382,7 @@ a,
 }
 
 .secDeluxeDouble .wrapItem .detailRoom li {
-  padding: 2px 0;
+  padding-top: 7.5px;
 }
 
 .secDeluxeDouble .wrapShare {
@@ -5731,15 +5748,16 @@ a,
 }
 
 .showTextPostNewsDetail {
-  color: #000;
-  font-size: 18px;
-  line-height: 24px;
-  overflow-x: auto;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.2;
   margin-top: 15px;
 }
 
 .showTextPostNewsDetail .titlePostNewsDetail {
-  line-height: 47px;
+  font-size: 2.3em;
+  line-height: 1.1;
+  font-weight: 400;
 }
 
 .showTextPostNewsDetail img {
@@ -5747,8 +5765,8 @@ a,
   height: auto;
 }
 
-.wrapShare {
-  margin-top: 10px;
+#ShareofNews {
+  margin: 10px 0 5px 0;
 }
 
 @media (max-width: 991.8px) {
@@ -5766,6 +5784,21 @@ a,
 .elementSlideLatestNews {
   margin-top: 15px;
   padding: 0;
+}
+
+@media (max-width: 767.8px) {
+  .showTextPostNewsDetail .titlePostNewsDetail {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 575.8px) {
+  .showTextPostNewsDetail .titlePostNewsDetail {
+    font-size: 1.5em;
+  }
+  .showTextPostNewsDetail #ShareofNews {
+    clear: both;
+  }
 }
 
 .wrapLatestNews {
@@ -6197,7 +6230,7 @@ a,
 
 @media (max-width: 575.8px) {
   .pagelistGallery {
-    padding: 35px 0 30px 0;
+    padding: 30px 0 25px 0;
     font-size: 20px;
   }
   .pagelistGallery .news .item {

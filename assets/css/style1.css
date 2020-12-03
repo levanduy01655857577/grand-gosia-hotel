@@ -348,9 +348,9 @@ header img {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    transition: all 1s ease-in;
 }
 
 #nav-desktop ul li>a {
@@ -398,7 +398,8 @@ header img {
     opacity: 1;
 }
 
-#nav-desktop ul li a:hover+.submenu {
+#nav-desktop ul li a:hover+.submenu,
+#nav-desktop ul li a:focus+.submenu {
     opacity: 1;
     -webkit-transform: rotateX(0deg);
     -moz-transform: rotateX(0deg);
@@ -453,10 +454,9 @@ header img {
     -ms-transform: rotateX(-90deg);
     -o-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
-    -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    z-index: 10;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 #nav-desktop .submenu li>.submenu {
@@ -714,6 +714,10 @@ header img {
 
 
 /* Select Language */
+
+.selectLanguage {
+    background-color: #fff;
+}
 
 .selectLanguage .Language {
     /* width: 70px !important; */

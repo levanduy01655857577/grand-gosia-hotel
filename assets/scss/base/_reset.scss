@@ -1,36 +1,39 @@
 // Chỉnh sửa mặc định của trình duyệt: margin, font...
-
 @font-face {
     font-family: 'Arima Madurai';
     font-weight: 500;
     src: url(../fonts/ArimaMadurai-Medium.ttf);
 }
+
 @font-face {
     font-family: 'Arima Madurai';
     font-weight: 900;
     src: url(../fonts/ArimaMadurai-Black.ttf);
 }
+
 @font-face {
     font-family: 'Montserrat';
     font-weight: 400;
     src: url(../fonts/Montserrat-Regular.ttf);
 }
+
 @font-face {
     font-family: 'Montserrat';
     font-weight: 500;
     src: url(../fonts/Montserrat-Medium.ttf);
 }
+
 @font-face {
     font-family: 'Montserrat';
     font-weight: 600;
     src: url(../fonts/Montserrat-SemiBold.ttf);
 }
+
 @font-face {
     font-family: 'Montserrat';
     font-weight: 700;
     src: url(../fonts/Montserrat-Bold.ttf);
 }
-
 
 * {
     outline: 0 !important;
@@ -59,10 +62,22 @@ body {
 }
 
 .title-fontfamily {
-    font-family: $title-fontfamily;;
+    font-family: $title-fontfamily;
+    ;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $title-fontfamily;
     font-weight: 500;
     line-height: 1.2;
@@ -81,7 +96,8 @@ a {
     color: $color1;
     outline: 0 !important;
     text-decoration: none !important;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: $color2;
     }
 }
@@ -103,11 +119,13 @@ ol {
     margin-left: 15px;
 }
 
+
 /* custom scrollbar */
 
 ::-webkit-scrollbar {
     width: 6px;
 }
+
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
     // border-radius: 999px;
@@ -116,6 +134,7 @@ ol {
     // -ms-border-radius: 999px;
     // -o-border-radius: 999px;
 }
+
 ::-webkit-scrollbar-thumb {
     background: $color1;
     // border-radius: 999px;
@@ -124,10 +143,12 @@ ol {
     // -ms-border-radius: 999px;
     // -o-border-radius: 999px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     // background: rgba(248, 88, 88, 0.4);
     background: $color1;
 }
+
 
 /* end custom scrollbar */
 
@@ -139,7 +160,6 @@ ol {
 //   -webkit-appearance: none; //Chrome, Safari, Edge, Opera
 //   margin: 0;
 // }
-
 // input[type=number] { 
 //   -moz-appearance:textfield; //Firefox
 // }
@@ -199,7 +219,6 @@ a,
 //     background-position: center;
 //     background-repeat: no-repeat;
 // }
-
 .overflow-hidden {
     overflow: hidden !important;
 }
@@ -246,8 +265,8 @@ a[href^='mailto'] {
 
 // dùng với background (set cho wrap-img), image
 .wrap-img {
-	position: relative;
-	transition: all .35s ease-in-out;
+    position: relative;
+    transition: all .35s ease-in-out;
     max-width: 100%;
     overflow: hidden;
     img {
@@ -265,7 +284,6 @@ a[href^='mailto'] {
 // .commin-soon {
 //     height: 150px;
 // }
-
 // .shortcut {
 //     // margin-bottom: 30px;
 //     .shortcut-content {
@@ -294,7 +312,6 @@ a[href^='mailto'] {
 //         }
 //     }
 // }
-
 // .price {
 //     .price-old {
 //         // font-size: 0.85em;
@@ -304,7 +321,6 @@ a[href^='mailto'] {
 //         @include opacity(0.5);
 //     }
 // }
-
 .quantity {
     display: flex;
     >* {
@@ -322,12 +338,11 @@ a[href^='mailto'] {
     }
     input::-webkit-outer-spin-button,
     input::-webkit-inner-spin-button {
-      -webkit-appearance: none; //Chrome, Safari, Edge, Opera
-      margin: 0;
+        -webkit-appearance: none; //Chrome, Safari, Edge, Opera
+        margin: 0;
     }
-
-    input[type=number] { 
-      -moz-appearance:textfield; //Firefox
+    input[type=number] {
+        -moz-appearance: textfield; //Firefox
     }
 }
 
@@ -357,7 +372,9 @@ a[href^='mailto'] {
         -moz-transition: all 0.35s linear;
         -ms-transition: all 0.35s linear;
         -o-transition: all 0.35s linear;
-        &:hover, &:focus, &.active {
+        &:hover,
+        &:focus,
+        &.active {
             color: $color2;
             background: $color1;
         }
@@ -368,10 +385,9 @@ a[href^='mailto'] {
             cursor: not-allowed;
             // color: $color1;
             background: transparent !important;
-          }
+        }
     }
 }
-
 
 // ie brower
 .ie .bg-cover {
@@ -379,7 +395,8 @@ a[href^='mailto'] {
     background-position: center;
     background-repeat: no-repeat;
     img {
-        display: none;;
+        display: none;
+        ;
     }
 }
 
@@ -394,4 +411,6 @@ a[href^='mailto'] {
         width: 1200px;
     }
 }
+
+
 /* end common */

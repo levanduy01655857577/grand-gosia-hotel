@@ -198,7 +198,18 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   line-height: 1.2;
@@ -1876,6 +1887,10 @@ select option {
 .wrapBreadCrumb {
   position: relative;
   margin-top: 128px;
+}
+
+.wrapBreadCrumb .titleCategory4, .wrapBreadCrumb .wrapContact #directions label, .wrapContact #directions .wrapBreadCrumb label {
+  text-align: center;
 }
 
 .wrapImgBreadcrumb {
