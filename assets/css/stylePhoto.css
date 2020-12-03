@@ -70,7 +70,7 @@ a,
   -o-transform: translateX(-50%);
 }
 
-.custom-input-files label.style1 .btn .text, .pagelistGallery .titleGallery {
+.custom-input-files label.style1 .btn .text {
   display: block;
   display: -webkit-box;
   text-overflow: ellipsis;
@@ -3034,7 +3034,7 @@ a,
   -o-transform: translateX(-50%);
 }
 
-.custom-input-files label.style1 .btn .text, .pagelistGallery .titleGallery {
+.custom-input-files label.style1 .btn .text {
   display: block;
   display: -webkit-box;
   text-overflow: ellipsis;
@@ -6143,14 +6143,16 @@ a,
 }
 
 .pagelistGallery .titleGallery {
+  display: block;
   font-family: "Open Sans", sans-serif;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 30px;
-  line-height: 1;
-  max-height: 1;
-  max-height: 50px;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  max-height: 30px;
   margin: 0;
+  text-align: center;
 }
 
 .pagelistGallery .news .news-list {
@@ -6159,7 +6161,7 @@ a,
 
 .pagelistGallery .news .item .content {
   position: relative;
-  padding: 40px 15px 15px 15px;
+  padding: 30px 15px 15px 15px;
 }
 
 .pagelistGallery .iconImage {

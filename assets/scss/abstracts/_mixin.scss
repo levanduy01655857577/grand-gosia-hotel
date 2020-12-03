@@ -99,7 +99,6 @@
     line-height: $height;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
 }
 
 @mixin lineclamp-n($font-size, $line-height, $lines-to-show) {
