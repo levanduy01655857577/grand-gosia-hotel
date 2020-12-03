@@ -3,9 +3,15 @@
         padding-top: 30px;
     }
     
-    @media(max-width:576px) {
+    @media(max-width:575.8px) {
         .pagelistNews {
             padding-top: 15px;
+            .item {
+                margin-top: 15px;
+            }
+            .pagination {
+                margin-top: 15px;
+            }
         }
     }
     

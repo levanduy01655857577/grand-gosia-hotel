@@ -1827,7 +1827,7 @@ select option {
   -webkit-transition: all 0.3s;
 }
 
-@media (max-width: 767.8px) {
+@media (max-width: 991.8px) {
   .btnBookingMobile {
     visibility: visible;
   }
@@ -3188,9 +3188,15 @@ a,
   padding-top: 30px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575.8px) {
   .pagelistNews {
     padding-top: 15px;
+  }
+  .pagelistNews .item {
+    margin-top: 15px;
+  }
+  .pagelistNews .pagination {
+    margin-top: 15px;
   }
 }
 
@@ -4181,7 +4187,7 @@ a,
   -webkit-transition: all 0.3s;
 }
 
-@media (max-width: 767.8px) {
+@media (max-width: 991.8px) {
   .btnBookingMobile {
     visibility: visible;
   }
@@ -5692,7 +5698,7 @@ a,
   -webkit-transition: all 0.3s;
 }
 
-@media (max-width: 767.8px) {
+@media (max-width: 991.8px) {
   .btnBookingMobile {
     visibility: visible;
   }
@@ -6179,7 +6185,7 @@ a,
 
 @media (max-width: 767.8px) {
   .pagelistGallery {
-    padding: 40px 0;
+    padding: 60px 0;
   }
   .pagelistGallery .titleGallery {
     font-size: 25px;
