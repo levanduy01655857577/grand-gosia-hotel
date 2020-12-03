@@ -66,14 +66,14 @@
 
     <!-- Date Range Picker -->
     <!-- <link rel="stylesheet" href="assets/lib/dateRangePicker/daterangepicker.min.css"> -->
-
+    <link rel="stylesheet" href="/assets/lib/lightGallery/css/lightgallery.min.css">
     <!-- Slide -->
     <link rel="stylesheet" href="assets/lib/slick/slick.css">
     <link rel="stylesheet" href="assets/lib/slick/slick-theme.css">
     <!-- Style -->
     <link rel="stylesheet" href="assets/css/book-now.css">
     <link rel="stylesheet" href="assets/css/style1.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/stylePhoto.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Philosopher&display=swap&subset=vietnamese" rel="stylesheet">
 </head>
@@ -108,9 +108,14 @@
                     </li>
                     <li><a href="#" title="SERVICES">Services</a></li>
                     <li><a href="#" title="PROMOTIONS">Promotions</a></li>
-                    <li class="active"><a href="listNews.htm" title="NEWS">News</a></li>
+                    <li><a href="listNews.htm" title="NEWS">News</a></li>
                     <li><a href="#" title="RECRUITMENT">Recruitment</a></li>
-                    <li><a href="gallery.htm" title="GALLERY">Gallery</a></li>
+                    <li><a href="javascript:void(0)" title="GALLERY">Gallery</a>
+                        <ul class="submenu">
+                            <li class="active"><a href="GalleryImage.htm">Photo</a></li>
+                            <li><a href="GalleryVideo.htm">Video</a></li>
+                        </ul>
+                    </li>
                     <li><a href="Contact.htm" title="CONTACT">CONTACT</a></li>
                     <li class="selectLanguage">
                         <div class="dropdown Language">
@@ -153,9 +158,14 @@
                         </li>
                         <li><a href="#" title="SERVICES">Services</a></li>
                         <li><a href="#" title="PROMOTIONS">Promotions</a></li>
-                        <li class="active"><a href="listNews.htm" title="NEWS">News</a></li>
+                        <li><a href="listNews.htm" title="NEWS">News</a></li>
                         <li><a href="#" title="RECRUITMENT">Recruitment</a></li>
-                        <li><a href="gallery.htm" title="GALLERY">Gallery</a></li>
+                        <li><a href="javascript:void(0)" title="GALLERY">Gallery</a>
+                            <ul class="submenu">
+                                <li class="active"><a href="GalleryImage.htm">Photo</a></li>
+                                <li><a href="GalleryVideo.htm">Video</a></li>
+                            </ul>
+                        </li>
                         <li><a href="Contact.htm" title="CONTACT">CONTACT</a></li>
                         <!-- <li class="selectLanguage">
 							<div class="dropdown Language">
@@ -200,71 +210,108 @@
                 <nav aria-label="navListBreadcrumb" class="navListBreadcrumb">
                     <ol class="olListBreqadcrumb">
                         <li class="itemListBreadcrumb"><a href="index.htm" class="linkListBreadcrumb" title="HOME">HOME</a></li>
-                        <li class="itemListBreadcrumb"><a href="gallery.htm" class="linkListBreadcrumb" title="GALLERY">GALLERY</a></li>
-                        <li class="itemListBreadcrumb active" aria-current="page">DELUXE DOUBLE</li>
+                        <li class="itemListBreadcrumb"><a href="GalleryImage.htm" class="linkListBreadcrumb" title="GALLERY">GALLERY</a></li>
+                        <li class="itemListBreadcrumb active" aria-current="page">PHOTO</li>
                     </ol>
                 </nav>
             </div>
         </div>
     </div>
     <!--End BreadCrumb-->
-    <section class="sec sec-photo">
-        <div class="container">
-            <div class="sec-title">
-                <a href="">
-                    <h2 class="title">DELUXE DOUBLE ROOM</h2>
-                </a>
-            </div>
-            <div class="service">
-                <div class="item">
-                    <div class="wrapimg wrapImgResize img16And9">
-                        <img src="assets/images/deluxe-double-1.jpg" alt="Room" />
+    <div class="sec wrapListProject PagelistPhoto">
+        <div class="container containerListProject">
+            <div class="contentListProject">
+                <div class="row" id="showGalleryImagesDetail">
+                    <div class="col-6 col-sm-6 col-lg-4 colItemImage" data-src="assets/images/14-1.jpg">
+                        <div class="contentItemProject">
+                            <div class="wrapImgResize img16And9 wrapImgResizeItemProject">
+                                <img src="assets/images/14-1.jpg" class="imgItemProject" alt="Deluxe Double" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-lg-4 colItemImage" data-src="assets/images/14-2.jpg">
+                        <div class="contentItemProject">
+                            <div class="wrapImgResize img16And9 wrapImgResizeItemProject">
+                                <img src="assets/images/14-2.jpg" class="imgItemProject" alt="Deluxe Twin" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-lg-4 colItemImage" data-src="assets/images/14-3-2.jpg">
+                        <div class="contentItemProject">
+                            <div class="wrapImgResize img16And9 wrapImgResizeItemProject">
+                                <img src="assets/images/14-3-2.jpg" class="imgItemProject" alt="Senior Deluxe" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-lg-4 colItemImage" data-src="assets/images/14-3.jpg">
+                        <div class="contentItemProject">
+                            <div class="wrapImgResize img16And9 wrapImgResizeItemProject">
+                                <img src="assets/images/14-3.jpg" class="imgItemProject" alt="Supernior Deluxe" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-lg-4 colItemImage" data-src="assets/images/14.jpg">
+                        <div class="contentItemProject">
+                            <div class="wrapImgResize img16And9 wrapImgResizeItemProject">
+                                <img src="assets/images/14.jpg" class="imgItemProject" alt="Supernior Twin" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-lg-4 colItemImage" data-src="assets/images/15.jpg">
+                        <div class="contentItemProject">
+                            <div class="wrapImgResize img16And9 wrapImgResizeItemProject">
+                                <img src="assets/images/15.jpg" class="imgItemProject" alt="Grand Gosia Suite" />
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="decs">
-                    <p> All 45 rooms boast private pools and fireplaces, while conveniences include dryers and sitting areas. Other amenities available to guests include free WiFi, TVs, and premium bedding. </p>
-                </div>
+
+                <nav class="wrapMenuTabProduct">
+                    <ul class="pagination navTabMenuProduct" role="tablist">
+                        <li class="page-item navItemMenuProduct" role="presentation">
+                            <a class="page-link navLinkMenuProduct" data-toggle="tab" href="#tabProduct1" role="tab" aria-controls="tabProduct1" aria-selected="false" title="Previous">
+                                <span class="arrow-left" aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+
+                        <li class="page-item navItemMenuProduct active" role="presentation">
+                            <a class="page-link navLinkMenuProduct" data-toggle="tab" href="#tabProduct2" role="tab" aria-controls="tabProduct2" aria-selected="false" title="Deluxe Double">1</a>
+                        </li>
+
+                        <li class="page-item navItemMenuProduct" role="presentation">
+                            <a class="page-link navLinkMenuProduct" data-toggle="tab" href="#tabProduct3" role="tab" aria-controls="tabProduct3" aria-selected="false " title="Deluxe Twin ">2</a>
+                        </li>
+
+                        <li class="page-item navItemMenuProduct" role="presentation">
+                            <a class="page-link navLinkMenuProduct" data-toggle="tab" href="#tabProduct4" role="tab" aria-controls="tabProduct4" aria-selected="false " title="Senior Deluxe ">3</a>
+                        </li>
+
+                        <li class="page-item navItemMenuProduct" role="presentation">
+                            <a class="page-link navLinkMenuProduct " data-toggle="tab" href="#tabProduct5" role="tab" aria-controls="tabProduct5" aria-selected="false " title="Superior Double ">4</a>
+                        </li>
+                        <li class="page-item navItemMenuProduct" role="presentation">
+                            <a class="page-link navLinkMenuProduct " data-toggle="tab" href="#tabProduct6" role="tab" aria-controls="tabProduct6" aria-selected="false " title="Superior Twin Room ">5</a>
+                        </li>
+                        <li class="page-item navItemMenuProduct" role="presentation">
+                            <a class="page-link navLinkMenuProduct" data-toggle="tab" href="#tabProduct7" role="tab" aria-controls="tabProduct7" aria-selected="false " title="Grand Gosia Suite ">6</a>
+                        </li>
+                        <li class="page-item navItemMenuProduct" role="presentation ">
+                            <a class="page-link navLinkMenuProduct" data-toggle="tab" href="#tabProduct8" role="tab" aria-controls="tabProduct8" aria-selected="false " title="Next ">
+                                <span class="arrow-right " aria-hidden="true ">&raquo;</span>
+                                <span class="sr-only ">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="wrapMenuTabProduct">
-                <ul class="pagination navTabMenuProduct" role="tablist">
-                    <li class="page-item navItemMenuProduct" role="presentation">
-                        <a class="page-link navLinkMenuProduct" data-toggle="tab" href="#tabProduct1" role="tab" aria-controls="tabProduct1" aria-selected="false" title="Previous">
-                            <span class="arrow-left" aria-hidden="true">&laquo;</span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                    </li>
-
-                    <li class="page-item navItemMenuProduct active" role="presentation">
-                        <a class="page-link navLinkMenuProduct" data-toggle="tab" href="#tabProduct2" role="tab" aria-controls="tabProduct2" aria-selected="false" title="Deluxe Double">1</a>
-                    </li>
-
-                    <li class="page-item navItemMenuProduct" role="presentation">
-                        <a class="page-link navLinkMenuProduct" data-toggle="tab" href="#tabProduct3" role="tab" aria-controls="tabProduct3" aria-selected="false " title="Deluxe Twin ">2</a>
-                    </li>
-
-                    <li class="page-item navItemMenuProduct" role="presentation">
-                        <a class="page-link navLinkMenuProduct" data-toggle="tab" href="#tabProduct4" role="tab" aria-controls="tabProduct4" aria-selected="false " title="Senior Deluxe ">3</a>
-                    </li>
-
-                    <li class="page-item navItemMenuProduct" role="presentation">
-                        <a class="page-link navLinkMenuProduct " data-toggle="tab" href="#tabProduct5" role="tab" aria-controls="tabProduct5" aria-selected="false " title="Superior Double ">4</a>
-                    </li>
-                    <li class="page-item navItemMenuProduct" role="presentation">
-                        <a class="page-link navLinkMenuProduct " data-toggle="tab" href="#tabProduct6" role="tab" aria-controls="tabProduct6" aria-selected="false " title="Superior Twin Room ">5</a>
-                    </li>
-                    <li class="page-item navItemMenuProduct" role="presentation">
-                        <a class="page-link navLinkMenuProduct" data-toggle="tab" href="#tabProduct7" role="tab" aria-controls="tabProduct7" aria-selected="false " title="Grand Gosia Suite ">6</a>
-                    </li>
-                    <li class="page-item navItemMenuProduct" role="presentation ">
-                        <a class="page-link navLinkMenuProduct" data-toggle="tab" href="#tabProduct8" role="tab" aria-controls="tabProduct8" aria-selected="false " title="Next ">
-                            <span class="arrow-right " aria-hidden="true ">&raquo;</span>
-                            <span class="sr-only ">Next</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </div>
-    </section>
+    </div>
     <!--Button Booking-->
     <div class="btnBookingMobile">
         <a href="#" title="BOOKING" class="btn btn1 btn-booking">BOOKING</a>
@@ -409,18 +456,18 @@
     <!-- end modal -->
 
     <!-- jQuery -->
-    <script src="assets/lib/jquery/jquery-2.2.4.min.js "></script>
-    <script src="assets/lib/jquery/jquery-ui-1.11.4.min.js "></script>
+    <script src="assets/lib/jquery/jquery-2.2.4.min.js"></script>
+    <script src="assets/lib/jquery/jquery-ui-1.11.4.min.js"></script>
     <!-- Bootstrap -->
     <!-- <script type="text/javascript " src="assets/lib/bootstrap/js/bootstrap.min.js "></script> -->
     <!-- Slide -->
-    <script type="text/javascript " src="assets/lib/slick/slick.min.js "></script>
     <!-- Date Range Picker -->
     <!-- <script type="text/javascript " src="assets/lib/dateRangePicker/moment.min.js "></script> -->
     <!-- <script type="text/javascript " src="assets/lib/dateRangePicker/daterangepicker.min.js "></script> -->
     <!-- Script -->
-    <script type="text/javascript " src="assets/js/lib.js "></script>
-    <script type="text/javascript " src="assets/js/scripts.js "></script>
+    <script src="assets/js/lib.js"></script>
+    <script src="assets/lib/lightGallery/js/lightgallery.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>

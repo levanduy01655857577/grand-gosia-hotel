@@ -1,0 +1,13 @@
+@import '../component/paging';
+// end paging
+// list project
+@import '../layout/wrapListProject';
+// end list project
+// end gallery
+.contentItemProject {
+    cursor: pointer;
+}
+
+.listProject {
+    margin-top: 0;
+}

@@ -1089,8 +1089,8 @@ jQuery(document).ready(function() {
     }
 
     // slider other item img
-    if ($('.sec-other .item .slider').length) {
-        $('.sec-other .item .slider').slick({
+    if (jQuery('.sec-other .item .slider').length) {
+        jQuery('.sec-other .item .slider').slick({
             prevArrow: prevArrow,
             nextArrow: nextArrow,
             arrows: true,
@@ -1114,6 +1114,12 @@ jQuery(document).ready(function() {
 });
 
 // }, 500);
+
+
+// start gallery image
+if (jQuery('#showGalleryImagesDetail').length) {
+    jQuery('#showGalleryImagesDetail').lightGallery();
+}
 
 
 //Map Contact

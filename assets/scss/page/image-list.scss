@@ -1,0 +1,19 @@
+// paging
+@import '../component/paging';
+// end paging
+// list project
+@import '../layout/wrapListProject';
+// end list project
+.listProject {
+    margin-top: 0;
+}
+
+.wrapListProject {
+    padding-top: 45px;
+}
+
+@media (max-width: 991.8px) {
+    .wrapListProject {
+        padding-top: 15px;
+    }
+}

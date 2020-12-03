@@ -1,62 +1,62 @@
-.sec-gallery {
-    .item {
-        .wrapimg {
-            img {
-                opacity: 1;
-            }
-            &:hover {
-                .content {
-                    top: 10px;
-                    right: 10px;
-                    bottom: 10px;
-                    left: 10px;
-                    border: 2px solid #fff;
-                }
+.pagelistGallery {
+    .titleGallery {
+        font-family: $title-fontfamily;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 30px !important;
+        @include lineclamp-1(1);
+        max-height: 50px;
+        margin: 0;
+    }
+    .news {
+        .news-list {
+            margin-top: -30px;
+        }
+        .item {
+            .content {
+                position: relative;
+                padding: 40px 15px 15px 15px;
             }
         }
     }
-    .service {
-        padding: -15px 0;
-        .content {
-            background-color: rgba(0, 0, 0, 0.15);
-            .body {
-                #viewPhoto {
-                    display: block;
-                    background-color: $color1;
-                    width: 135px;
-                    padding: 0 10px;
-                    margin: 15px auto;
-                    @include box-shadow(rgba(0, 0, 0, 0.5) 0px 5px 10px);
-                    &:hover {
-                        background-color: $color7!important;
-                        color: $color1;
-                    }
-                }
-            }
+    .iconImage {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background-color: $color1;
+        border-radius: 50%;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        i {
+            margin: auto;
+            color: $color7;
+            font-size: 25px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
-    .pagination {
-        margin-top: 15px;
-    }
-    .sec-title {
-        margin-bottom: 15px;
+}
+
+@media(max-width:767.8px) {
+    .pagelistGallery {
+        padding: 40px 0;
+        .titleGallery {
+            font-size: 25px;
+            line-height: 35px !important;
+        }
     }
 }
 
-.rowGallery {
-    margin: 15px 0;
-}
-
-@media(max-width:575px) {
-    .sec-gallery {
-        .sec-title {
-            margin-bottom: 7.5px;
+@media(max-width:575.8px) {
+    .pagelistGallery {
+        .item {
+            margin-top: 15px;
         }
         .pagination {
-            margin-top: 7.5px;
+            margin-top: 15px;
         }
-    }
-    .rowGallery {
-        margin: 7.5px 0;
     }
 }

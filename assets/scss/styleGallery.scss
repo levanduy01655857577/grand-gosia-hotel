@@ -13,7 +13,6 @@
 // @import "component/item";
 @import "component/loader";
 @import "component/captcha";
-@import "component/scroll-top";
 // @import "component/map-api";
 // @import "component/search";
 // @import "component/login";
@@ -23,9 +22,12 @@
 // @import "layout/header";
 @import "layout/footer";
 @import "layout/booking";
-@import "layout/breadcrumb";
-@import "layout/resizeImgage";
+// @import "layout/breadcrunb";
 // @import "layout/sec-404";
 // 5. page
+@import "page/home";
+@import "page/room";
+@import "page/listnews";
+@import "page/DeluxeDouble";
+@import "page/Infodetail";
 @import "page/Gallery";
-@import "layout/listProduct";
