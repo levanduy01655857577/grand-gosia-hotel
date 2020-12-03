@@ -1117,8 +1117,16 @@ jQuery(document).ready(function() {
 
 
 // start gallery image
+
 if (jQuery('#showGalleryImagesDetail').length) {
-    jQuery('#showGalleryImagesDetail').lightGallery();
+    jQuery('#showGalleryImagesDetail').lightGallery({
+        showThumbByDefault: false,
+        download: false,
+        fullScreen: false,
+        zoom: false,
+        scale: false,
+        autoplayControls: false
+    });
 }
 
 

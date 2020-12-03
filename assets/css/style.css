@@ -6140,7 +6140,7 @@ a,
   font-family: "Open Sans", sans-serif;
   font-size: 19px;
   font-weight: 600;
-  line-height: 30px !important;
+  line-height: 30px;
   line-height: 1;
   max-height: 1;
   max-height: 50px;
@@ -6188,8 +6188,16 @@ a,
 }
 
 @media (max-width: 575.8px) {
-  .pagelistGallery .item {
+  .pagelistGallery {
+    padding: 35px 0 30px 0;
+    font-size: 20px;
+  }
+  .pagelistGallery .news .item {
     margin-top: 15px;
+  }
+  .pagelistGallery .news .item .content {
+    position: relative;
+    padding-top: 30px;
   }
   .pagelistGallery .pagination {
     margin-top: 15px;
