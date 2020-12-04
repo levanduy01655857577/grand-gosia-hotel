@@ -264,13 +264,13 @@
     @include square(60px);
 }
 
-@media(max-width:768px) {
+@media(max-width:991.8px) {
     .btn-messenger {
         bottom: 55px;
     }
 }
 
-@media(max-width:576px) {
+@media(max-width:575.8px) {
     .btn-messenger {
         height: 45px;
         width: 45px;

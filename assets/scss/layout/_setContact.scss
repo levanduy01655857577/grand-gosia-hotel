@@ -5,31 +5,76 @@
 .wrapContact {
     padding: 60px 0;
     .contentCategory {
-        margin: 0;
+        margin-top: 30px;
     }
     .wrapcaptcha {
         display: flex;
         align-items: center;
     }
-    #directions {
-        label {
-            @extend .titleCategory4;
-            color: $color2!important;
-            display: block;
+    .rowContact {
+        min-height: 725px;
+    }
+    .colFrmContact,
+    .colTextContact {
+        width: 50%;
+    }
+    .colFrmContact {
+        float: right;
+    }
+    .colTextContact {
+        float: left;
+    }
+    .colTextContact {
+        padding-right: 0;
+        .bgImgage {
+            background-image: url('/assets/images/deluxe-double-4.jpg');
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 1;
+            padding: 30px 15px 15px;
+            min-height: 725px;
+            display: flex;
+            align-items: center;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: $color1;
+                opacity: 0.7;
+            }
         }
-        input {
-            @extend .form-control;
-            border: 1px solid $color9;
-            margin-top: 15px;
+        .rowContentMap {
+            min-height: 400px;
         }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .adp-text {
-            padding: 0 10px!important;
-        }
-        #directionsPanel {
-            padding-top: 5px;
+    }
+    .rowMap {
+        padding: 15px 0 0 15px;
+    }
+    .rowContentMap {
+        padding-top: 20px;
+        #directions {
+            label {
+                @extend .titleCategory4;
+                color: $color2!important;
+                display: block;
+            }
+            input {
+                @extend .form-control;
+                border: none;
+                margin-top: 15px;
+            }
+            .adp-text {
+                padding: 0 10px!important;
+            }
         }
     }
 }
@@ -38,30 +83,68 @@
 .titleFrmContact {
     color: $color2;
     display: block;
+    text-align: center;
+    padding-top: 30px;
 }
 
 .wrapTexInfoContact {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 25px;
     color: $color7;
     margin-top: 15px;
     font-family: $title-fontfamily;
-    a {
-        color: $color8;
-        font-weight: 400;
-        @include transition(0.5s);
-        &:hover {
-            color: $color2;
-            text-decoration: none;
+    margin: auto;
+    font-weight: 400;
+    .wrapflex {
+        display: flex;
+        padding-bottom: 30px;
+        .flex-col {
+            display: -webkit-flex;
+            flex-direction: column;
+        }
+        a {
+            color: $color7;
+            font-weight: 400;
+            @include transition(0.5s);
+            &:hover {
+                color: $color2;
+                text-decoration: none;
+            }
+        }
+        b {
+            color: $color7;
+            margin-bottom: 5px;
+            font-weight: 400;
+        }
+        i {
+            color: $color7;
+            margin-right: 15px;
+        }
+        span {
+            display: none;
         }
     }
-    b {
-        color: $color8;
+    #directions {
+        width: 100%;
+        .titleContact {
+            color: $color7;
+        }
+        .form-group {
+            margin: 0;
+            input {
+                border: none;
+            }
+        }
     }
-    i {
-        color: $color8;
-        margin-right: 5px;
+    .wrapContentContact {
+        width: 75%;
+        margin: auto;
     }
+}
+
+.col-no-gutters {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .listFanpageContatc {
@@ -83,11 +166,11 @@
 }
 
 .wrapFrmSendMessage {
-    padding-top: 15px;
-    margin: 0 7.5px;
+    padding: 15px 0 30px 0;
     .form-control {
         font-size: 16px;
-        height: 40px;
+        height: 50px;
+        box-shadow: none;
     }
     .form-group {
         margin-bottom: 15px;
@@ -95,19 +178,32 @@
     .colInputFrmSendMessage {
         padding: 0 7.5px;
     }
+    .FullName {
+        .form-control:nth-child(2) {
+            margin-left: -1px;
+        }
+    }
 }
 
 .lblSendMessageContact {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 700;
+    font-size: 15px;
+    line-height: 50px;
+    font-weight: 500;
     color: $color8;
-    margin: 0 0 5px 0;
+    padding: 0 15px;
     width: 100%;
+    border: 1px solid $color9;
+    margin: -1px 0;
+    height: 50px;
 }
 
-.contentFrmContact {
-    margin-top: 30px;
+.wrapContactus {
+    margin: 0 15px;
+}
+
+.colFrmContact {
+    background-color: $color7;
+    min-height: 200px;
 }
 
 // captcha
@@ -120,20 +216,19 @@
 }
 
 .btnSendMessageContact {
-    height: 40px;
-    padding: 0 20px;
+    height: 50px;
+    padding: 0 50px;
 }
 
 .formControlCodeCaptchaContact {
-    margin-left: 0;
-    width: 150px;
+    margin-left: -1px;
+    width: 25%;
 }
 
 .imageRefreshCaptchaContact,
 .imageCaptchaContact {
     height: 25px;
     width: auto;
-    margin-top: 6px;
 }
 
 .btnSendMessageContact {
@@ -158,14 +253,6 @@
     margin-top: 10px;
 }
 
-#directions {
-    label {
-        color: $color1;
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-}
-
 #message {
     min-height: 100px;
     border-radius: 0;
@@ -177,55 +264,133 @@
     }
 }
 
-@media (max-width: 991.8px) {
-    .colFrmContact,
-    .contentFrmContact {
-        margin-top: 30px;
+.FullName {
+    display: flex;
+}
+
+.wrapCodeCaptchaContact {
+    .wrapsendMessage {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
     }
-    .wrapMap {
-        margin-top: 30px;
+}
+
+@media(max-width:1199px) {
+    .rowContentMap {
+        padding-left: 0;
+        padding-right: 0;
+        #directionsPanel {
+            .adp-directions {
+                width: 100%;
+            }
+        }
     }
 }
 
 @media (max-width: 767.8px) {
-    .formControlCodeCaptchaContact {
-        float: none;
-        width: 100%;
-        margin: 0 0 15px 0;
-    }
-    .btnSendMessageContact {
-        float: none;
-        margin: 0;
-        padding-left: 10px;
-        clear: both;
-    }
-    .imageCaptchaContact {
-        margin-left: 0;
-    }
     .wrapMap {
         height: 250px;
-    }
-    .imageRefreshCaptchaContact,
-    .imageCaptchaContact {
-        margin-top: 7.5px;
     }
     .imageRefreshCaptchaContact {
         margin-right: 10px;
     }
     .wrapContact {
-        padding: 40px 0;
+        .colFrmContact,
+        .colTextContact {
+            float: none;
+            width: 100%;
+        }
+        .colTextContact {
+            min-height: 300px;
+            margin-top: 30px;
+            .bgImgage {
+                min-height: 300px;
+                .wrapContentContact {
+                    width: 90%;
+                }
+                .wrapTexInfoContact {
+                    .wrapflex {
+                        padding-bottom: 15px;
+                        .flex-col {
+                            display: inline-block;
+                            span {
+                                display: inline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .col-no-gutters,
+        .rowContentMap {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     }
 }
 
 @media(max-width:575.8px) {
+    .wrapCodeCaptchaContact {
+        display: block;
+        label {
+            width: 100%;
+        }
+        .wrapsendMessage {
+            display: block;
+            .formControlCodeCaptchaContact {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            .imageCaptchaContact,
+            .imageRefreshCaptchaContact {
+                margin: 12.5px 15px 12.5px 0;
+            }
+        }
+    }
     .wrapContact {
         padding: 30px 0;
+        .colTextContact {
+            margin-top: 15px;
+            .bgImgage {
+                padding: 15px 0;
+            }
+        }
+        .wrapTexInfoContact {
+            font-size: 15px;
+            line-height: 20px;
+        }
+        .colFrmContact,
+        .contentFrmContact {
+            margin-top: 15px;
+        }
+        .contentCategory {
+            margin-top: 15px;
+        }
+        .rowContentMap {
+            padding-top: 5px;
+        }
     }
-    .colFrmContact,
-    .contentFrmContact {
-        margin-top: 15px;
-    }
-    .formControlCodeCaptchaContact {
-        margin: 0 0 15px 0;
+}
+
+@media(max-width:320px) {
+    .wrapContact {
+        .colTextContact {
+            .bgImgage {
+                .wrapTexInfoContact {
+                    .wrapflex {
+                        .flex-col {
+                            display: -webkit-flex;
+                            span {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btnSendMessageContact {
+            padding: 0 25px;
+        }
     }
 }

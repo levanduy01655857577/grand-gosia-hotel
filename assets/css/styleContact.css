@@ -726,7 +726,7 @@ select option {
   width: 100%;
 }
 
-.form .form-control, .form .wrapContact #directions input, .wrapContact #directions .form input {
+.form .form-control, .form .wrapContact .rowContentMap #directions input, .wrapContact .rowContentMap #directions .form input {
   height: 45px;
   border: 1px solid #ccc;
   width: 100%;
@@ -749,7 +749,7 @@ select option {
   -o-border-radius: 0px;
 }
 
-.form .form-control:focus, .form .wrapContact #directions input:focus, .wrapContact #directions .form input:focus {
+.form .form-control:focus, .form .wrapContact .rowContentMap #directions input:focus, .wrapContact .rowContentMap #directions .form input:focus {
   border-color: #a07743;
 }
 
@@ -757,7 +757,7 @@ select option {
   height: auto;
 }
 
-.form-control:focus, .wrapContact #directions input:focus {
+.form-control:focus, .wrapContact .rowContentMap #directions input:focus {
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -1203,13 +1203,19 @@ select option {
   z-index: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991.8px) {
   #return-to-top {
     bottom: 120px;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767.8px) {
+  #return-to-top {
+    bottom: 120px;
+  }
+}
+
+@media (max-width: 575.8px) {
   #return-to-top {
     height: 45px;
     width: 45px;
@@ -1464,13 +1470,13 @@ select option {
   width: 60px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991.8px) {
   .btn-messenger {
     bottom: 55px;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575.8px) {
   .btn-messenger {
     height: 45px;
     width: 45px;
@@ -1590,7 +1596,7 @@ select option {
   margin: 0;
 }
 
-.booking-search .form .form-control, .booking-search .form .wrapContact #directions input, .wrapContact #directions .booking-search .form input {
+.booking-search .form .form-control, .booking-search .form .wrapContact .rowContentMap #directions input, .wrapContact .rowContentMap #directions .booking-search .form input {
   height: 45px;
   border: 1px solid #ccc;
 }
@@ -1604,7 +1610,7 @@ select option {
   font-weight: 600;
 }
 
-.booking-search .form .dates .item .form-control, .booking-search .form .dates .item .wrapContact #directions input, .wrapContact #directions .booking-search .form .dates .item input {
+.booking-search .form .dates .item .form-control, .booking-search .form .dates .item .wrapContact .rowContentMap #directions input, .wrapContact .rowContentMap #directions .booking-search .form .dates .item input {
   cursor: pointer;
 }
 
@@ -1612,7 +1618,7 @@ select option {
   position: relative;
 }
 
-.booking-search .form .has-icon .form-control, .booking-search .form .has-icon .wrapContact #directions input, .wrapContact #directions .booking-search .form .has-icon input {
+.booking-search .form .has-icon .form-control, .booking-search .form .has-icon .wrapContact .rowContentMap #directions input, .wrapContact .rowContentMap #directions .booking-search .form .has-icon input {
   padding-left: 30px;
   padding-right: 2px;
   line-height: 35px;
@@ -1867,7 +1873,7 @@ select option {
   -webkit-transition: all 0.3s;
 }
 
-@media (max-width: 767.8px) {
+@media (max-width: 991.8px) {
   .btnBookingMobile {
     visibility: visible;
   }
@@ -1889,7 +1895,7 @@ select option {
   margin-top: 128px;
 }
 
-.wrapBreadCrumb .titleCategory4, .wrapBreadCrumb .wrapContact #directions label, .wrapContact #directions .wrapBreadCrumb label {
+.wrapBreadCrumb .titleCategory4, .wrapBreadCrumb .wrapContact .rowContentMap #directions label, .wrapContact .rowContentMap #directions .wrapBreadCrumb label {
   text-align: center;
 }
 
@@ -2018,7 +2024,7 @@ select option {
 }
 
 @media (max-width: 767.8px) {
-  .wrapBreadCrumb .titleCategory4, .wrapBreadCrumb .wrapContact #directions label, .wrapContact #directions .wrapBreadCrumb label {
+  .wrapBreadCrumb .titleCategory4, .wrapBreadCrumb .wrapContact .rowContentMap #directions label, .wrapContact .rowContentMap #directions .wrapBreadCrumb label {
     font-size: 30px;
     padding: 0 0 10px 0;
     line-height: 30px;
@@ -2035,7 +2041,7 @@ select option {
   .wrapBreadCrumb .wrapImgBreadcrumb {
     padding-top: 56%;
   }
-  .wrapBreadCrumb .titleCategory4, .wrapBreadCrumb .wrapContact #directions label, .wrapContact #directions .wrapBreadCrumb label {
+  .wrapBreadCrumb .titleCategory4, .wrapBreadCrumb .wrapContact .rowContentMap #directions label, .wrapContact .rowContentMap #directions .wrapBreadCrumb label {
     font-size: 18px;
     padding: 0;
     line-height: 25px;
@@ -2164,7 +2170,7 @@ select option {
   margin: 0;
 }
 
-.titleCategory4, .wrapContact #directions label {
+.titleCategory4, .wrapContact .rowContentMap #directions label {
   color: #ffff;
   line-height: 35px;
   font-size: 30px;
@@ -2242,7 +2248,7 @@ select option {
   width: 100%;
 }
 
-.form .form-control, .form .wrapContact #directions input, .wrapContact #directions .form input {
+.form .form-control, .form .wrapContact .rowContentMap #directions input, .wrapContact .rowContentMap #directions .form input {
   height: 45px;
   border: 1px solid #ccc;
   width: 100%;
@@ -2265,7 +2271,7 @@ select option {
   -o-border-radius: 0px;
 }
 
-.form .form-control:focus, .form .wrapContact #directions input:focus, .wrapContact #directions .form input:focus {
+.form .form-control:focus, .form .wrapContact .rowContentMap #directions input:focus, .wrapContact .rowContentMap #directions .form input:focus {
   border-color: #a07743;
 }
 
@@ -2273,7 +2279,7 @@ select option {
   height: auto;
 }
 
-.form-control:focus, .wrapContact #directions input:focus {
+.form-control:focus, .wrapContact .rowContentMap #directions input:focus {
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -2450,7 +2456,7 @@ select option {
 }
 
 .wrapContact .contentCategory {
-  margin: 0;
+  margin-top: 30px;
 }
 
 .wrapContact .wrapcaptcha {
@@ -2458,44 +2464,111 @@ select option {
   align-items: center;
 }
 
-.wrapContact #directions label {
+.wrapContact .rowContact {
+  min-height: 725px;
+}
+
+.wrapContact .colFrmContact,
+.wrapContact .colTextContact {
+  width: 50%;
+}
+
+.wrapContact .colFrmContact {
+  float: right;
+}
+
+.wrapContact .colTextContact {
+  float: left;
+}
+
+.wrapContact .colTextContact {
+  padding-right: 0;
+}
+
+.wrapContact .colTextContact .bgImgage {
+  background-image: url("/assets/images/deluxe-double-4.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  padding: 30px 15px 15px;
+  min-height: 725px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapContact .colTextContact .bgImgage::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #a07743;
+  opacity: 0.7;
+}
+
+.wrapContact .colTextContact .rowContentMap {
+  min-height: 400px;
+}
+
+.wrapContact .rowMap {
+  padding: 15px 0 0 15px;
+}
+
+.wrapContact .rowContentMap {
+  padding-top: 20px;
+}
+
+.wrapContact .rowContentMap #directions label {
   color: #a78e72 !important;
   display: block;
 }
 
-.wrapContact #directions input {
-  border: 1px solid #ccc;
+.wrapContact .rowContentMap #directions input {
+  border: none;
   margin-top: 15px;
 }
 
-.wrapContact #directions .form-group {
-  margin-bottom: 15px;
-}
-
-.wrapContact #directions .adp-text {
+.wrapContact .rowContentMap #directions .adp-text {
   padding: 0 10px !important;
-}
-
-.wrapContact #directions #directionsPanel {
-  padding-top: 5px;
 }
 
 .titleTextContact,
 .titleFrmContact {
   color: #a78e72;
   display: block;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .wrapTexInfoContact {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 25px;
   color: #ffff;
   margin-top: 15px;
   font-family: "Open Sans", sans-serif;
+  margin: auto;
+  font-weight: 400;
 }
 
-.wrapTexInfoContact a {
-  color: #000;
+.wrapTexInfoContact .wrapflex {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.wrapTexInfoContact .wrapflex .flex-col {
+  display: -webkit-flex;
+  flex-direction: column;
+}
+
+.wrapTexInfoContact .wrapflex a {
+  color: #ffff;
   font-weight: 400;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -2504,18 +2577,50 @@ select option {
   -o-transition: 0.5s;
 }
 
-.wrapTexInfoContact a:hover {
+.wrapTexInfoContact .wrapflex a:hover {
   color: #a78e72;
   text-decoration: none;
 }
 
-.wrapTexInfoContact b {
-  color: #000;
+.wrapTexInfoContact .wrapflex b {
+  color: #ffff;
+  margin-bottom: 5px;
+  font-weight: 400;
 }
 
-.wrapTexInfoContact i {
-  color: #000;
-  margin-right: 5px;
+.wrapTexInfoContact .wrapflex i {
+  color: #ffff;
+  margin-right: 15px;
+}
+
+.wrapTexInfoContact .wrapflex span {
+  display: none;
+}
+
+.wrapTexInfoContact #directions {
+  width: 100%;
+}
+
+.wrapTexInfoContact #directions .titleContact {
+  color: #ffff;
+}
+
+.wrapTexInfoContact #directions .form-group {
+  margin: 0;
+}
+
+.wrapTexInfoContact #directions .form-group input {
+  border: none;
+}
+
+.wrapTexInfoContact .wrapContentContact {
+  width: 75%;
+  margin: auto;
+}
+
+.col-no-gutters {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .listFanpageContatc {
@@ -2544,13 +2649,13 @@ select option {
 }
 
 .wrapFrmSendMessage {
-  padding-top: 15px;
-  margin: 0 7.5px;
+  padding: 15px 0 30px 0;
 }
 
-.wrapFrmSendMessage .form-control, .wrapFrmSendMessage .wrapContact #directions input, .wrapContact #directions .wrapFrmSendMessage input {
+.wrapFrmSendMessage .form-control, .wrapFrmSendMessage .wrapContact .rowContentMap #directions input, .wrapContact .rowContentMap #directions .wrapFrmSendMessage input {
   font-size: 16px;
-  height: 40px;
+  height: 50px;
+  box-shadow: none;
 }
 
 .wrapFrmSendMessage .form-group {
@@ -2561,17 +2666,29 @@ select option {
   padding: 0 7.5px;
 }
 
-.lblSendMessageContact {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 700;
-  color: #000;
-  margin: 0 0 5px 0;
-  width: 100%;
+.wrapFrmSendMessage .FullName .form-control:nth-child(2), .wrapFrmSendMessage .FullName .wrapContact .rowContentMap #directions input:nth-child(2), .wrapContact .rowContentMap #directions .wrapFrmSendMessage .FullName input:nth-child(2) {
+  margin-left: -1px;
 }
 
-.contentFrmContact {
-  margin-top: 30px;
+.lblSendMessageContact {
+  font-size: 15px;
+  line-height: 50px;
+  font-weight: 500;
+  color: #000;
+  padding: 0 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: -1px 0;
+  height: 50px;
+}
+
+.wrapContactus {
+  margin: 0 15px;
+}
+
+.colFrmContact {
+  background-color: #ffff;
+  min-height: 200px;
 }
 
 .btnSendMessageContact,
@@ -2583,20 +2700,19 @@ select option {
 }
 
 .btnSendMessageContact {
-  height: 40px;
-  padding: 0 20px;
+  height: 50px;
+  padding: 0 50px;
 }
 
 .formControlCodeCaptchaContact {
-  margin-left: 0;
-  width: 150px;
+  margin-left: -1px;
+  width: 25%;
 }
 
 .imageRefreshCaptchaContact,
 .imageCaptchaContact {
   height: 25px;
   width: auto;
-  margin-top: 6px;
 }
 
 .btnSendMessageContact {
@@ -2620,12 +2736,6 @@ select option {
   margin-top: 10px;
 }
 
-#directions label {
-  color: #a07743;
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
 #message {
   min-height: 100px;
   border-radius: 0;
@@ -2635,55 +2745,115 @@ select option {
   margin-bottom: 0;
 }
 
-@media (max-width: 991.8px) {
-  .colFrmContact,
-  .contentFrmContact {
-    margin-top: 30px;
+.FullName {
+  display: flex;
+}
+
+.wrapCodeCaptchaContact .wrapsendMessage {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1199px) {
+  .rowContentMap {
+    padding-left: 0;
+    padding-right: 0;
   }
-  .wrapMap {
-    margin-top: 30px;
+  .rowContentMap #directionsPanel .adp-directions {
+    width: 100%;
   }
 }
 
 @media (max-width: 767.8px) {
-  .formControlCodeCaptchaContact {
-    float: none;
-    width: 100%;
-    margin: 0 0 15px 0;
-  }
-  .btnSendMessageContact {
-    float: none;
-    margin: 0;
-    padding-left: 10px;
-    clear: both;
-  }
-  .imageCaptchaContact {
-    margin-left: 0;
-  }
   .wrapMap {
     height: 250px;
-  }
-  .imageRefreshCaptchaContact,
-  .imageCaptchaContact {
-    margin-top: 7.5px;
   }
   .imageRefreshCaptchaContact {
     margin-right: 10px;
   }
-  .wrapContact {
-    padding: 40px 0;
+  .wrapContact .colFrmContact,
+  .wrapContact .colTextContact {
+    float: none;
+    width: 100%;
+  }
+  .wrapContact .colTextContact {
+    min-height: 300px;
+    margin-top: 30px;
+  }
+  .wrapContact .colTextContact .bgImgage {
+    min-height: 300px;
+  }
+  .wrapContact .colTextContact .bgImgage .wrapContentContact {
+    width: 90%;
+  }
+  .wrapContact .colTextContact .bgImgage .wrapTexInfoContact .wrapflex {
+    padding-bottom: 15px;
+  }
+  .wrapContact .colTextContact .bgImgage .wrapTexInfoContact .wrapflex .flex-col {
+    display: inline-block;
+  }
+  .wrapContact .colTextContact .bgImgage .wrapTexInfoContact .wrapflex .flex-col span {
+    display: inline;
+  }
+  .wrapContact .col-no-gutters,
+  .wrapContact .rowContentMap {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 @media (max-width: 575.8px) {
+  .wrapCodeCaptchaContact {
+    display: block;
+  }
+  .wrapCodeCaptchaContact label {
+    width: 100%;
+  }
+  .wrapCodeCaptchaContact .wrapsendMessage {
+    display: block;
+  }
+  .wrapCodeCaptchaContact .wrapsendMessage .formControlCodeCaptchaContact {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .wrapCodeCaptchaContact .wrapsendMessage .imageCaptchaContact,
+  .wrapCodeCaptchaContact .wrapsendMessage .imageRefreshCaptchaContact {
+    margin: 12.5px 15px 12.5px 0;
+  }
   .wrapContact {
     padding: 30px 0;
   }
-  .colFrmContact,
-  .contentFrmContact {
+  .wrapContact .colTextContact {
     margin-top: 15px;
   }
-  .formControlCodeCaptchaContact {
-    margin: 0 0 15px 0;
+  .wrapContact .colTextContact .bgImgage {
+    padding: 15px 0;
+  }
+  .wrapContact .wrapTexInfoContact {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .wrapContact .colFrmContact,
+  .wrapContact .contentFrmContact {
+    margin-top: 15px;
+  }
+  .wrapContact .contentCategory {
+    margin-top: 15px;
+  }
+  .wrapContact .rowContentMap {
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapContact .colTextContact .bgImgage .wrapTexInfoContact .wrapflex .flex-col {
+    display: -webkit-flex;
+  }
+  .wrapContact .colTextContact .bgImgage .wrapTexInfoContact .wrapflex .flex-col span {
+    display: none;
+  }
+  .wrapContact .btnSendMessageContact {
+    padding: 0 25px;
   }
 }

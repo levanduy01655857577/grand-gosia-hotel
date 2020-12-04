@@ -228,78 +228,98 @@
     <div class="wrapContact bg-gray">
         <div class="container containerContact">
             <div class="contentContact">
-                <div class="row rowContact">
-                    <div class="col-lg-6 colTextContact">
-                        <div class="contentCategory">
-                            <div class="infoLocation"></div>
-                            <div id="directions">
-                                <div class="form-group formGroupSendMessageContact">
-                                    <label class="titleCategory4 titleTextContact">Your position</label>
-                                    <input name="ctl00$ContainMain$txtCusAddress" type="text" id="ctl00_ContainMain_txtCusAddress" class="form-control contact-form-input pac-target-input" autocomplete="off" placeholder="Enter your position">
-                                </div>
-                                <div id="directions_map" style="height: 385px; width: 100%;"></div>
-                                <div id="directionsPanel"></div>
+                <div class="rowContact">
+                    <div class="colFrmContact">
+                        <div class="wrapContactus">
+                            <div class="contentTextContact">
+                                <h3 class="titleCategory4 titleTextContact">Send Us A Message</h3>
+                            </div>
+                            <div class="contentFrmContact">
+                                <div class="wrapFrmSendMessage">
+                                    <div class="rowFrmSendMessage">
+                                        <div class="form-group formGroupSendMessageContact">
+                                            <label class="lblSendMessageContact">TELL US YOUR NAME *</label>
+                                            <div class="FullName">
+                                                <input type="text" class="form-control formControlSendMessageContact" placeholder="First Name" />
+                                                <input type="text" class="form-control formControlSendMessageContact" placeholder="Last Name" />
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                    <div class="rowFrmSendMessage">
+                                        <div class="form-group formGroupSendMessageContact">
+                                            <label class="lblSendMessageContact">ENTER YOUR EMAIL *</label>
+                                            <input type="email" class="form-control formControlSendMessageContact" placeholder="Eg. example@email.com" />
+                                        </div>
+                                    </div>
+
+                                    <div class="rowFrmSendMessage">
+                                        <div class="form-group formGroupSendMessageContact">
+                                            <label class="lblSendMessageContact">ENTER PHONE NUMBER</label>
+                                            <input type="phone" class="form-control formControlSendMessageContact" placeholder="Eg. +1 800 000000" />
+                                        </div>
+                                    </div>
+
+                                    <div class="rowFrmSendMessage">
+                                        <div class="form-group formGroupSendMessageContact">
+                                            <label class="lblSendMessageContact">MESSAGE *</label>
+                                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Write us a message"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="rowFrmSendMessage">
+                                        <div class="clearfix wrapCodeCaptchaContact">
+                                            <label class="lblSendMessageContact">Code Captcha</label>
+                                            <div class="wrapsendMessage">
+                                                <input type="text" class="form-control formControlSendMessageContact formControlCodeCaptchaContact" />
+                                                <img src="assets/images/captcha.png" class="imageCaptchaContact" alt="captcha" />
+                                                <img src="assets/images/refresh-captcha.png" class="imageRefreshCaptchaContact" alt="refresh-captcha" />
+                                                <button type="button" class="btn btn1  btnSendMessageContact" name="send-mesage">SEND</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 colFrmContact">
-                        <div class="contentTextContact">
-                            <h3 class="titleCategory4 titleTextContact">CONTACT US</h3>
-
+                    <div class="colTextContact">
+                        <div class="bgImgage">
                             <div class="wrapTexInfoContact">
-                                <p>
-                                    <b></i>Address:</b>
-                                    <a target="_blank" href="https://www.google.com/maps/place/Gosia+hotel/@12.2368186,109.1930876,17z/data=!3m1!4b1!4m8!3m7!1s0x3170677b6aedbf9f:0x5f496340b04033f9!5m2!4m1!1i2!8m2!3d12.2368186!4d109.1952763?hl=en" title="116 Hung Vuong Street, Loc Tho Ward, Nha Trang City, Vietnam">116 Hung Vuong Street, Loc Tho Ward, Nha Trang City, Vietnam</a>
-                                </p>
-                                <p>
-                                    <b>Phone number:</b>
-                                    <b class="ContactPhone"> 
-                                        <a href="tel:(+84) 258 6 299 990 " title="Phone ">(+84) 258 6 299 990</a>
-                                        <i>-</i>
-                                        <a href="tel:(+84) 258 6 299 991 " title="Phone ">(+84) 258 6 299 991</a>
-                                    </b>
-                                </p>
-                                <p>
-                                    <b>E-mail:</b>
-                                    <a href="mailto:sm@gosiahotel.com" title="sm@gosiahotel.com">sm@gosiahotel.com</a>
-                                </p>
-                            </div>
-
-                        </div>
-                        <div class="contentFrmContact">
-                            <h3 class="titleCategory4 titleFrmContact">LEAVE US A COMMENT</h3>
-
-                            <div class="wrapFrmSendMessage">
-                                <div class="row rowFrmSendMessage">
-                                    <div class="col-md-6 colInputFrmSendMessage">
-                                        <div class="form-group formGroupSendMessageContact">
-                                            <label class="lblSendMessageContact">Full Name</label>
-                                            <input type="text" class="form-control formControlSendMessageContact" placeholder="Your Name" />
+                                <div class="wrapContentContact">
+                                    <div class="wrapflex">
+                                        <div class="icon">
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="flex-col">
+                                            <b>Address :</b>
+                                            <a target="_blank" href="https://www.google.com/maps/place/Gosia+hotel/@12.2368186,109.1930876,17z/data=!3m1!4b1!4m8!3m7!1s0x3170677b6aedbf9f:0x5f496340b04033f9!5m2!4m1!1i2!8m2!3d12.2368186!4d109.1952763?hl=en" title="116 Hung Vuong Street, Loc Tho Ward, Nha Trang City, Vietnam">116 Hung Vuong Street, Loc Tho Ward, Nha Trang City, Vietnam</a>
                                         </div>
                                     </div>
-
-                                    <div class="col-md-6 colInputFrmSendMessage">
-                                        <div class="form-group formGroupSendMessageContact">
-                                            <label class="lblSendMessageContact">Email</label>
-                                            <input type="email" class="form-control formControlSendMessageContact" placeholder="Your Email" />
+                                    <div class="wrapflex">
+                                        <div class="icon">
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="flex-col">
+                                            <b>Phone number :</b>
+                                            <a href="tel:(+84) 258 6 299 990 " title="Phone ">(+84) 258 6 299 990</a>
+                                            <span>-</span>
+                                            <a href="tel:(+84) 258 6 299 991 " title="Phone ">(+84) 258 6 299 991</a>
                                         </div>
                                     </div>
-
-                                    <div class="col-md-12 colInputFrmSendMessage">
-                                        <div class="form-group formGroupSendMessageContact">
-                                            <label class="lblSendMessageContact">Message</label>
-                                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Your Message"></textarea>
+                                    <div class="wrapflex">
+                                        <div class="icon">
+                                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="flex-col">
+                                            <b>E-mail :</b>
+                                            <a href="mailto:sm@gosiahotel.com" title="sm@gosiahotel.com">sm@gosiahotel.com</a>
+                                            </p>
                                         </div>
                                     </div>
-
-                                    <div class="col-md-12 colInputFrmSendMessage">
-                                        <div class="clearfix wrapCodeCaptchaContact">
-                                            <label class="lblSendMessageContact">Code Captcha</label>
-                                            <input type="text" class="form-control formControlSendMessageContact formControlCodeCaptchaContact" />
-                                            <img src="assets/images/captcha.png" class="imageCaptchaContact" alt="captcha" />
-                                            <img src="assets/images/refresh-captcha.png" class="imageRefreshCaptchaContact" alt="refresh-captcha" />
-                                            <button type="button" class="btn btn1  btnSendMessageContact" name="send-mesage">SEND</button>
+                                    <div id="directions">
+                                        <div class="form-group formGroupSendMessageContact">
+                                            <label class="titleContact">Your position</label>
+                                            <input name="ctl00$ContainMain$txtCusAddress" type="text" id="ctl00_ContainMain_txtCusAddress" class="form-control contact-form-input pac-target-input" autocomplete="off" placeholder="Enter your position">
                                         </div>
                                     </div>
                                 </div>
@@ -308,8 +328,22 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-6 col-xs-12 col-no-gutters">
+                    <div class="contentCategory">
+                        <div class="infoLocation"></div>
+                        <div id="directions">
+                            <div id="directions_map" style="height: 385px; width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xs-12 rowContentMap">
+                    <div id="directions">
+                        <div id="directionsPanel"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
     <!--End Contact-->
     <!--Button Booking-->

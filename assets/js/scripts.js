@@ -1045,6 +1045,18 @@ jQuery(document).ready(function() {
             slidesToShow: 1,
         });
     }
+    // slider InfoDetail
+    if ((jQuery('.sliderService').length)) {
+        jQuery('.sliderService').slick({
+            dots: true,
+            arrows: false,
+            prevArrow: prevArrow,
+            nextArrow: nextArrow,
+            speed: 700,
+            autoplay: true,
+            slidesToShow: 1,
+        });
+    }
     // -------------------------------------------------
     // page detail slider
     if ($('.page-detail .top-content .slider').length) {

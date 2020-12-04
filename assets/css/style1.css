@@ -1995,7 +1995,7 @@ ul.scroll_tabs_container {
     max-width: 300px;
 }
 
-@media(max-width:768px) {
+@media(max-width:991.8px) {
     .banner-mini {
         visibility: hidden;
     }
@@ -3065,7 +3065,7 @@ ul.scroll_tabs_container {
     /* End Multicol Layout 2 */
 }
 
-@media(max-width: 767px) {
+@media(max-width: 767.8px) {
     .body-language-ru .show-room-home .content-room-home .content-room-right .room-price-info .btn-book {
         font-size: 12px;
     }
