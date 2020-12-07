@@ -2545,7 +2545,7 @@ ul.scroll_tabs_container {
     }
 }
 
-@media(max-width: 1199px) {
+@media(max-width: 1199.8px) {
     .show-room-home .content-room-home .content-room-right .room-price-info .btn-book {
         padding-left: 5px;
         padding-right: 5px;

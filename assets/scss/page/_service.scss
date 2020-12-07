@@ -1,0 +1,149 @@
+.sectop0 {
+    padding-top: 0;
+}
+
+#resizeImg {
+    width: 60%;
+}
+
+.secServiceHotel {
+    .item {
+        .content {
+            margin: 40px 60px 40px -120px;
+            display: flex;
+            align-items: center;
+            .desc {
+                max-height: 9.1em;
+                height: 9.1em;
+            }
+        }
+    }
+}
+
+.serviceRestaurant {
+    .item {
+        flex-direction: row-reverse;
+        .content {
+            float: left;
+            margin: 40px -120px 40px 60px;
+            display: flex;
+            align-items: center;
+            .desc {
+                max-height: 9.1em;
+                height: 9.1em;
+            }
+        }
+    }
+}
+
+@media(max-width:1199.8px) {
+    .serviceRestaurant {
+        .item {
+            .content {
+                margin: 30px -90px 30px 45px;
+            }
+        }
+    }
+    .secServiceHotel {
+        .item {
+            .content {
+                margin: 30px 45px 30px -90px;
+            }
+        }
+    }
+}
+
+@media(max-width:991.8px) {
+    .secServiceHotel,
+    .serviceRestaurant {
+        .item {
+            .content {
+                padding: 20px;
+                .desc {
+                    line-height: 1.4em;
+                    -webkit-line-clamp: 2;
+                    max-height: 3.1em;
+                }
+            }
+        }
+    }
+    .serviceRestaurant {
+        .item {
+            .content {
+                margin: 20px -60px 20px 40px;
+                .desc {
+                    max-height: 4.1em;
+                    height: 4.1em;
+                }
+                .btn-book {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .secServiceHotel {
+        .item {
+            .content {
+                margin: 20px 40px 20px -60px;
+                .desc {
+                    max-height: 4.1em;
+                    height: 4.1em;
+                }
+                .btn-book {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:767.8px) {
+    #resizeImg {
+        width: 100%;
+    }
+    .secServiceHotel {
+        .item {
+            .content {
+                margin: -20px 15px 15px 15px;
+                .desc {
+                    max-height: max-content;
+                }
+            }
+        }
+    }
+    .serviceRestaurant {
+        .item {
+            flex-direction: row;
+            .content {
+                margin: -20px 15px 15px 15px;
+                .desc {
+                    max-height: max-content;
+                }
+            }
+        }
+    }
+    .secInfoLike {
+        padding: 40px 0;
+    }
+}
+
+@media(max-width:575.8px) {
+    .secServiceHotel {
+        .item {
+            .content {
+                margin: -15px 15px 15px 15px;
+            }
+        }
+    }
+    .serviceRestaurant {
+        .item {
+            flex-direction: row;
+            .content {
+                margin: -15px 15px 15px 15px;
+            }
+        }
+    }
+    .secInfoLike {
+        padding: 30px 0;
+    }
+}

@@ -371,7 +371,7 @@
             2);
         }
         .desc {
-            height: 5.4em;
+            height: 5.5em;
             @include lineclamp-n(1em,
             1.8em,
             3);
@@ -386,11 +386,16 @@
             width: 50%;
         }
         .content {
-            padding: 20px;
-            margin: 40px 40px 40px -60px;
+            padding: 13px 20px;
+            margin: 10px 10px 10px -20px;
             position: relative;
             z-index: 10;
             background: #fff;
+            .desc {
+                line-height: 1.4em;
+                -webkit-line-clamp: 2;
+                max-height: 3.1em;
+            }
         }
     }
 }
@@ -398,17 +403,28 @@
 @media (min-width: 992px) {
     .promo .item {
         .content {
-            padding: 20px 30px;
+            margin: 40px 60px 40px -60px;
+            padding: 30px;
+            .desc {
+                line-height: 1.8em;
+                -webkit-line-clamp: 2;
+                max-height: 5.1em;
+            }
         }
     }
 }
 
 @media (max-width: 767.8px) {
-    .promo .item .content {
-        margin: -30px 15px 15px 15px;
-        position: relative;
-        z-index: 1;
-        background: #fff;
+    .promo .item {
+        .content {
+            margin: -30px 15px 15px 15px;
+            position: relative;
+            z-index: 1;
+            background: #fff;
+            .btn-book {
+                margin: 0;
+            }
+        }
     }
 }
 

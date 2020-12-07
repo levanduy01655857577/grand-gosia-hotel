@@ -5,7 +5,16 @@
 .wrapContact {
     padding: 60px 0;
     .contentCategory {
-        margin-top: 30px;
+        margin-top: 15px;
+        #directionsPanel {
+            margin-top: 15px;
+            .adp-directions {
+                width: 100%;
+            }
+            .adp-text {
+                padding: 0 10px!important;
+            }
+        }
     }
     .wrapcaptcha {
         display: flex;
@@ -27,7 +36,7 @@
     .colTextContact {
         padding-right: 0;
         .bgImgage {
-            background-image: url('/assets/images/deluxe-double-4.jpg');
+            background-image: url('../images/deluxe-double-4.jpg');
             width: 100%;
             height: 100%;
             background-repeat: no-repeat;
@@ -58,24 +67,6 @@
     }
     .rowMap {
         padding: 15px 0 0 15px;
-    }
-    .rowContentMap {
-        padding-top: 20px;
-        #directions {
-            label {
-                @extend .titleCategory4;
-                color: $color2!important;
-                display: block;
-            }
-            input {
-                @extend .form-control;
-                border: none;
-                margin-top: 15px;
-            }
-            .adp-text {
-                padding: 0 10px!important;
-            }
-        }
     }
 }
 
@@ -280,11 +271,6 @@
     .rowContentMap {
         padding-left: 0;
         padding-right: 0;
-        #directionsPanel {
-            .adp-directions {
-                width: 100%;
-            }
-        }
     }
 }
 
@@ -303,13 +289,15 @@
         }
         .colTextContact {
             min-height: 300px;
-            margin-top: 30px;
+            margin-top: 0;
             .bgImgage {
                 min-height: 300px;
+                padding: 0;
                 .wrapContentContact {
                     width: 90%;
                 }
                 .wrapTexInfoContact {
+                    margin: 0;
                     .wrapflex {
                         padding-bottom: 15px;
                         .flex-col {
@@ -349,11 +337,10 @@
         }
     }
     .wrapContact {
-        padding: 30px 0;
+        padding: 15px 0 30px 0;
         .colTextContact {
-            margin-top: 15px;
             .bgImgage {
-                padding: 15px 0;
+                padding: 0;
             }
         }
         .wrapTexInfoContact {
