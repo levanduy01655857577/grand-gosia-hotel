@@ -2423,7 +2423,7 @@ ul.scroll_tabs_container {
         width: calc(100% - 24px);
     }
     .selectLanguage .Language {
-        padding: 14px 12px 33px !important;
+        padding: 14px 12px 33px;
     }
 }
 
@@ -2664,7 +2664,7 @@ ul.scroll_tabs_container {
         padding: 0;
     }
     .selectLanguage .Language {
-        width: 70px !important;
+        width: 70px;
         padding: 0 0 10px 0;
     }
     .selectLanguage .Language button {
