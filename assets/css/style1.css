@@ -377,7 +377,7 @@ header img {
     display: block;
     content: '';
     position: absolute;
-    bottom: 41%;
+    bottom: 40%;
     background: #a07743;
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;

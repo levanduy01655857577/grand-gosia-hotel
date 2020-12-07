@@ -978,34 +978,15 @@ jQuery(document).ready(function() {
             }
         })
     }
-
-    // slider services
-    if ((jQuery('.service .service-list.slider').length)) {
-        jQuery('.service .service-list.slider').slick({
-            dots: false,
-            arrows: true,
-            prevArrow: prevArrow,
-            nextArrow: nextArrow,
-            speed: 1000,
-            autoplay: true,
-            slidesToShow: 3,
-            responsive: [{
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                },
-            ]
+    //slider service
+    if ((jQuery('.sliderPageService').length)) {
+        jQuery('.sliderPageService').slick({
+            dots: true,
+            arrows: false,
+            autoplay: false,
+            slidesToShow: 1,
         });
     }
-
     // slider news
     if ((jQuery('.news .news-list.slider').length)) {
         jQuery('.news .news-list.slider').slick({
@@ -1032,6 +1013,31 @@ jQuery(document).ready(function() {
             ]
         });
     }
+    //May be you like of page service
+    //if ((jQuery('.news .news-list.slider').length)) {
+    jQuery('.secInfoLike .sliderYouLike').slick({
+        dots: false,
+        arrows: true,
+        prevArrow: prevArrow,
+        nextArrow: nextArrow,
+        speed: 1000,
+        autoplay: false,
+        slidesToShow: 3,
+        responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+        ]
+    });
 
     // slider testi
     if ((jQuery('.testi.slider').length)) {
