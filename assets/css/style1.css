@@ -377,7 +377,7 @@ header img {
     display: block;
     content: '';
     position: absolute;
-    bottom: 40%;
+    bottom: 41%;
     background: #a07743;
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
@@ -389,12 +389,12 @@ header img {
 #nav-desktop #main-menu>li>a:hover::after,
 #nav-desktop #main-menu>li.active>a::after,
 #nav-desktop #main-menu>li.current>a::after {
-    bottom: 44%;
+    bottom: 40%;
     opacity: 1;
 }
 
 .selectLanguage .Language:hover::after {
-    bottom: 44%;
+    bottom: 41%;
     opacity: 1;
 }
 
@@ -721,7 +721,7 @@ header img {
 
 .selectLanguage .Language {
     /* width: 70px !important; */
-    padding: 13px 0 32px 15px;
+    padding: 16px 0 32px 15px;
     /* padding: 13px 0 32px 0; */
 }
 
@@ -2424,6 +2424,7 @@ ul.scroll_tabs_container {
     }
     .selectLanguage .Language {
         padding: 14px 12px 33px;
+        margin-top: 1px;
     }
 }
 

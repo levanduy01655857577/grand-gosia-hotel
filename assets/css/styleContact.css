@@ -2452,7 +2452,7 @@ select option {
 
 /* end form */
 .wrapContact {
-  padding: 60px 0;
+  padding: 60px 0 45px 0;
 }
 
 .wrapContact .contentCategory {
@@ -2474,10 +2474,6 @@ select option {
 .wrapContact .wrapcaptcha {
   display: flex;
   align-items: center;
-}
-
-.wrapContact .rowContact {
-  min-height: 725px;
 }
 
 .wrapContact .colFrmContact,
@@ -2506,8 +2502,7 @@ select option {
   background-position: center;
   position: relative;
   z-index: 1;
-  padding: 30px 15px 15px;
-  min-height: 725px;
+  height: 469.333px;
   display: flex;
   align-items: center;
 }
@@ -2523,10 +2518,6 @@ select option {
   left: 0;
   background: #a07743;
   opacity: 0.7;
-}
-
-.wrapContact .colTextContact .rowContentMap {
-  min-height: 400px;
 }
 
 .wrapContact .rowMap {
@@ -2592,6 +2583,7 @@ select option {
 }
 
 .wrapTexInfoContact #directions {
+  padding-top: 15px;
   width: 100%;
 }
 
@@ -2608,8 +2600,8 @@ select option {
 }
 
 .wrapTexInfoContact .wrapContentContact {
-  width: 75%;
   margin: auto;
+  padding: 0 60px;
 }
 
 .col-no-gutters {
@@ -2682,7 +2674,6 @@ select option {
 
 .colFrmContact {
   background-color: #ffff;
-  min-height: 200px;
 }
 
 .btnSendMessageContact,
@@ -2726,10 +2717,6 @@ select option {
   font-weight: 700;
 }
 
-.contentCategory {
-  margin-top: 10px;
-}
-
 #message {
   min-height: 100px;
   border-radius: 0;
@@ -2744,7 +2731,6 @@ select option {
 }
 
 .wrapCodeCaptchaContact .wrapsendMessage {
-  margin-top: 15px;
   display: flex;
   align-items: center;
 }

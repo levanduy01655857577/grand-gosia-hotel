@@ -3,7 +3,7 @@
 @import "../layout/titles";
 @import "../component/form";
 .wrapContact {
-    padding: 60px 0;
+    padding: 60px 0 45px 0;
     .contentCategory {
         margin-top: 15px;
         #directionsPanel {
@@ -19,9 +19,6 @@
     .wrapcaptcha {
         display: flex;
         align-items: center;
-    }
-    .rowContact {
-        min-height: 725px;
     }
     .colFrmContact,
     .colTextContact {
@@ -44,8 +41,7 @@
             background-position: center;
             position: relative;
             z-index: 1;
-            padding: 30px 15px 15px;
-            min-height: 725px;
+            height: 469.333px;
             display: flex;
             align-items: center;
             &::before {
@@ -60,9 +56,6 @@
                 background: $color1;
                 opacity: 0.7;
             }
-        }
-        .rowContentMap {
-            min-height: 400px;
         }
     }
     .rowMap {
@@ -116,6 +109,7 @@
         }
     }
     #directions {
+        padding-top: 15px;
         width: 100%;
         .titleContact {
             color: $color7;
@@ -128,8 +122,8 @@
         }
     }
     .wrapContentContact {
-        width: 75%;
         margin: auto;
+        padding: 0 60px;
     }
 }
 
@@ -194,7 +188,6 @@
 
 .colFrmContact {
     background-color: $color7;
-    min-height: 200px;
 }
 
 // captcha
@@ -240,10 +233,6 @@
 }
 
 //Position
-.contentCategory {
-    margin-top: 10px;
-}
-
 #message {
     min-height: 100px;
     border-radius: 0;
@@ -261,7 +250,6 @@
 
 .wrapCodeCaptchaContact {
     .wrapsendMessage {
-        margin-top: 15px;
         display: flex;
         align-items: center;
     }
