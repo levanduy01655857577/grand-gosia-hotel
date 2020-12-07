@@ -1,6 +1,6 @@
 @charset "UTF-8";
 a,
-.slider .slick-arrow, .checkbox-container .checkmark, .checkbox-container .checkmark:after, .btn-messenger, .modal-search-room .tab-menu li, .service .item .content {
+.slider .slick-arrow, .checkbox-container .checkmark, .checkbox-container .checkmark:after, .btn-messenger, .modal-search-room .tab-menu li, .service .item .content, .scroll-top {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -23,7 +23,7 @@ a,
   top: 0;
 }
 
-.testi .item .wrap-img-cover, .news .item .content .newstime {
+.testi .item .wrap-img-cover, .news .item .content .newstime, .scroll-top .btn {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1861,170 +1861,6 @@ select option {
   }
 }
 
-.wrapBreadCrumb {
-  position: relative;
-  margin-top: 128px;
-}
-
-.wrapBreadCrumb .titleCategory4 {
-  text-align: center;
-}
-
-.wrapImgBreadcrumb {
-  padding-top: 400px;
-}
-
-.wrapTextBreadcrumb {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  transform: translate(0, -50%);
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  top: 50%;
-}
-
-.navListBreadcrumb {
-  background: none;
-  display: table;
-  margin: 10px auto auto auto;
-}
-
-.olListBreqadcrumb {
-  margin: 0;
-  background: none;
-  padding: 0;
-  display: block;
-  text-align: center;
-}
-
-.itemListBreadcrumb.active,
-.linkListBreadcrumb {
-  font-size: 18px;
-  line-height: 26px;
-  color: #ffff;
-  text-transform: capitalize;
-}
-
-.linkListBreadcrumb {
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-}
-
-.linkListBreadcrumb:hover {
-  color: #a07743;
-  text-decoration: none;
-}
-
-.itemListBreadcrumb {
-  display: inline;
-}
-
-.itemListBreadcrumb + .itemListBreadcrumb {
-  padding-left: 15px;
-}
-
-.itemListBreadcrumb + .itemListBreadcrumb::before {
-  font-family: "FontAwesome";
-  content: "\f061";
-  font-weight: 900;
-  color: #ffff;
-  padding-right: 15px;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.wrapVectorTitleBreadcrumb {
-  position: relative;
-  width: 80px;
-  margin: auto;
-}
-
-.wrapVectorTitleBreadcrumb:before, .wrapVectorTitleBreadcrumb:after {
-  position: absolute;
-  bottom: 3px;
-  content: '';
-  width: 10px;
-  height: 10px;
-  background-color: #a07743;
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
-}
-
-.wrapVectorTitleBreadcrumb:before {
-  left: 0;
-}
-
-.wrapVectorTitleBreadcrumb:after {
-  right: 0;
-}
-
-@media (max-width: 1199.8px) {
-  .wrapBreadCrumb {
-    margin-top: 80px;
-  }
-  .wrapBreadCrumb .navListBreadcrumb {
-    margin-top: 5px;
-  }
-  .wrapBreadCrumb .titlePageCurrentBreadcrumb {
-    padding: 0 0 15px 0;
-    font-size: 24px;
-    line-height: 38px;
-  }
-  .wrapBreadCrumb .titlePageCurrentBreadcrumb:before {
-    content: none;
-  }
-  .wrapBreadCrumb .titlePageCurrentBreadcrumb:after {
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    -webkit-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0);
-    top: auto;
-  }
-}
-
-@media (max-width: 767.8px) {
-  .wrapBreadCrumb .titleCategory4 {
-    font-size: 30px;
-    padding: 0 0 10px 0;
-    line-height: 30px;
-    margin: 0 auto;
-  }
-  .wrapBreadCrumb .wrapTextBreadcrumb .itemListBreadcrumb.active,
-  .wrapBreadCrumb .wrapTextBreadcrumb .linkListBreadcrumb {
-    font-size: 15px;
-    line-height: 23px;
-  }
-}
-
-@media (max-width: 575.8px) {
-  .wrapBreadCrumb .wrapImgBreadcrumb {
-    padding-top: 56%;
-  }
-  .wrapBreadCrumb .titleCategory4 {
-    font-size: 18px;
-    padding: 0;
-    line-height: 25px;
-    margin: 0 auto;
-  }
-  .wrapBreadCrumb .wrapTextBreadcrumb .itemListBreadcrumb.active,
-  .wrapBreadCrumb .wrapTextBreadcrumb .linkListBreadcrumb {
-    font-size: 14px;
-    line-height: 20px;
-  }
-}
-
 .slider-home {
   position: relative;
   margin-top: 81px;
@@ -3111,7 +2947,7 @@ select option {
 }
 
 a,
-.slider .slick-arrow, .checkbox-container .checkmark, .checkbox-container .checkmark:after, .btn-messenger, .modal-search-room .tab-menu li, .service .item .content {
+.slider .slick-arrow, .checkbox-container .checkmark, .checkbox-container .checkmark:after, .btn-messenger, .modal-search-room .tab-menu li, .service .item .content, .scroll-top {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -3134,7 +2970,7 @@ a,
   top: 0;
 }
 
-.testi .item .wrap-img-cover, .news .item .content .newstime {
+.testi .item .wrap-img-cover, .news .item .content .newstime, .scroll-top .btn {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -5688,7 +5524,7 @@ a,
 }
 
 a,
-.slider .slick-arrow, .checkbox-container .checkmark, .checkbox-container .checkmark:after, .btn-messenger, .modal-search-room .tab-menu li, .service .item .content {
+.slider .slick-arrow, .checkbox-container .checkmark, .checkbox-container .checkmark:after, .btn-messenger, .modal-search-room .tab-menu li, .service .item .content, .scroll-top {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -5711,7 +5547,7 @@ a,
   top: 0;
 }
 
-.testi .item .wrap-img-cover, .news .item .content .newstime {
+.testi .item .wrap-img-cover, .news .item .content .newstime, .scroll-top .btn {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -6445,6 +6281,64 @@ a,
   .wrapBreadCrumb .wrapTextBreadcrumb .linkListBreadcrumb {
     font-size: 14px;
     line-height: 20px;
+  }
+}
+
+/* scroll top */
+.scroll-top {
+  position: fixed;
+  bottom: 15px;
+  z-index: 10;
+  right: -100px;
+}
+
+.scroll-top .btn {
+  font-size: 24px;
+  line-height: 36px;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  background: #a07743;
+  border-color: #a07743;
+  color: #fff;
+}
+
+.scroll-top .btn:hover {
+  background: #fff;
+  border-color: #a07743;
+  color: #a07743 !important;
+}
+
+.scroll-top.appear {
+  right: 15px;
+}
+
+#return-to-top {
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  right: 20px;
+  bottom: 80px;
+  z-index: 1;
+}
+
+@media (max-width: 991.8px) {
+  #return-to-top {
+    bottom: 120px;
+  }
+}
+
+@media (max-width: 767.8px) {
+  #return-to-top {
+    bottom: 120px;
+  }
+}
+
+@media (max-width: 575.8px) {
+  #return-to-top {
+    height: 45px;
+    width: 45px;
+    bottom: 100px;
   }
 }
 
