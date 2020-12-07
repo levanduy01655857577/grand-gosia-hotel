@@ -105,7 +105,7 @@
         .item {
             .content {
                 margin: 0;
-                @include box-shadow(0 2px 5px rgba(68, 68, 68, 0.3));
+                @include box-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
                 .desc {
                     max-height: max-content;
                 }
@@ -118,7 +118,7 @@
             display: block;
             .content {
                 margin: 0;
-                @include box-shadow(0 2px 5px rgba(68, 68, 68, 0.3));
+                @include box-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
                 .desc {
                     max-height: max-content;
                 }

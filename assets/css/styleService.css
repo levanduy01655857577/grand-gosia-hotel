@@ -3629,11 +3629,11 @@ a,
   }
   .secServiceHotel .item .content {
     margin: 0;
-    box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
-    -webkit-box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
-    -moz-box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
-    -ms-box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
-    -o-box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   }
   .secServiceHotel .item .content .desc {
     max-height: max-content;
@@ -3644,11 +3644,11 @@ a,
   }
   .serviceRestaurant .item .content {
     margin: 0;
-    box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
-    -webkit-box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
-    -moz-box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
-    -ms-box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
-    -o-box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   }
   .serviceRestaurant .item .content .desc {
     max-height: max-content;
