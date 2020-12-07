@@ -744,7 +744,7 @@ header img {
     color: #a07743 !important;
     border: none !important;
     font-weight: 600;
-    padding: 0 3px 0 0;
+    padding: 1px 3px 0 0;
     display: flex;
     align-items: center;
 }
@@ -2424,7 +2424,6 @@ ul.scroll_tabs_container {
     }
     .selectLanguage .Language {
         padding: 14px 12px 33px;
-        margin-top: 1px;
     }
 }
 
