@@ -2583,7 +2583,6 @@ select option {
 }
 
 .wrapTexInfoContact #directions {
-  padding-top: 15px;
   width: 100%;
 }
 
@@ -2691,7 +2690,7 @@ select option {
 
 .formControlCodeCaptchaContact {
   margin-left: -1px;
-  width: 25%;
+  width: 50%;
 }
 
 .imageRefreshCaptchaContact,
@@ -2742,28 +2741,37 @@ select option {
   }
 }
 
+@media (max-width: 991.8px) {
+  .colTextContact .bgImgage .wrapContentContact {
+    padding: 30px;
+  }
+  .colFrmContact .wrapsendMessage .btnSendMessageContact,
+  .colFrmContact .wrapsendMessage .imageRefreshCaptchaContact,
+  .colFrmContact .wrapsendMessage .imageCaptchaContact {
+    margin-left: 7.5px;
+  }
+  .colFrmContact .wrapsendMessage .btnSendMessageContact {
+    padding: 0 25px;
+  }
+  .colFrmContact .wrapsendMessage .formControlCodeCaptchaContact {
+    width: 100%;
+  }
+}
+
 @media (max-width: 767.8px) {
-  .wrapMap {
-    height: 250px;
-  }
-  .imageRefreshCaptchaContact {
-    margin-right: 10px;
-  }
   .wrapContact .colFrmContact,
   .wrapContact .colTextContact {
     float: none;
     width: 100%;
   }
   .wrapContact .colTextContact {
-    min-height: 300px;
     margin-top: 0;
   }
   .wrapContact .colTextContact .bgImgage {
-    min-height: 300px;
-    padding: 0;
+    height: auto;
   }
   .wrapContact .colTextContact .bgImgage .wrapContentContact {
-    width: 90%;
+    padding: 60px;
   }
   .wrapContact .colTextContact .bgImgage .wrapTexInfoContact {
     margin: 0;
@@ -2781,6 +2789,14 @@ select option {
   .wrapContact .rowContentMap {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .colFrmContact .wrapsendMessage .btnSendMessageContact,
+  .colFrmContact .wrapsendMessage .imageRefreshCaptchaContact,
+  .colFrmContact .wrapsendMessage .imageCaptchaContact {
+    margin-left: 15px;
+  }
+  .colFrmContact .wrapsendMessage .btnSendMessageContact {
+    padding: 0 50px;
   }
 }
 
@@ -2803,10 +2819,13 @@ select option {
     margin: 12.5px 15px 12.5px 0;
   }
   .wrapContact {
-    padding: 15px 0 30px 0;
+    padding: 15px 0 15px 0;
   }
   .wrapContact .colTextContact .bgImgage {
     padding: 0;
+  }
+  .wrapContact .colTextContact .bgImgage .wrapContentContact {
+    padding: 30px;
   }
   .wrapContact .wrapTexInfoContact {
     font-size: 15px;
