@@ -104,7 +104,8 @@
     .secServiceHotel {
         .item {
             .content {
-                margin: -20px 15px 15px 15px;
+                margin: 0;
+                @include box-shadow(0 2px 5px rgba(68, 68, 68, 0.3));
                 .desc {
                     max-height: max-content;
                 }
@@ -113,9 +114,11 @@
     }
     .serviceRestaurant {
         .item {
-            flex-direction: row;
+            padding-bottom: 5px;
+            display: block;
             .content {
-                margin: -20px 15px 15px 15px;
+                margin: 0;
+                @include box-shadow(0 2px 5px rgba(68, 68, 68, 0.3));
                 .desc {
                     max-height: max-content;
                 }
@@ -128,21 +131,6 @@
 }
 
 @media(max-width:575.8px) {
-    .secServiceHotel {
-        .item {
-            .content {
-                margin: -15px 15px 15px 15px;
-            }
-        }
-    }
-    .serviceRestaurant {
-        .item {
-            flex-direction: row;
-            .content {
-                margin: -15px 15px 15px 15px;
-            }
-        }
-    }
     .secInfoLike {
         padding: 30px 0;
     }

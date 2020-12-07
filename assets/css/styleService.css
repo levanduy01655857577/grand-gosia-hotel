@@ -2560,10 +2560,10 @@ select option {
 
 .itemListBreadcrumb.active,
 .linkListBreadcrumb {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 20px;
   color: #ffff;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .linkListBreadcrumb {
@@ -3628,16 +3628,27 @@ a,
     width: 100%;
   }
   .secServiceHotel .item .content {
-    margin: -20px 15px 15px 15px;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
+    -webkit-box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
+    -moz-box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
+    -ms-box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
+    -o-box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
   }
   .secServiceHotel .item .content .desc {
     max-height: max-content;
   }
   .serviceRestaurant .item {
-    flex-direction: row;
+    padding-bottom: 5px;
+    display: block;
   }
   .serviceRestaurant .item .content {
-    margin: -20px 15px 15px 15px;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
+    -webkit-box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
+    -moz-box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
+    -ms-box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
+    -o-box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
   }
   .serviceRestaurant .item .content .desc {
     max-height: max-content;
@@ -3648,15 +3659,6 @@ a,
 }
 
 @media (max-width: 575.8px) {
-  .secServiceHotel .item .content {
-    margin: -15px 15px 15px 15px;
-  }
-  .serviceRestaurant .item {
-    flex-direction: row;
-  }
-  .serviceRestaurant .item .content {
-    margin: -15px 15px 15px 15px;
-  }
   .secInfoLike {
     padding: 30px 0;
   }

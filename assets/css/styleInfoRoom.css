@@ -1954,10 +1954,10 @@ select option {
 
 .itemListBreadcrumb.active,
 .linkListBreadcrumb {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 20px;
   color: #ffff;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .linkListBreadcrumb {
@@ -2724,10 +2724,10 @@ select option {
 
 .itemListBreadcrumb.active,
 .linkListBreadcrumb {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 20px;
   color: #ffff;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .linkListBreadcrumb {
@@ -5307,10 +5307,10 @@ a,
 
 .itemListBreadcrumb.active,
 .linkListBreadcrumb {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 20px;
   color: #ffff;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .linkListBreadcrumb {
