@@ -1,0 +1,25 @@
+@import url("../lib/fontAwesome/css/font-awesome.min.css");
+@import url("../lib/slick/slick.css");
+@import url("../lib/slick/slick-theme.css");
+@import url("../scss/style1.css");
+@import 'vendor/bootstrap.min';
+@import 'vendor/daterangepicker.min';
+// 2. base
+@import "base/general";
+@import "base/reset";
+@import "base/normalized";
+// 3. components
+@import "component/section";
+@import "component/form";
+@import "component/modal";
+@import "component/button";
+@import "component/scroll-top";
+// 4. layout
+@import "layout/breadcrumb";
+@import "layout/footer";
+@import "layout/booking";
+// 5. page
+@import "page/home";
+@import "page/room";
+@import "page/listnews";
+@import "page/DeluxeDouble";

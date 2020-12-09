@@ -1,35 +1,27 @@
-@import "_pre-scss.scss";
+@import url("../lib/fontAwesome/css/font-awesome.min.css");
+@import url("../scss/style1.css");
+@import url("../lib/lightGallery/css/lightgallery.min.css");
+@import 'vendor/bootstrap.min';
 // 2. base
+@import "base/general";
 @import "base/reset";
 @import "base/normalized";
 // 3. components
 @import "component/section";
-// @import "component/dropdown-menu";
 @import "component/form";
-// @import "component/form-popup";
 @import "component/modal";
 @import "component/button";
-// @import "component/slider";
-// @import "component/item";
-@import "component/loader";
-@import "component/captcha";
-// @import "component/map-api";
-// @import "component/search";
-// @import "component/login";
-// @import "component/scroll-top";
-// @import "component/page-detail";
+@import "component/scroll-top";
 // 4. layout
-// @import "layout/header";
+@import "layout/breadcrumb";
 @import "layout/footer";
 @import "layout/booking";
 @import "layout/Photo";
-// @import "layout/breadcrunb";
-// @import "layout/sec-404";
+@import 'layout/wrapListProject';
+@import "layout/generalRoom";
+@import "layout/textNewsDetail";
+@import "layout/wrapListNews";
 // 5. page
 @import "page/home";
-@import "page/room";
 @import "page/listnews";
-@import "page/DeluxeDouble";
-@import "page/Infodetail";
 @import "page/Gallery";
-@import "page/image-detail.scss";

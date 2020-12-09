@@ -4,6 +4,10 @@
 @import "../component/form";
 .wrapContact {
     padding: 60px 0 45px 0;
+    .contentContact {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .contentCategory {
         margin-top: 15px;
         #directionsPanel {
@@ -57,9 +61,6 @@
                 opacity: 0.7;
             }
         }
-    }
-    .rowMap {
-        padding: 15px 0 0 15px;
     }
 }
 

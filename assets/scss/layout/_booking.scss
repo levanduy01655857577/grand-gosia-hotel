@@ -1,10 +1,6 @@
 @import "../vendor/custom-select";
 // booking
 .booking-search {
-    // position: absolute;
-    // bottom: 60px;
-    // left: 0;
-    // right: 0;
     .row {
         margin: -7.5px;
         display: flex;
@@ -46,9 +42,7 @@
             border: 1px solid #ccc;
         }
         label {
-            // color: #fff;
             text-transform: uppercase;
-            // letter-spacing: 1px;
             font-weight: 600;
         }
         .dates .item {
@@ -59,16 +53,13 @@
         .has-icon {
             position: relative;
             .form-control {
-                // padding-left: 36px;
                 padding-left: 30px;
                 padding-right: 2px;
                 line-height: 35px;
             }
             .fa {
                 position: absolute;
-                // top: 30%;
                 top: 35%;
-                // left: 12px;
                 left: 8px;
                 z-index: 3;
             }
@@ -76,10 +67,6 @@
         .btn-search {
             width: 100%;
         }
-        // select option {
-        // 	height: 45px;
-        // 	border: 0;
-        // }
         .custom-select {
             .select-items {
                 margin-top: 7.5px;
@@ -122,9 +109,7 @@
 .booking-desktop {
     position: relative;
     bottom: 0;
-    // margin-top: -65px;
     margin-top: -55px;
-    // margin-bottom: 20px;
 }
 
 .booking-mobile {
@@ -133,10 +118,6 @@
 
 @media (min-width: 768px) {
     .booking-search {
-        // position: absolute;
-        // bottom: 15px;
-        // left: 0;
-        // right: 0;
         .form>.row {
             display: flex;
             align-items: flex-end;
@@ -155,24 +136,9 @@
     }
 }
 
-// @media (max-width: 1023px) {
-// @media (max-width: 991px) {
-// 	.booking-search {
-// 		.form1 .booking-info .form-control {
-// 			display: flex;
-// 			align-items: center;
-// 			justify-content: space-between;
-// 		}
-// 	}
-// }
-// @media (min-width: 1024px) {
 @media (min-width: 768px) {
     .booking-search {
-        // bottom: 60px;
         .form {
-            // .btn-search, .form-control, .select-selected {
-            // 	height: 45px;
-            // }
             .select-selected {
                 height: 45px;
                 line-height: 45px;
@@ -180,19 +146,13 @@
         }
         .form1 .booking-info .form-group {
             span {
-                // display: block;
                 span {
                     display: inline;
                 }
             }
-            // .form-control {
-            // 	height: 60px;
-            // }
         }
         .custom-select {
             .select-selected {
-                // height: 60px;
-                // line-height: 60px;
                 padding: 0 12px;
                 &::after {
                     top: 20px;
@@ -201,9 +161,6 @@
                     top: 14px;
                 }
             }
-            // .select-items {
-            // 	margin-top: 15px;
-            // }
         }
     }
 }
@@ -224,12 +181,6 @@
         z-index: 1000;
         @include box-shadow(0px -3px 6px #ccc);
         display: flex;
-        // >* {
-        // 	width: 50%;
-        // 	&:first-child {
-        // 		border-right-color: #fff;
-        // 	}
-        // }
         .btn {
             width: 100%;
             height: 45px;
@@ -239,73 +190,9 @@
     }
 }
 
-// modal
-.modal-search-room {
-    .tab-menu {
-        margin-left: 0;
-        margin-bottom: 0;
-        border-bottom: 1px solid $color1;
-        li {
-            // padding: 10px 0;
-            border: 1px solid $color1;
-            border-bottom: 0;
-            @extend %transition;
-            &:first-child {
-                border-top-left-radius: 10px;
-            }
-            &:last-child {
-                border-top-right-radius: 10px;
-            }
-            a {
-                display: block;
-                color: #fff;
-                padding: 10px 12px;
-                font-weight: 500;
-            }
-            &.active,
-            &:hover {
-                // cursor: pointer;
-                background: $color1;
-                a {
-                    color: #fff;
-                }
-            }
-        }
-    }
-    .modal-dialog {
-        padding-top: 20px;
-    }
-    .modal-content {
-        // background: $color5;
-        .modal-body {
-            padding: 30px 15px;
-            .box-title {
-                margin-top: 0;
-            }
-        }
-    }
-    .form label {
-        font-size: 14px;
-        // padding-left: 12px;
-    }
-}
-
 // 18.08.2020
 .booking-search .col-md-3.col-sm-10 {
     z-index: 1 !important;
-}
-
-.btn-forget-password {
-    font-size: 0.9em;
-    color: $color2;
-    text-decoration: underline !important;
-    font-style: italic;
-    font-weight: 500;
-    text-align: center;
-    display: block;
-    &:hover {
-        color: $color1;
-    }
 }
 
 .btnBookingMobile {

@@ -1,5 +1,3 @@
-@import "../page/home";
-@import "../layout/booking";
 .rowformInfoRoom {
     height: auto;
 }
@@ -17,7 +15,7 @@
     margin: 0;
     font-size: 30px;
     line-height: 40px;
-    font-weight: 800;
+    font-weight: 600;
     color: $color2;
 }
 
@@ -247,6 +245,7 @@
 
 .bookingRoomDetail {
     position: relative;
+    @include transition(0.3s);
     &::after {
         position: absolute;
         content: "";
@@ -255,6 +254,13 @@
         left: 2px;
         bottom: 2px;
         border: 1px solid $color7;
+    }
+    &:hover,
+     :focus,
+     :active {
+        color: $color1;
+        background: $color7;
+        border-color: $color1;
     }
 }
 

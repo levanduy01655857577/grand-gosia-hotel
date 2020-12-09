@@ -2,10 +2,7 @@
 
 label {
     color: #555;
-    // font-size: 14px;
     font-weight: 500;
-    // text-transform: uppercase;
-    // letter-spacing: 1px;
 }
 
 textarea {
@@ -23,7 +20,6 @@ select option {
 
 .form .form-control {
     height: 45px;
-    //border: 0;
     border: 1px solid #ccc;
     width: 100%;
     margin-bottom: 0;
@@ -66,185 +62,6 @@ select option {
         position: absolute;
         right: 0;
         @extend %block-center-y;
-    }
-}
-
-
-/* Customize the checkbox (the container) */
-
-.checkbox-container {
-    display: block;
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    /* Hide the browser's default checkbox */
-    input {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        cursor: pointer;
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-        margin: 0;
-    }
-    /* Create a custom checkbox */
-    .checkmark {
-        position: absolute;
-        top: 0;
-        // left: 0;
-        // top: 20px;
-        left: 0;
-        height: 20px;
-        width: 20px;
-        // background-color: $bg-gray-solid;
-        border: 2px solid $color1;
-        /* Create the checkmark/indicator (hidden when not checked) */
-        @extend %transition;
-        &:after {
-            content: "";
-            position: absolute;
-            display: none;
-            /*Stylethecheckmark/indicator*/
-            left: 5px;
-            top: 1px;
-            width: 7px;
-            height: 11px;
-            border: solid $color1;
-            border-width: 0 2px 2px 0;
-            @extend %transition;
-            @include transform(rotate(45deg));
-        }
-    }
-    /* On mouse-over, add a background color */
-    &:hover input~.checkmark {
-        // background-color: $color-main-1;
-    }
-    /* When the checkbox is checked, add a background */
-    input:checked~.checkmark {
-        // background-color: $color-main-1;
-    }
-    /* Show the checkmark when checked */
-    input:checked~.checkmark:after {
-        display: block;
-    }
-    .checktext {
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-size: 13px;
-    }
-}
-
-// /* Customize the radio button */
-.radio-container {
-    // height: 50px;
-    // line-height: 50px;
-    // display: inline-block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    // margin-right: 15px;
-    // &:last-child {
-    //     margin-right: 0;
-    // }
-    // /* Hide the browser's default radio button */
-    &.disabled {
-        opacity: 0.6;
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-    }
-    input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-    }
-    // /* Create a custom radio button */
-    .checkmark {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 20px;
-        width: 20px;
-        // margin-top: 12px;
-        // background-color: $bg-gray-solid;
-        border: 2px solid $color1;
-        border-radius: 50%;
-    }
-    // /* On mouse-over, add a grey background color */
-    &:hover input~.checkmark {
-        // background-color: $color-main-1;
-    }
-    &:hover input~.checkmark {
-        // background-color: $color-main-1;
-    }
-    // /* When the radio button is checked, add a blue background */
-    input:checked~.checkmark {
-        // background-color: $color-main-1;
-    }
-    // /* Create the indicator (the dot/circle - hidden when not checked) */
-    .checkmark:after {
-        content: "";
-        position: absolute;
-        display: none;
-    }
-    // /* Show the indicator (dot/circle) when checked */
-    input:checked~.checkmark:after {
-        display: block;
-    }
-    // /* Style the indicator (dot/circle) */
-    .checkmark:after {
-        // top: 6px;
-        // left: 6px;
-        // ===has boder 2px
-        top: 4px;
-        left: 4px;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background: $color1;
-    }
-}
-
-// custom input[type=file]
-.custom-input-files {
-    input[type=file] {
-        opacity: 0;
-        height: 0;
-        width: 0;
-        overflow: hidden;
-    }
-    label.style1 {
-        color: #fff;
-        .btn {
-            min-width: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .text {
-                @include lineclamp-1(1.4em);
-            }
-        }
-        .fa {
-            font-size: 18px;
-            margin-right: 5px;
-        }
     }
 }
 

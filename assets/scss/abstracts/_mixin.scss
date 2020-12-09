@@ -49,14 +49,6 @@
     -ms-animation-duration: $seconds;
     -o-animation-duration: $seconds;
 }
-
-// @mixin animation($animation) {
-//     animation: $animation;
-//     -webkit-animation: $animation;
-//     -moz-animation-duration: $animation;
-//     -ms-animation-duration: $animation;
-//     -o-animation-duration: $animation;
-// }
 @mixin animation($animation-name) {
     animation: $animation-name 1s linear infinite;
     -webkit-animation: $animation-name 1s linear infinite;
@@ -80,13 +72,6 @@
     top: 50%;
     @include transform(translate(-50%, -50%));
 }
-
-// @mixin lineclamp($line-height, $line) {
-//     overflow: hidden;
-//     line-height: $line-height;
-//     height: $line-height * $line;
-//     text-overflow: ellipsis;
-// }
 @mixin lineclamp-1($height) {
     @extend %lineclamp-1;
     line-height: $height;
@@ -103,19 +88,10 @@
 
 @mixin lineclamp-n($font-size, $line-height, $lines-to-show) {
     @extend %lineclamp-n;
-    // overflow: hidden;
-    // text-overflow: ellipsis;
-    // display: -webkit-box;
-    // -webkit-box-orient: vertical;
     font-size: $font-size;
     line-height: $line-height;
     -webkit-line-clamp: $lines-to-show;
     max-height: $line-height*$lines-to-show;
-    /* Fallback for non-webkit */
-    // display: -webkit-box;
-    // -webkit-box-orient: vertical;
-    // overflow: hidden;
-    // text-overflow: ellipsis;
 }
 
 @mixin lineclamp-n-media($font-size, $line-height, $lines-to-show) {
@@ -148,11 +124,6 @@
     @include square($px);
     @extend %border-radius-50;
 }
-
-// @mixin list-inline($col) {
-//     display: inline-grid;
-//     width: 100%/$col;
-// }
 @mixin list-inline($col) {
     display: -ms-flexbox;
     display: flex;
@@ -206,29 +177,9 @@
         >li {
             >a {
                 color: $linkColor;
-                // &:hover, &:focus {
-                //     color: $linkHoverColor;
-                //     border-color: $linkHoverColor;
-                // }
+           
             }
-            // &.active {
-            //     // > a, .dropdown-icon {
-            //     .dropdown-icon {
-            //         color: $linkHoverColor;
-            //     }
-            // }
         }
-        // .dropdown {
-        //     // .dropdown-icon {
-        //     //     color: $linkColor;
-        //     // }
-        //     // &:hover .dropdown-icon {
-        //     //     color: $linkHoverColor;
-        //     // }
-        //     >a:hover, >a:focus {
-        //         background: $color1;
-        //     }
-        // }
     }
 }
 

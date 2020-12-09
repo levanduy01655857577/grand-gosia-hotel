@@ -1,4 +1,5 @@
 // @import "../_pre-scss.scss";
+@import "../layout/news";
 .slider-home {
     position: relative;
     margin-top: 81px;
@@ -16,33 +17,21 @@
     }
     .wrap-img-cover {
         width: 100%;
-        // height: 66.67vw; //3x2
         height: 56.25vw; //16x9
         max-height: 100vh;
-        // max-height: calc(100vh - 128px);
-        // background: #000;
-        // img {
-        // 	@include opacity(0.7);
-        // }
     }
     .item {
         position: relative;
     }
     .content {
-        // @extend %overlay-full;
         position: relative;
         z-index: 1;
         background: rgba(#000, 0.2);
         .body {
             position: relative;
-            // position: absolute;
-            // left: 0;
-            // right: 0;
-            // bottom: 0;
             margin-top: -60px;
             padding: 10px;
             color: #fff;
-            // background: rgba(#000, 0.6);
             .sub-title {
                 text-transform: uppercase;
                 font-size: 1.4em;
@@ -73,9 +62,6 @@
 
 @media (min-width: 768px) {
     .slider-home {
-        // .wrap-img-cover {
-        // 	height: calc(100vh - 35px);
-        // }
         .content {
             position: absolute;
             top: 0;
@@ -120,16 +106,6 @@
                         font-size: 1.6em;
                     }
                 }
-                // .slick-control {
-                // 	position: absolute;
-                // 	top: 30px;
-                // 	right: 30px;
-                // 	.slick-arrow {
-                // 		height: 50px;
-                // 		width: 40px;
-                // 		color: $color1;
-                // 	}
-                // }
             }
         }
     }
@@ -137,13 +113,8 @@
 
 @media (min-width: 992px) {
     .slider-home {
-        // .wrap-img-cover {
-        // 	height: calc(100vh - 35px);
-        // }
         .content {
             .body {
-                // width: 40%;
-                // padding: 25px;
                 .title {
                     font-size: 38px;
                 }
@@ -160,7 +131,6 @@
 
 @media (min-width: 1200px) {
     .slider-home {
-        // margin-top: 128px;
         margin-top: 0;
     }
 }
@@ -173,11 +143,6 @@
 
 @media (max-width: 768px) {
     .slider-home {
-        // padding-bottom: 60px;
-        // background:#f1f1f1;
-        // .content {
-        // 	background:#f1f1f1;
-        // }
         .slick-dots {
             display: none !important;
         }
@@ -190,18 +155,6 @@
                 text-align: center;
             }
         }
-        // .slick-control {
-        // 	position: absolute;
-        // 	top: -90px;
-        // 	left: -15px;
-        // 	right: -15px;
-        // 	display: flex;
-        // 	justify-content: space-between;
-        // 	.slick-arrow {
-        // 		height: 60px;
-        // 		width: 35px;
-        // 	}
-        // }
     }
 }
 
@@ -223,32 +176,6 @@
 }
 
 // end sec intro
-// toast HTML: <div class="toast">4.5 sao /17 đánh giá</div>
-.toast {
-    display: none;
-    position: absolute;
-    top: -32px;
-    left: -10px;
-    z-index: 10;
-    background: #fff;
-    white-space: nowrap;
-    @include box-shadow(0px 3px 10px 3px rgba(0, 0, 0, 0.2));
-    border-radius: 2px;
-    padding: 2px 5px;
-    font-size: 0.9em;
-    &::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 44px; //star width 85px
-        height: 0;
-        width: 0;
-        border: solid transparent;
-        border-top-color: #fff;
-        border-width: 7px;
-    }
-}
-
 .rating {
     position: relative;
     height: 16px;
@@ -283,52 +210,11 @@
         top: 0;
         bottom: 0;
         width: 100%;
-        // width: 89%; // 4.5 sao = 90% -> 89% (trừ 1% cho khoảng cách)
         background: #f9b403;
     }
     &:hover .toast {
         display: block;
     }
-}
-
-.tag {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    // top: 10px;
-    // right: 12px;
-    // right: 22px;
-    z-index: 5;
-    padding: 5px 12px;
-    color: #fff;
-    background: $color5;
-    text-transform: uppercase;
-    // font-size: 0.9em;
-    &::before {
-        position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        content: "";
-        left: -12px;
-        border-top: 15px solid transparent;
-        border-right: 12px solid $color5;
-        border-bottom: 15px solid transparent;
-        width: 0;
-    }
-    // &::after {
-    // 	position: absolute;
-    // 	right: 0;
-    // 	top: 0;
-    // 	bottom: 0;
-    // 	content: "";
-    // 	right: -12px;
-    // 	border-top: 15px solid $color5;
-    // 	border-right: 12px solid transparent;
-    // 	border-bottom: 15px solid $color5;
-    // 	width: 0;
-    // }
 }
 
 // room
@@ -429,10 +315,6 @@
 }
 
 // services
-.sec-service {
-    // background: $color1;
-}
-
 .service {
     overflow: hidden;
     .item {
@@ -456,7 +338,6 @@
             justify-content: center;
             padding: 15px;
             text-align: center;
-            // background: $color1;
             @extend %transition;
             .body {
                 position: relative;
@@ -481,7 +362,6 @@
         }
     }
     .service-list {
-        // padding-top: 30px;
         .slick-next {
             right: 15px;
         }
@@ -518,7 +398,6 @@
         }
     }
     .news-list {
-        // padding-top: 30px;
         .slick-next {
             right: 15px;
         }
@@ -546,9 +425,6 @@
 .sec-testi {
     &.has-bg-src {
         @extend %bg-paralax;
-        // &::before {
-        // 	display: none;
-        // }
     }
     .sec-title .title {
         color: #fff;
@@ -556,29 +432,10 @@
 }
 
 .testi {
-    // &.row {
-    // 	margin: -15px;
-    // 	[class^="col-"], [class*=" col-"] {
-    // 		padding: 15px;
-    // 	}
-    // }
-    // position: relative;
     &.slick-dotted .slick-dots {
         bottom: -30px;
     }
-    // &::before {
-    // 	position: absolute;
-    // 	top: 0;
-    // 	right: 0;
-    // 	// content: "\f10d";
-    // 	content: "\f10e";
-    // 	font-family: "FontAwesome";
-    // 	color: $color1;
-    // 	font-size: 60px;
-    // 	z-index: 1;
-    // }
     .item {
-        // overflow: hidden;
         padding: 15px;
         margin: 15px;
         background: #fff;
@@ -638,11 +495,7 @@
                 @include transition(all 0.3s);
             }
             &:hover {
-                // text-decoration: underline !important;
                 color: $color-tripadvisor;
-                .icon {
-                    // margin-left: 10px;
-                }
             }
         }
     }
@@ -650,12 +503,6 @@
 
 @media (min-width: 768px) {
     .testi {
-        // &.row {
-        // 	margin: -15px -30px;
-        // 	[class^="col-"], [class*=" col-"] {
-        // 		padding: 15px 30px;
-        // 	}
-        // }
         max-width: 750px;
         margin: 0 auto;
         .item {

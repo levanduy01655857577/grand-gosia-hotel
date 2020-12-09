@@ -161,25 +161,7 @@
     -webkit-line-clamp: inherit !important;
 }
 
-
-// %text-decorator {
-//     position: relative;
-//     &::after {
-//         content: "";
-//         position: absolute;
-//         left: 0;
-//         width: 110%;
-//         background: $color-main-1;
-//         z-index: -1;
-//         height: 32%;
-//         top: 48%;
-//     }
-// }
-
 %text-vertical {
     white-space:nowrap;
         @include transform(rotate(-90deg));
-    /*InternetExplorer*/
-    // filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-    // -webkit-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }

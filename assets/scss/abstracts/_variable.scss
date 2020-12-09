@@ -1,15 +1,9 @@
 $body-fontfamily: 'Open Sans',
 sans-serif;
-// $title-fontfamily: "Muli","Helvetica Neue", Helvetica, Arial, sans-serif;
-// $title-fontfamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $title-fontfamily: 'Open Sans',
 sans-serif;
-// background-image: linear-gradient(to right, #8e5e3f, #dabf4a, #f5ff62,#dab948, #8c5d3e);
-// $color1: #b16f1e; // màu đậm hơn mà logo
-// $color1: #88553d; // màu logo1
 $color1: #a07743; // màu logo2
 $color2: #a78e72;
-// $color2:#ffb04e;
 $color3: lighten(saturate($color1, 4.27), 39.02);
 $color4: darken($color1, 20%);
 $color5: red;
