@@ -214,6 +214,8 @@
         background: #a07743;
         border-color: #a07743;
         width: 100%;
+        height: 60px;
+        line-height: 60px;
         @include transition(0.5s);
         &:hover,
         &:focus {
@@ -239,18 +241,5 @@
 @media(max-width:991.8px) {
     .btnBookingMobile {
         visibility: visible;
-        .btn-booking {
-            height: 50px;
-            line-height: 50px;
-        }
-    }
-}
-
-@media(max-width:575.8px) {
-    .btnBookingMobile {
-        .btn-booking {
-            height: 45px;
-            line-height: 45px;
-        }
     }
 }

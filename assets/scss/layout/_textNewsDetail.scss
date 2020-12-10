@@ -10,7 +10,7 @@
         font-weight: 400;
     }
     .sliderService {
-        width: 65%;
+        width: 50%;
         float: left;
         margin: 0 30px 15px 0;
         transition: all 0.5s;
@@ -31,8 +31,20 @@
                 }
             }
         }
-        .slick-dots li button::before {
-            color: $color7;
+        .slick-dots {
+            bottom: 10px;
+            li {
+                button {
+                    top: 0;
+                    left: 0;
+                    @include transition(0.3s);
+                }
+            }
+        }
+    }
+    .textDetail {
+        p {
+            margin: 0;
         }
     }
 }

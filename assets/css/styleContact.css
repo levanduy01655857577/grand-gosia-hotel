@@ -8489,6 +8489,15 @@ a[href^='mailto'] {
   -o-border-radius: 5px;
 }
 
+@media (max-width: 767.8px) {
+  .pagination li a {
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
 .pagination li.active a:hover {
   color: #fff;
 }
@@ -8836,13 +8845,7 @@ select option {
 
 @media (max-width: 991.8px) {
   #return-to-top {
-    bottom: 120px;
-  }
-}
-
-@media (max-width: 767.8px) {
-  #return-to-top {
-    bottom: 120px;
+    bottom: 130px;
   }
 }
 
@@ -8850,7 +8853,7 @@ select option {
   #return-to-top {
     height: 45px;
     width: 45px;
-    bottom: 100px;
+    bottom: 115px;
   }
 }
 
@@ -9429,7 +9432,7 @@ select option {
 
 @media (max-width: 991.8px) {
   .btn-messenger {
-    bottom: 55px;
+    bottom: 65px;
   }
 }
 
@@ -9437,7 +9440,6 @@ select option {
   .btn-messenger {
     height: 45px;
     width: 45px;
-    bottom: 50px;
   }
 }
 
@@ -9758,6 +9760,8 @@ select option {
   background: #a07743;
   border-color: #a07743;
   width: 100%;
+  height: 60px;
+  line-height: 60px;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -9787,17 +9791,6 @@ select option {
 @media (max-width: 991.8px) {
   .btnBookingMobile {
     visibility: visible;
-  }
-  .btnBookingMobile .btn-booking {
-    height: 50px;
-    line-height: 50px;
-  }
-}
-
-@media (max-width: 575.8px) {
-  .btnBookingMobile .btn-booking {
-    height: 45px;
-    line-height: 45px;
   }
 }
 
@@ -10009,25 +10002,8 @@ select option {
   padding: 60px 0 45px 0;
 }
 
-.wrapContact .contentContact {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.wrapContact .contentCategory {
-  margin-top: 15px;
-}
-
-.wrapContact .contentCategory #directionsPanel {
-  margin-top: 15px;
-}
-
-.wrapContact .contentCategory #directionsPanel .adp-directions {
-  width: 100%;
-}
-
-.wrapContact .contentCategory #directionsPanel .adp-text {
-  padding: 0 10px !important;
+.wrapContact .contentContact .rowContact {
+  margin: 0;
 }
 
 .wrapContact .wrapcaptcha {
@@ -10039,33 +10015,35 @@ select option {
           align-items: center;
 }
 
-.wrapContact .colFrmContact,
-.wrapContact .colTextContact {
-  width: 50%;
-}
-
 .wrapContact .colFrmContact {
-  float: right;
-}
-
-.wrapContact .colTextContact {
+  width: 60%;
   float: left;
 }
 
+.wrapContact .colFrmContact .contentSologanLocation {
+  color: #000;
+  padding: 15px 0;
+}
+
+.wrapContact .colFrmContact .contentSologanLocation p {
+  margin: 0;
+}
+
 .wrapContact .colTextContact {
+  float: right;
+  width: 40%;
   padding-right: 0;
 }
 
 .wrapContact .colTextContact .bgImgage {
-  background-image: url("../images/deluxe-double-4.jpg");
+  background-image: url("../images/GrandGosia.jpg");
   width: 100%;
-  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   z-index: 1;
-  height: 469.333px;
+  height: 619.2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10084,19 +10062,101 @@ select option {
   top: 0;
   left: 0;
   background: #a07743;
-  opacity: 0.7;
+  opacity: 0.8;
+}
+
+.wrapContact .colFrmMap {
+  width: 60%;
+  float: left;
+}
+
+.wrapContact .colTextMap {
+  float: right;
+  width: 40%;
+}
+
+.wrapContact .colTextMap .bgLocation {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffff;
+  height: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapContact .colTextMap .bgLocation .wrapTextLocation {
+  width: 100%;
+  padding: 0 60px;
+  margin: auto;
+}
+
+.wrapContact .colTextMap .bgLocation .wrapTextLocation .titleTextContact {
+  color: #a07743;
+  padding-bottom: 15px;
+}
+
+.wrapContact .colTextMap .bgLocation .wrapTextLocation .contentSologanLocation {
+  color: #000;
+  padding-bottom: 15px;
+}
+
+.wrapContact .colTextMap .bgLocation .wrapTextLocation p {
+  font-size: 14px;
+  line-height: 25px;
+  margin: 0;
+}
+
+.wrapContact .colTextMap .bgLocation .wrapTextLocation #directions label {
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.wrapContact .colTextMap .bgLocation .wrapTextLocation #directions .form-group {
+  margin-bottom: 0;
+}
+
+.wrapContact .colTextMap .bgLocation .wrapTextLocation #directions .form-group input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+}
+
+.wrapContact #directionsPanel {
+  margin-top: 15px;
+}
+
+.wrapContact #directionsPanel .adp-directions {
+  width: 100%;
+}
+
+.wrapContact #directionsPanel .adp-text {
+  padding: 0 10px !important;
+}
+
+.wrapContact #directionsPanel .adp,
+.wrapContact #directionsPanel .adp table {
+  width: 100%;
 }
 
 .titleTextContact,
 .titleFrmContact {
   color: #a78e72;
   display: block;
-  text-align: center;
-  padding-top: 30px;
+  text-align: left;
+}
+
+.wrapTextLocation .titleTextContact {
+  padding-bottom: 30px;
 }
 
 .wrapTexInfoContact {
-  font-size: 20px;
   line-height: 25px;
   color: #ffff;
   margin-top: 15px;
@@ -10131,7 +10191,7 @@ select option {
 }
 
 .wrapTexInfoContact .wrapflex a:hover {
-  color: #a78e72;
+  color: #ccc;
   text-decoration: none;
 }
 
@@ -10141,29 +10201,31 @@ select option {
   font-weight: 400;
 }
 
-.wrapTexInfoContact .wrapflex i {
+.wrapTexInfoContact .wrapflex b:hover {
+  color: #ccc;
+}
+
+.wrapTexInfoContact .wrapflex .icon {
+  display: block;
+  padding-right: 10px;
+}
+
+.wrapTexInfoContact .wrapflex .icon i {
   color: #ffff;
-  margin-right: 15px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffff;
+  border-radius: 100%;
+  text-align: center;
 }
 
 .wrapTexInfoContact .wrapflex span {
   display: none;
 }
 
-.wrapTexInfoContact #directions {
-  width: 100%;
-}
-
-.wrapTexInfoContact #directions .titleContact {
-  color: #ffff;
-}
-
-.wrapTexInfoContact #directions .form-group {
-  margin: 0;
-}
-
-.wrapTexInfoContact #directions .form-group input {
-  border: none;
+.wrapTexInfoContact .wrapflex:nth-child(3) {
+  padding: 0;
 }
 
 .wrapTexInfoContact .wrapContentContact {
@@ -10176,52 +10238,51 @@ select option {
   padding-right: 0;
 }
 
-.listFanpageContatc {
-  margin-top: 15px;
-}
-
-.listFanpageContatc a {
-  color: #000;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  display: inline-block;
-  font-size: 18px;
-  margin-left: 15px;
-}
-
-.listFanpageContatc a:first-child {
-  margin-left: 0;
-}
-
-.listFanpageContatc a:hover {
-  color: #e8d7c2;
-  text-decoration: none;
-}
-
-.wrapFrmSendMessage {
-  padding: 15px 0 30px 0;
-}
-
 .wrapFrmSendMessage .form-control {
   font-size: 16px;
   height: 50px;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
 }
 
 .wrapFrmSendMessage .form-group {
   margin-bottom: 15px;
+  border-radius: 0;
+}
+
+.wrapFrmSendMessage .form-group label {
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.wrapFrmSendMessage .form-group input {
+  padding: 0;
 }
 
 .wrapFrmSendMessage .colInputFrmSendMessage {
   padding: 0 7.5px;
 }
 
-.wrapFrmSendMessage .FullName .form-control:nth-child(2) {
-  margin-left: -1px;
+.wrapFrmSendMessage .rowtwoSendMessage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapFrmSendMessage .rowtwoSendMessage .line {
+  width: 100%;
+}
+
+.wrapFrmSendMessage .rowtwoSendMessage .line:nth-child(1) {
+  margin-right: 7.5px;
+}
+
+.wrapFrmSendMessage .rowtwoSendMessage .line:nth-child(2) {
+  margin-left: 7.5px;
 }
 
 .lblSendMessageContact {
@@ -10237,7 +10298,7 @@ select option {
 }
 
 .wrapContactus {
-  margin: 0 15px;
+  padding: 60px;
 }
 
 .colFrmContact {
@@ -10246,8 +10307,7 @@ select option {
 
 .btnSendMessageContact,
 .imageRefreshCaptchaContact,
-.imageCaptchaContact,
-.formControlCodeCaptchaContact {
+.imageCaptchaContact {
   float: left;
   margin-left: 15px;
 }
@@ -10258,8 +10318,8 @@ select option {
 }
 
 .formControlCodeCaptchaContact {
-  margin-left: -1px;
-  width: 50%;
+  width: 100%;
+  padding: 0;
 }
 
 .imageRefreshCaptchaContact,
@@ -10270,10 +10330,6 @@ select option {
 
 .btnSendMessageContact {
   line-height: 34px;
-}
-
-.formControlSendMessageContact {
-  border-radius: 0;
 }
 
 .wrapShare {
@@ -10288,18 +10344,13 @@ select option {
 }
 
 #message {
-  min-height: 100px;
-  border-radius: 0;
+  min-height: 50px;
+  max-height: 50px;
+  padding: 12.5px 0 0;
 }
 
 .wrapTexInfoContact p {
   margin-bottom: 0;
-}
-
-.FullName {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .wrapCodeCaptchaContact .wrapsendMessage {
@@ -10309,6 +10360,12 @@ select option {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.wrapCodeCaptchaContact label {
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #000;
 }
 
 @media (max-width: 1199px) {
@@ -10337,7 +10394,9 @@ select option {
 
 @media (max-width: 767.8px) {
   .wrapContact .colFrmContact,
-  .wrapContact .colTextContact {
+  .wrapContact .colTextContact,
+  .wrapContact .colFrmMap,
+  .wrapContact .colTextMap {
     float: none;
     width: 100%;
   }
@@ -10354,6 +10413,9 @@ select option {
     margin: 0;
   }
   .wrapContact .colTextContact .bgImgage .wrapTexInfoContact .wrapflex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-bottom: 15px;
   }
   .wrapContact .colTextContact .bgImgage .wrapTexInfoContact .wrapflex .flex-col {
@@ -10361,6 +10423,19 @@ select option {
   }
   .wrapContact .colTextContact .bgImgage .wrapTexInfoContact .wrapflex .flex-col span {
     display: inline;
+  }
+  .wrapContact .colTextContact .bgImgage .wrapTexInfoContact .wrapflex:nth-child(3) {
+    padding: 0;
+  }
+  .wrapContact .colTextMap .bgLocation {
+    height: auto;
+  }
+  .wrapContact .colTextMap .bgLocation .wrapTextLocation {
+    padding: 60px;
+  }
+  .wrapContact .colTextMap .bgLocation .wrapTextLocation .titleTextContact,
+  .wrapContact .colTextMap .bgLocation .wrapTextLocation .contentSologanLocation {
+    padding-bottom: 15px;
   }
   .wrapContact .col-no-gutters,
   .wrapContact .rowContentMap {
@@ -10374,6 +10449,9 @@ select option {
   }
   .colFrmContact .wrapsendMessage .btnSendMessageContact {
     padding: 0 50px;
+  }
+  #message {
+    max-height: 100px;
   }
 }
 
@@ -10412,22 +10490,45 @@ select option {
   .wrapContact .contentFrmContact {
     margin-top: 15px;
   }
-  .wrapContact .contentCategory {
-    margin-top: 15px;
-  }
   .wrapContact .rowContentMap {
     padding-top: 5px;
   }
+  .wrapContact .colTextMap .bgLocation .wrapTextLocation {
+    padding: 30px;
+  }
+  .wrapContact .colFrmContact .wrapsendMessage .btnSendMessageContact {
+    padding: 0 25px;
+  }
+  .wrapContact .wrapContactus {
+    padding: 30px;
+  }
 }
 
-@media (max-width: 320px) {
-  .wrapContact .colTextContact .bgImgage .wrapTexInfoContact .wrapflex .flex-col {
+@media (max-width: 375.8px) {
+  .wrapContact .colTextContact .bgImgage .wrapTexInfoContact .wrapContentContact {
+    padding: 15px;
+  }
+  .wrapContact .colTextContact .bgImgage .wrapTexInfoContact .wrapContentContact .wrapflex {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .wrapContact .colTextContact .bgImgage .wrapTexInfoContact .wrapContentContact .wrapflex .flex-col {
     display: -webkit-flex;
   }
-  .wrapContact .colTextContact .bgImgage .wrapTexInfoContact .wrapflex .flex-col span {
+  .wrapContact .colTextContact .bgImgage .wrapTexInfoContact .wrapContentContact .wrapflex .flex-col span {
     display: none;
+  }
+  .wrapContact .wrapContactus {
+    padding: 15px;
+  }
+  .wrapContact .wrapContactus .contentSologanLocation {
+    padding: 15px 0;
   }
   .wrapContact .btnSendMessageContact {
     padding: 0 25px;
+  }
+  .wrapContact .colTextMap .bgLocation .wrapTextLocation {
+    padding: 15px;
   }
 }

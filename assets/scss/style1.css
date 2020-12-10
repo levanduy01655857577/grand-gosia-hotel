@@ -66,7 +66,6 @@ strong {
 .sec-room .container {
     overflow: unset;
 }
-
 header .fa {
     margin-right: 8px;
     width: 15px;
@@ -1035,7 +1034,6 @@ header img {
     word-wrap: break-word;
     white-space: normal;
     position: relative;
-    margin-bottom: 10px;
 }
 
 .show-room-home .content-room-home .content-room-right .room-price-info .btn-book::after {
@@ -1416,9 +1414,6 @@ header img {
     }
     .specials-mobile {
         width: 50%;
-    }
-    .mobile-show-room>.row {
-        margin: 0;
     }
     .show-room-home {
         padding: 0;

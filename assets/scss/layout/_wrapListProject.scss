@@ -75,6 +75,7 @@
 .contentItemProject {
     position: relative;
     overflow: hidden;
+    cursor: pointer;
     &:hover {
         .linkTitleItemProject {
             background-color: transparent;

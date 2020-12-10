@@ -5,47 +5,38 @@
 .wrapContact {
     padding: 60px 0 45px 0;
     .contentContact {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .contentCategory {
-        margin-top: 15px;
-        #directionsPanel {
-            margin-top: 15px;
-            .adp-directions {
-                width: 100%;
-            }
-            .adp-text {
-                padding: 0 10px!important;
-            }
+        .rowContact {
+            margin: 0;
         }
     }
     .wrapcaptcha {
         display: flex;
         align-items: center;
     }
-    .colFrmContact,
-    .colTextContact {
-        width: 50%;
-    }
     .colFrmContact {
-        float: right;
-    }
-    .colTextContact {
+        width: 60%;
         float: left;
+        .contentSologanLocation {
+            color: $color8;
+            padding: 15px 0;
+            p {
+                margin: 0;
+            }
+        }
     }
     .colTextContact {
+        float: right;
+        width: 40%;
         padding-right: 0;
         .bgImgage {
-            background-image: url('../images/deluxe-double-4.jpg');
+            background-image: url('../images/GrandGosia.jpg');
             width: 100%;
-            height: 100%;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             position: relative;
             z-index: 1;
-            height: 469.333px;
+            height: 619.2px;
             display: flex;
             align-items: center;
             &::before {
@@ -58,8 +49,71 @@
                 top: 0;
                 left: 0;
                 background: $color1;
-                opacity: 0.7;
+                opacity: 0.8;
             }
+        }
+    }
+    .colFrmMap {
+        width: 60%;
+        float: left;
+    }
+    .colTextMap {
+        float: right;
+        width: 40%;
+        .bgLocation {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            background-color: $color7;
+            height: 400px;
+            align-items: center;
+            .wrapTextLocation {
+                width: 100%;
+                padding: 0 60px;
+                margin: auto;
+                .titleTextContact {
+                    color: $color1;
+                    padding-bottom: 15px;
+                }
+                .contentSologanLocation {
+                    color: $color8;
+                    padding-bottom: 15px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 25px;
+                    margin: 0;
+                }
+                #directions {
+                    label {
+                        text-transform: capitalize;
+                        margin: 0;
+                    }
+                    .form-group {
+                        margin-bottom: 0;
+                        input {
+                            border: none;
+                            outline: none;
+                            border-bottom: 1px solid $color9;
+                            box-shadow: none;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #directionsPanel {
+        margin-top: 15px;
+        .adp-directions {
+            width: 100%;
+        }
+        .adp-text {
+            padding: 0 10px!important;
+        }
+        .adp,
+        .adp table {
+            width: 100%;
         }
     }
 }
@@ -68,12 +122,16 @@
 .titleFrmContact {
     color: $color2;
     display: block;
-    text-align: center;
-    padding-top: 30px;
+    text-align: left;
+}
+
+.wrapTextLocation {
+    .titleTextContact {
+        padding-bottom: 30px;
+    }
 }
 
 .wrapTexInfoContact {
-    font-size: 20px;
     line-height: 25px;
     color: $color7;
     margin-top: 15px;
@@ -92,7 +150,7 @@
             font-weight: 400;
             @include transition(0.5s);
             &:hover {
-                color: $color2;
+                color: $color9;
                 text-decoration: none;
             }
         }
@@ -100,25 +158,28 @@
             color: $color7;
             margin-bottom: 5px;
             font-weight: 400;
+            &:hover {
+                color: $color9;
+            }
         }
-        i {
-            color: $color7;
-            margin-right: 15px;
+        .icon {
+            display: block;
+            padding-right: 10px;
+            i {
+                color: $color7;
+                line-height: 30px;
+                width: 30px;
+                height: 30px;
+                border: 1px solid $color7;
+                border-radius: 100%;
+                text-align: center;
+            }
         }
         span {
             display: none;
         }
-    }
-    #directions {
-        width: 100%;
-        .titleContact {
-            color: $color7;
-        }
-        .form-group {
-            margin: 0;
-            input {
-                border: none;
-            }
+        &:nth-child(3) {
+            padding: 0;
         }
     }
     .wrapContentContact {
@@ -132,40 +193,40 @@
     padding-right: 0;
 }
 
-.listFanpageContatc {
-    margin-top: 15px;
-    a {
-        color: $color8;
-        @include transition(0.5s);
-        display: inline-block;
-        font-size: 18px;
-        margin-left: 15px;
-        &:first-child {
-            margin-left: 0;
-        }
-        &:hover {
-            color: $color3;
-            text-decoration: none;
-        }
-    }
-}
-
 .wrapFrmSendMessage {
-    padding: 15px 0 30px 0;
     .form-control {
         font-size: 16px;
         height: 50px;
         box-shadow: none;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid $color9;
     }
     .form-group {
         margin-bottom: 15px;
+        border-radius: 0;
+        label {
+            font-weight: 600;
+            margin-bottom: 0;
+            color: $color8;
+        }
+        input {
+            padding: 0;
+        }
     }
     .colInputFrmSendMessage {
         padding: 0 7.5px;
     }
-    .FullName {
-        .form-control:nth-child(2) {
-            margin-left: -1px;
+    .rowtwoSendMessage {
+        display: flex;
+        .line {
+            width: 100%;
+            &:nth-child(1) {
+                margin-right: 7.5px;
+            }
+            &:nth-child(2) {
+                margin-left: 7.5px;
+            }
         }
     }
 }
@@ -183,7 +244,7 @@
 }
 
 .wrapContactus {
-    margin: 0 15px;
+    padding: 60px;
 }
 
 .colFrmContact {
@@ -193,8 +254,7 @@
 // captcha
 .btnSendMessageContact,
 .imageRefreshCaptchaContact,
-.imageCaptchaContact,
-.formControlCodeCaptchaContact {
+.imageCaptchaContact {
     float: left;
     margin-left: 15px;
 }
@@ -205,8 +265,8 @@
 }
 
 .formControlCodeCaptchaContact {
-    margin-left: -1px;
-    width: 50%;
+    width: 100%;
+    padding: 0;
 }
 
 .imageRefreshCaptchaContact,
@@ -217,10 +277,6 @@
 
 .btnSendMessageContact {
     line-height: 34px;
-}
-
-.formControlSendMessageContact {
-    border-radius: 0;
 }
 
 // end captcha
@@ -234,8 +290,9 @@
 
 //Position
 #message {
-    min-height: 100px;
-    border-radius: 0;
+    min-height: 50px;
+    max-height: 50px;
+    padding: 12.5px 0 0;
 }
 
 .wrapTexInfoContact {
@@ -244,14 +301,15 @@
     }
 }
 
-.FullName {
-    display: flex;
-}
-
 .wrapCodeCaptchaContact {
     .wrapsendMessage {
         display: flex;
         align-items: center;
+    }
+    label {
+        font-weight: 600;
+        margin-bottom: 0;
+        color: $color8;
     }
 }
 
@@ -290,7 +348,9 @@
 @media (max-width: 767.8px) {
     .wrapContact {
         .colFrmContact,
-        .colTextContact {
+        .colTextContact,
+        .colFrmMap,
+        .colTextMap {
             float: none;
             width: 100%;
         }
@@ -304,6 +364,7 @@
                 .wrapTexInfoContact {
                     margin: 0;
                     .wrapflex {
+                        align-items: center;
                         padding-bottom: 15px;
                         .flex-col {
                             display: inline-block;
@@ -311,6 +372,21 @@
                                 display: inline;
                             }
                         }
+                        &:nth-child(3) {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .colTextMap {
+            .bgLocation {
+                height: auto;
+                .wrapTextLocation {
+                    padding: 60px;
+                    .titleTextContact,
+                    .contentSologanLocation {
+                        padding-bottom: 15px;
                     }
                 }
             }
@@ -332,6 +408,9 @@
                 padding: 0 50px;
             }
         }
+    }
+    #message {
+        max-height: 100px;
     }
 }
 
@@ -371,33 +450,64 @@
         .contentFrmContact {
             margin-top: 15px;
         }
-        .contentCategory {
-            margin-top: 15px;
-        }
         .rowContentMap {
             padding-top: 5px;
+        }
+        .colTextMap {
+            .bgLocation {
+                .wrapTextLocation {
+                    padding: 30px;
+                }
+            }
+        }
+        .colFrmContact {
+            .wrapsendMessage {
+                .btnSendMessageContact {
+                    padding: 0 25px;
+                }
+            }
+        }
+        .wrapContactus {
+            padding: 30px;
         }
     }
 }
 
-@media(max-width:320px) {
+@media(max-width:375.8px) {
     .wrapContact {
         .colTextContact {
             .bgImgage {
                 .wrapTexInfoContact {
-                    .wrapflex {
-                        .flex-col {
-                            display: -webkit-flex;
-                            span {
-                                display: none;
+                    .wrapContentContact {
+                        padding: 15px;
+                        .wrapflex {
+                            align-items: flex-start;
+                            .flex-col {
+                                display: -webkit-flex;
+                                span {
+                                    display: none;
+                                }
                             }
                         }
                     }
                 }
             }
         }
+        .wrapContactus {
+            padding: 15px;
+            .contentSologanLocation {
+                padding: 15px 0;
+            }
+        }
         .btnSendMessageContact {
             padding: 0 25px;
+        }
+        .colTextMap {
+            .bgLocation {
+                .wrapTextLocation {
+                    padding: 15px;
+                }
+            }
         }
     }
 }

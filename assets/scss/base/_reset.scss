@@ -266,6 +266,14 @@ a[href^='mailto'] {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+@media(max-width:767.8px){
+    .pagination li a
+  {  height: 30px;
+    width: 30px;
+    font-size: 15px;
+    line-height: 30px;}
+    
+}
 .pagination li.active a:hover{
     color: #fff;
 }
