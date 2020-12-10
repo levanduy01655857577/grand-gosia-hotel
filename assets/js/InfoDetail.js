@@ -4213,7 +4213,7 @@ jQuery(document).ready(function() {
     var nextArrow = '<button type="button" class="slick-next slick-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></button>';
 
     //May be you like of page service
-    jQuery('.secInfoLike .sliderYouLike').slick({
+    jQuery('.secInfoLike .slider').slick({
         dots: false,
         arrows: true,
         prevArrow: prevArrow,
