@@ -4236,16 +4236,23 @@ jQuery(document).ready(function() {
             },
         ]
     });
-    // slider InfoDetail
-    if ((jQuery('.sliderService').length)) {
-        jQuery('.sliderService').slick({
-            dots: true,
-            arrows: false,
-            prevArrow: prevArrow,
-            nextArrow: nextArrow,
-            speed: 700,
-            autoplay: true,
-            slidesToShow: 1,
+    if ($('#secNewsDetail .slider-nav-for').length) {
+        $("#secNewsDetail .slider-nav-for").each(function(index) {
+            $(this).attr('id', 'slider' + index);
+            $(this).find('.slider-for').slick({
+                prevArrow: prevArrow,
+                nextArrow: nextArrow,
+                arrows: true,
+                asNavFor: $(this).find('.slider-nav'),
+            });
+
+            $(this).find('.slider-nav').slick({
+                arrows: false,
+                asNavFor: $(this).find('.slider-for'),
+                slidesToShow: 5,
+                focusOnSelect: true
+            });
         });
     }
+
 });
