@@ -10447,6 +10447,10 @@ select option {
   margin: 0 0 10px 0;
 }
 
+.padu0 {
+  padding-top: 0;
+}
+
 .titleHeaddingItemProject {
   color: #a78e72;
 }
@@ -10746,10 +10750,6 @@ select option {
   margin: 0;
 }
 
-.secRoomRela {
-  padding-top: 0;
-}
-
 .secRoomRela .itemlike {
   margin-top: 0;
 }
@@ -10947,12 +10947,12 @@ select option {
   .secDeluxeDouble {
     padding-bottom: 67.5px;
   }
-  .secDeluxeDouble .headerDeluxeRight {
-    padding: 0;
-  }
   .secDeluxeDouble .headerDeluxeRight,
   .secDeluxeDouble .headerDeluxeLeft {
     width: 100%;
+  }
+  .padu0 {
+    padding-top: 0 !important;
   }
 }
 
@@ -11027,7 +11027,7 @@ select option {
     padding: 40px 0;
   }
   .secRoomRela {
-    padding-bottom: 40px;
+    padding: 40px 0;
   }
   .secRoomRela .sec-title {
     margin-bottom: 15px;
@@ -11037,6 +11037,7 @@ select option {
   }
   .secComfort .wrapComfort .listRoomComfort {
     padding-top: 15px;
+    margin: 0 15px;
   }
   .secComfort .wrapComfort .listRoomComfort .detailRoom {
     width: 100%;

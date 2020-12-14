@@ -148,7 +148,6 @@
 }
 
 .secRoomRela {
-    padding-top: 0;
     .itemlike {
         margin-top: 0;
     }
@@ -355,13 +354,13 @@
     }
     .secDeluxeDouble {
         padding-bottom: 67.5px;
-        .headerDeluxeRight {
-            padding: 0;
-        }
         .headerDeluxeRight,
         .headerDeluxeLeft {
             width: 100%;
         }
+    }
+    .padu0 {
+        padding-top: 0!important;
     }
 }
 
@@ -448,7 +447,7 @@
         padding: 40px 0;
     }
     .secRoomRela {
-        padding-bottom: 40px;
+        padding: 40px 0;
         .sec-title {
             margin-bottom: 15px;
         }
@@ -458,6 +457,7 @@
         .wrapComfort {
             .listRoomComfort {
                 padding-top: 15px;
+                margin: 0 15px;
                 .detailRoom {
                     width: 100%;
                     margin-left: 0;
