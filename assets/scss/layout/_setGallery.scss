@@ -20,6 +20,13 @@
                 position: relative;
                 padding: 30px 15px 15px 15px;
             }
+            .slider-img{
+                .wrap-img{
+                    &:hover{
+                        transform: scale(1.4);
+                    }
+                }
+            }
         }
     }
     .iconImage {

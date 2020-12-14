@@ -197,11 +197,6 @@ jQuery(document).ready(function() {
             }
         });
 
-        // moment.locale(); 
-        // if($('.date-picker-wrapper table.month2').length){
-        //     $('.date-picker-wrapper table.month2 tbody td div').addClass('date-of-month-2');
-        // }
-
         checkout.click(function() {
             towInput.data('dateRangePicker').open();
 
@@ -212,7 +207,6 @@ jQuery(document).ready(function() {
             });
         });
     }
-    // activeDaterangepickermaster($('#two-input'), $('#two-input .check-in'), $('#two-input .check-out'));
 
     if ($('#two-input').length) {
         $('#two-input').dateRangePicker({
@@ -242,36 +236,6 @@ jQuery(document).ready(function() {
             });
         });
     }
-
-
-    // $('#two-input2').dateRangePicker({
-    //     autoClose:true,
-    //     separator : ' to ',
-    //     format:'DD/MM/YYYY',
-    //     selectForward: true,
-    //     startDate: moment().endOf('day').format('DD/MM/YYYY'),
-    //     getValue: function()
-    //     {
-    //         if ($('#two-input2 .check-in').val() && $('#two-input2 .check-out').val() )
-    //             return $('#two-input2 .check-in').val() + ' to ' + $('#two-input2 .check-out').val();
-    //         else
-    //             return '';
-    //     },
-    //     setValue: function(s,s1,s2)
-    //     {
-    //         $('#two-input2 .check-in').val(s1);
-    //         $('#two-input2 .check-out').val(s2);
-    //     }
-    // });
-    // $('#two-input2 .check-out').click(function(){
-    //     $('#two-input2').data('dateRangePicker').open();
-
-    //     $('.date-picker-wrapper .day.toMonth.valid').click(function(){
-    //         var endDate = moment(parseInt($(this).attr('time'))).format('DD/MM/YYYY');
-    //         $('#two-input2').data('dateRangePicker').setDateRange($('#two-input2 .check-in').val(), endDate, true);
-    //         $('#two-input2').data('dateRangePicker').close();
-    //     });
-    // });
 
     if ($('#two-input3').length) {
         $('#two-input3').dateRangePicker({
@@ -305,46 +269,6 @@ jQuery(document).ready(function() {
             });
         });
     }
-
-
-    // $('#two-input4').dateRangePicker({
-    //     singleMonth: true,
-    //     showShortcuts: false,
-    //     showTopbar: false,
-
-    //     autoClose:true,
-    //     separator : ' to ',
-    //     format:'DD/MM/YYYY',
-    //     selectForward: true,
-    //     startDate: moment().endOf('day').format('DD/MM/YYYY'),
-    //     getValue: function()
-    //     {
-    //         if ($('#two-input4 .check-in').val() && $('#two-input4 .check-out').val() )
-    //             return $('#two-input2 .check-in').val() + ' to ' + $('#two-input4 .check-out').val();
-    //         else
-    //             return '';
-    //     },
-    //     setValue: function(s,s1,s2)
-    //     {
-    //         $('#two-input4 .check-in').val(s1);
-    //         $('#two-input4 .check-out').val(s2);
-    //     }
-    // });
-
-    // moment.locale(); 
-    // if($('.date-picker-wrapper table.month2').length){
-    //     $('.date-picker-wrapper table.month2 tbody td div').addClass('date-of-month-2');
-    // }
-
-    // $('#two-input4 .check-out').click(function(){
-    //     $('#two-input4').data('dateRangePicker').open();
-
-    //     $('.date-picker-wrapper .day.toMonth.valid').click(function(){
-    //         var endDate = moment(parseInt($(this).attr('time'))).format('DD/MM/YYYY');
-    //         $('#two-input4').data('dateRangePicker').setDateRange($('#two-input4 .check-in').val(), endDate, true);
-    //         $('#two-input4').data('dateRangePicker').close();
-    //     });
-    // });
 
     if ($('.dates').length) {
         moment.locale();
