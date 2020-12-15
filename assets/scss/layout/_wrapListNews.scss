@@ -1,66 +1,67 @@
-@import '../abstracts/variable';
-@import '../abstracts/mixin';
+@import "../abstracts/variable";
+@import "../abstracts/mixin";
 .wrapLatestNews {
-    padding: 60px 0;
+  padding: 60px 0;
 }
 
 .wrapImgItemLatestNews {
-    display: block;
+  display: block;
 }
 
 .wrapCategoryAndUserPostItemLatestNews {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .titleHeadingLatestNews {
-    font-weight: 700;
-    @include splitText(2, 56px);
-    font-size: 18px;
-    line-height: 28px;
-    color: $color8;
-    @include transition(0.5s);
-    font-family: $title-fontfamily;
-    margin: 0;
-    text-transform: capitalize;
+  font-weight: 700;
+  @include splitText(2, 56px);
+  font-size: 18px;
+  line-height: 28px;
+  color: $color8;
+  @include transition(0.5s);
+  font-family: $title-fontfamily;
+  margin: 0;
+  text-transform: capitalize;
 }
 
 .linkTitleLatestNews {
-    display: block;
-    margin-top: 15px;
-    &:hover {
-        text-decoration: none;
-        .titleHeadingLatestNews {
-            color: $color3;
-        }
+  display: block;
+  margin-top: 15px;
+  @include transition(all 0.35s ease-in);
+  &:hover {
+    text-decoration: none;
+    .titleHeadingLatestNews {
+      color: $color3;
     }
+  }
 }
 
 .descriptionLatestNews {
-    position: relative;
-    @include splitText(3, 76px);
-    font-size: 14px;
-    line-height: 24px;
-    color: $color8;
-    margin: 10px 0 0 0;
+  position: relative;
+  @include splitText(3, 76px);
+  font-size: 14px;
+  line-height: 24px;
+  color: $color8;
+  margin: 10px 0 0 0;
 }
 
 .rowLatestNews {
-    margin: 0 -7.5px;
+  margin: 0 -7.5px;
 }
 
 @media (max-width: 991.8px) {
-    .descriptionLatestNews {
-        text-align: left;
-    }
-    .titleHeadingLatestNews {
-        @include splitText(2, 56px);
-        font-size: 18px;
-        line-height: 28px;
-    }
-    .elementSlideLatestNews {
-        margin-top: 15px;
-    }
-    .wrapLatestNews {
-        padding: 30px 0;
-    }
+  .descriptionLatestNews {
+    text-align: left;
+  }
+  .titleHeadingLatestNews {
+    @include splitText(2, 56px);
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .elementSlideLatestNews {
+    margin-top: 15px;
+  }
+  .wrapLatestNews {
+    padding: 30px 0;
+  }
 }

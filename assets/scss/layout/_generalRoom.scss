@@ -1,490 +1,519 @@
 .rowformInfoRoom {
-    height: auto;
+  height: auto;
 }
 
 .pageSubTitleInfoRoom {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .pageTitleInfoRoom {
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 30px;
-    line-height: 40px;
-    font-weight: 600;
-    color: $color2;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  color: $color2;
+  a {
+    &:hover {
+      color: $colorTitleHover;
+    }
+  }
 }
 
 .wrapContentInfoRoom {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
 .wrapTitleInfoRoom {
-    padding-bottom: 30px;
-    position: relative;
-    &::after {
-        position: absolute;
-        content: "";
-        left: 0;
-        bottom: 0;
-        width: 100px;
-        height: 1px;
-        background-color: $color1;
-    }
+  padding-bottom: 30px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 1px;
+    background-color: $color1;
+  }
 }
 
 .contentRoom,
 .contentRoomDetail,
 .detailRoom {
-    font-size: 15px;
-    font-family: $title-fontfamily;
-    line-height: 1.4;
-    font-weight: 400;
+  font-size: 15px;
+  font-family: $title-fontfamily;
+  line-height: 1.4;
+  font-weight: 400;
 }
 
 .contentRoom {
-    margin: 0;
-    padding-bottom: 10px;
+  margin: 0;
+  padding-bottom: 7.5px;
 }
 
 .contentRoomDetail {
-    margin: 0;
+  margin: 0;
 }
 
 .listRoomComfort {
-    .detailRoom {
-        margin-bottom: 0;
-    }
-    .detailRoom:nth-child(4n + 1) {
-        clear: both;
-    }
+  .detailRoom {
+    margin-bottom: 0;
+  }
+  .detailRoom:nth-child(4n + 1) {
+    clear: both;
+  }
 }
 
 .secRoomRela {
-    .rowContentInfoRoom {
-        position: relative;
-        top: -15px;
-        .content-room-left {
-            top: 50%;
-            left: 0;
-        }
-        .content-room-right {
-            position: absolute;
-            top: 0;
-            right: 0;
-            .wrapPriceSlide {
-                .text-line-through {
-                    margin-top: 0;
-                }
-            }
-        }
-    }
-    .wraptitle {
-        padding-top: 10px;
-    }
-}
-
-#bookform {
+  .rowContentInfoRoom {
     position: relative;
-    top: 10px;
-    right: 0;
-    margin: 0;
-    .form {
-        margin-top: 0;
-        min-height: 350px;
-        padding: 30px;
-        .row [class^="col-"],
-        .row [class*=" col-"] {
-            padding: 10px 7.5px;
-        }
+    .content-room-left {
+      top: 50%;
+      left: 0;
+      .btn-book {
+        bottom: 7.5px;
+      }
     }
+    .content-room-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      .wrapPriceSlide {
+        .text-line-through {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .wraptitle {
+    padding-top: 15px;
+  }
+  .wrapPriceSlide {
+    text-align: right;
+  }
+  .itemlike {
+    margin-top: 0;
+  }
+  .news {
+    .item {
+      .wrap-img {
+        padding-top: 56%;
+      }
+      .content {
+        .title {
+          height: auto;
+          max-height: none;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+#bookform {
+  position: relative;
+  top: 0;
+  right: 0;
+  margin: 0;
+  .form {
+    margin-top: 0;
+    min-height: 350px;
+    padding: 30px;
+    .row [class^="col-"],
+    .row [class*=" col-"] {
+      padding: 10px 7.5px;
+    }
+  }
 }
 
 .headerDeluxeRight {
-    .content-room-right {
-        .wrapPriceSlide {
-            position: relative;
-            bottom: 10px;
-            .nocolor {
-                color: $color7!important;
-            }
-        }
+  .content-room-right {
+    .wrapPriceSlide {
+      position: relative;
+      bottom: 10px;
+      .nocolor {
+        color: $color7 !important;
+      }
     }
+  }
 }
 
 .room-price-info {
-    .text-line-through {
-        text-decoration: line-through;
-        color: #646464;
-        font-weight: 500;
-        font-size: 20px;
-        margin-bottom: 0;
-        text-align: right;
-    }
-    .price {
-        font-weight: 600;
-        font-size: 26px;
-        text-align: right;
-        color: #e12d2d;
-        margin-bottom: 0;
-    }
-    .sale {
-        white-space: nowrap;
-        padding: 5px 10px;
-        background-color: #e12d2d;
-        color: #fff;
-        font-weight: 600;
-        text-align: center;
-        border-radius: 0;
-        text-transform: uppercase;
-        word-wrap: break-word;
-        white-space: normal;
-        margin: 0;
-    }
-}
-
-.secRoomRela {
-    .itemlike {
-        margin-top: 0;
-    }
-    .news {
-        .item {
-            .wrap-img {
-                padding-top: 56%;
-            }
-        }
-    }
-    .wrapPriceSlide {
-        text-align: right;
-    }
+  .text-line-through {
+    text-decoration: line-through;
+    color: #646464;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 0;
+    text-align: right;
+  }
+  .price {
+    font-weight: 600;
+    font-size: 26px;
+    text-align: right;
+    color: #e12d2d;
+    margin-bottom: 0;
+  }
+  .sale {
+    white-space: nowrap;
+    padding: 5px 10px;
+    background-color: #e12d2d;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 0;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    white-space: normal;
+    margin: 0;
+  }
 }
 
 .secDeluxeDouble {
-    .wrapItem {
-        .detailRoom {
-            margin-left: 15px;
-            li {
-                padding-top: 7.5px;
-            }
-        }
+  .wrapItem {
+    ul {
+      margin-left: 15px;
+      li {
+        padding-top: 7.5px;
+      }
     }
-    .wrapShare {
-        display: flex;
-        .titleShare {
-            font-family: $title-fontfamily;
-            font-size: 16px;
-            font-weight: 700;
-            margin-right: 5px;
-        }
+  }
+  .wrapShare {
+    display: flex;
+    .titleShare {
+      font-family: $title-fontfamily;
+      font-size: 16px;
+      font-weight: 700;
+      margin-right: 5px;
     }
+  }
 }
 
 .secDeluxeSlide {
-    .news {
-        .item {
-            .wrap-img {
-                padding-top: 56%;
-            }
-        }
+  .news {
+    .item {
+      .wrap-img {
+        padding-top: 56%;
+      }
     }
-    .itemlike {
-        margin-top: 0;
-    }
+  }
+  .itemlike {
+    margin-top: 0;
+  }
 }
 
 .listRoomComfort {
-    margin: 0 30px;
-    padding-top: 30px;
-    .detailRoom {
-        p {
-            position: relative;
-            &::after {
-                position: absolute;
-                content: "\f00c";
-                font-family: FontAwesome;
-                display: inline-block;
-                top: 0;
-                left: 0;
-                width: 1.3em;
-                margin-left: -1.3em;
-            }
-        }
+  margin: 0 30px;
+  padding-top: 30px;
+  .detailRoom {
+    p {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "\f00c";
+        font-family: FontAwesome;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        width: 1.3em;
+        margin-left: -1.3em;
+      }
     }
+  }
 }
 
 .secComfort {
-    padding: 0 0 50px 0;
-    .wrapTitleInfoRoom {
-        text-align: center;
+  padding: 0 0 50px 0;
+  .wrapTitleInfoRoom {
+    text-align: center;
+  }
+  .sec-title {
+    position: relative;
+    margin: 0;
+    padding-bottom: 30px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100px;
+      height: 1px;
+      background-color: $color1;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
     }
-    .sec-title {
-        position: relative;
-        margin: 0;
-        padding-bottom: 30px;
-        &::after {
-            position: absolute;
-            content: "";
-            width: 100px;
-            height: 1px;
-            background-color: $color1;
-            bottom: 0;
-            left: 50%;
-            transform: translate(-50%, 0);
-        }
-    }
-    .wrapComfort {
-        background-color: $color7;
-    }
+  }
+  .wrapComfort {
+    background-color: $color7;
+  }
 }
 
 .bookingRoomDetail {
-    position: relative;
-    @include transition(0.3s);
-    &::after {
-        position: absolute;
-        content: "";
-        top: 2px;
-        right: 2px;
-        left: 2px;
-        bottom: 2px;
-        border: 1px solid $color7;
-    }
-    &:hover,
-     :focus,
-     :active {
-        color: $color1;
-        background: $color7;
-        border-color: $color1;
-    }
+  position: relative;
+  @include transition(0.3s);
+  &::after {
+    position: absolute;
+    content: "";
+    top: 2px;
+    right: 2px;
+    left: 2px;
+    bottom: 2px;
+    border: 1px solid $color7;
+  }
+  &:hover,
+  :focus,
+  :active {
+    color: $color1;
+    background: $color7;
+    border-color: $color1;
+  }
 }
 
 .colorbrown {
-    color: $color1
+  color: $color1;
 }
 
 .rowHeadRoom {
-    .wrapPriceSlide {
-        position: relative;
-        bottom: 10px;
-        .nocolor {
-            color: $color7!important;
+  .wrapPriceSlide {
+    position: relative;
+    bottom: 10px;
+    .nocolor {
+      color: $color7 !important;
+    }
+  }
+  .room-price-info {
+    .text-line-through {
+      text-decoration: line-through;
+      color: #646464;
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 0;
+      text-align: right;
+    }
+    .price {
+      font-weight: 600;
+      font-size: 26px;
+      text-align: right;
+      color: #e12d2d;
+      margin-bottom: 0;
+    }
+    .sale {
+      white-space: nowrap;
+      padding: 5px 10px;
+      background-color: #e12d2d;
+      color: #fff;
+      font-weight: 600;
+      text-align: center;
+      border-radius: 0;
+      text-transform: uppercase;
+      word-wrap: break-word;
+      white-space: normal;
+    }
+  }
+}
+
+@media (max-width: 1199.8px) {
+  #bookform {
+    .form {
+      padding: 15px;
+      min-height: 200px;
+      background: #e8e6e3;
+      .booking-info .info span {
+        font-size: 13px;
+      }
+    }
+  }
+  .secRoomRela {
+    .bookingRoomDetail {
+      letter-spacing: 1px;
+    }
+  }
+  .secDeluxeDouble {
+    .content-room-left {
+      width: 58.33333333%;
+    }
+    .content-room-right {
+      width: 41.66666667%;
+    }
+    .contentRoom {
+      padding: 5px 0;
+    }
+    .rowContentRoom {
+      .detailRoom {
+        li {
+          padding: 0;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.8px) {
+  #bookform {
+    margin-top: 10px;
+    .form {
+      .has-icon .form-control {
+        padding-left: 30px;
+        .booking-info .info span {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .secDeluxeDouble {
+    padding-bottom: 60px;
+    .headerDeluxeRight,
+    .headerDeluxeLeft {
+      width: 100%;
+    }
+    .headerDeluxeLeft {
+      .wrapContentInfoRoom {
+        .rowContentRoom {
+          ul {
+            margin-bottom: 7.5px;
+          }
+        }
+      }
+    }
+  }
+  .padu0 {
+    padding-top: 0 !important;
+  }
+}
+
+@media (max-width: 767.8px) {
+  #bookform {
+    padding: 0;
+    margin-top: 10px;
+    .form {
+      padding: 15px;
+      .has-icon .form-control {
+        .booking-info .info span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .secDeluxeSlide {
+    padding: 40px 0;
+  }
+  .secRoomRela {
+    padding-bottom: 40px;
+    .item {
+      margin-top: -30px;
+    }
+  }
+  .secComfort {
+    padding-bottom: 40px;
+    .wrapComfort {
+      .detailRoom:nth-child(2n + 1) {
+        clear: both;
+      }
+      .detailRoom {
+        margin-left: 0;
+      }
+    }
+  }
+  .secDeluxeSlide,
+  .secRoomRela {
+    .news {
+      .item {
+        .wrap-img {
+          padding-top: 56%;
+        }
+      }
+    }
+  }
+  .secRoomRela {
+    .news {
+      .item {
+        .desc {
+          height: 3.4em;
+        }
+      }
+    }
+  }
+  .secDeluxeDouble {
+    padding: 40px 0 47.5px 0;
+    .rowContentRoom {
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 575.8px) {
+  .wrapTitleInfoRoom {
+    padding-bottom: 15px;
+  }
+  #bookform {
+    margin-top: 0;
+    .form {
+      min-height: 200px;
+      .has-icon .form-control {
+        padding-left: 30px;
+        .booking-info .info span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .secDeluxeDouble {
+    .content-room-right,
+    .content-room-left {
+      width: 100%;
+    }
+    .content-room-right {
+      position: static;
     }
     .room-price-info {
-        .text-line-through {
-            text-decoration: line-through;
-            color: #646464;
-            font-weight: 500;
-            font-size: 20px;
-            margin-bottom: 0;
-            text-align: right;
-        }
-        .price {
-            font-weight: 600;
-            font-size: 26px;
-            text-align: right;
-            color: #e12d2d;
-            margin-bottom: 0;
-        }
-        .sale {
-            white-space: nowrap;
-            padding: 5px 10px;
-            background-color: #e12d2d;
-            color: #fff;
-            font-weight: 600;
-            text-align: center;
-            border-radius: 0;
-            text-transform: uppercase;
-            word-wrap: break-word;
-            white-space: normal;
-        }
+      padding-top: 10px;
     }
-}
-
-@media(max-width:1199.8px) {
-    #bookform {
-        .form {
-            padding: 15px;
-            min-height: 200px;
-            background: #e8e6e3;
-            .booking-info .info span {
-                font-size: 13px;
-            }
-        }
+  }
+  .secDeluxeSlide {
+    padding: 40px 0;
+  }
+  .secRoomRela {
+    padding: 40px 0;
+    .sec-title {
+      margin-bottom: 15px;
     }
-    .secRoomRela {
-        .bookingRoomDetail {
-            letter-spacing: 1px;
+  }
+  .secComfort {
+    padding-bottom: 40px;
+    .wrapComfort {
+      .listRoomComfort {
+        padding-top: 15px;
+        margin: 0 15px;
+        .detailRoom {
+          width: 100%;
+          margin-left: 0;
+          p {
+            padding-bottom: 0;
+            margin-bottom: 5px;
+          }
         }
-    }
-    .secDeluxeDouble {
-        .content-room-left {
-            width: 58.33333333%;
-        }
-        .content-room-right {
-            width: 41.66666667%;
-        }
-        .contentRoom {
-            padding: 5px 0;
-        }
-        .rowContentRoom {
-            .detailRoom {
-                li {
-                    padding: 0;
-                }
-            }
-        }
-    }
-}
-
-@media(max-width:991.8px) {
-    #bookform {
-        .form {
-            .has-icon .form-control {
-                padding-left: 30px;
-                .booking-info .info span {
-                    font-size: 13px;
-                }
-            }
-        }
-    }
-    .secDeluxeDouble {
-        padding-bottom: 67.5px;
-        .headerDeluxeRight,
-        .headerDeluxeLeft {
-            width: 100%;
-        }
-    }
-    .padu0 {
-        padding-top: 0!important;
-    }
-}
-
-@media(max-width:767.8px) {
-    #bookform {
-        padding: 0;
-        margin-top: 15px;
-        .form {
-            padding: 15px;
-            .has-icon .form-control {
-                .booking-info .info span {
-                    font-size: 14px;
-                }
-            }
-        }
-    }
-    .secDeluxeSlide {
-        padding: 40px 0;
-    }
-    .secRoomRela {
-        padding-bottom: 40px;
-        .item {
-            margin-top: -30px;
-        }
-    }
-    .secComfort {
-        padding-bottom: 40px;
-        .wrapComfort {
-            .detailRoom:nth-child(2n + 1) {
-                clear: both;
-            }
-            .detailRoom {
-                margin-left: 0;
-            }
-        }
-    }
-    .secDeluxeSlide,
-    .secRoomRela {
-        .news {
-            .item {
-                .wrap-img {
-                    padding-top: 56%;
-                }
-            }
-        }
-    }
-    .secDeluxeDouble {
-        padding: 40px 0 47.5px 0;
-        .rowContentRoom {
-            position: relative;
-        }
-    }
-}
-
-@media(max-width:575.8px) {
-    .wrapTitleInfoRoom {
+      }
+      .sec-title {
         padding-bottom: 15px;
-    }
-    #bookform {
-        margin-top: 0;
-        .form {
-            min-height: 200px;
-            .has-icon .form-control {
-                padding-left: 30px;
-                .booking-info .info span {
-                    font-size: 12px;
-                }
-            }
+        &::after {
+          width: 75px;
+          height: 1px;
         }
+      }
     }
-    .secDeluxeDouble {
-        .content-room-right,
-        .content-room-left {
-            width: 100%;
-        }
-        .content-room-right {
-            position: static;
-        }
-        .room-price-info {
-            padding-top: 10px;
-        }
-    }
-    .secDeluxeSlide {
-        padding: 40px 0;
-    }
-    .secRoomRela {
-        padding: 40px 0;
-        .sec-title {
-            margin-bottom: 15px;
-        }
-    }
-    .secComfort {
-        padding-bottom: 40px;
-        .wrapComfort {
-            .listRoomComfort {
-                padding-top: 15px;
-                margin: 0 15px;
-                .detailRoom {
-                    width: 100%;
-                    margin-left: 0;
-                    p {
-                        padding-bottom: 0;
-                        margin-bottom: 5px;
-                    }
-                }
-            }
-            .sec-title {
-                padding-bottom: 15px;
-                &::after {
-                    width: 75px;
-                    height: 1px;
-                }
-            }
-        }
-    }
+  }
 }
 
-@media(max-width:320.8px) {
-    .secRoomRela {
-        .room-price-info {
-            .price {
-                font-size: 25px;
-                letter-spacing: -1.5px;
-            }
-        }
+@media (max-width: 320.8px) {
+  .secRoomRela {
+    .room-price-info {
+      .price {
+        font-size: 25px;
+        letter-spacing: -1.5px;
+      }
     }
+  }
 }

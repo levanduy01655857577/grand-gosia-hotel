@@ -1,11 +1,11 @@
-@import url("../lib/fontAwesome/css/font-awesome.min.css");
-@import url("../scss/style1.css");
- //Bootstrap v3.4.1
-@import 'vendor/bootstrap.min';
+@import "vendor/font-awesome.min";
 // 2. base
 @import "base/general";
 @import "base/reset";
 @import "base/normalized";
+@import "style1";
+//Bootstrap v3.4.1
+@import "vendor/bootstrap.min";
 // 3. components
 @import "component/section";
 @import "component/form";

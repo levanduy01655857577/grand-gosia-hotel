@@ -8806,8 +8806,8 @@ jQuery(document).ready(function() {
 //slide
 jQuery(document).ready(function() {
     // slider
-    var prevArrow = '<button type="button" class="slick-prev slick-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></button>';
-    var nextArrow = '<button type="button" class="slick-next slick-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></button>';
+    var prevArrow = '<button type="button" aria-label="Move Left" class="slick-prev slick-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></button>';
+    var nextArrow = '<button type="button" aria-label="Move Right" class="slick-next slick-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></button>';
 
     //May be you like of page service
     jQuery('.secInfoLike .slider').slick({

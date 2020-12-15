@@ -101,8 +101,10 @@ jQuery('#return-to-top').click(function () {
     }, 1000);
 });
 //Arrow Slide
-var prevArrow = '<button type="button" class="slick-prev slick-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></button>';
-var nextArrow = '<button type="button" class="slick-next slick-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></button>';
+var prevArrow =
+    '<button type="button" aria-label="Left" class="slick-prev slick-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></button>';
+  var nextArrow =
+    '<button type="button" aria-label="Right" class="slick-next slick-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></button>';
 //banner
 jQuery(document).ready(function () {
     if ((jQuery('#bannerFullscreen').length === 1)) {

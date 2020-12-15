@@ -326,8 +326,10 @@ jQuery(document).ready(function() {
 
 jQuery(document).ready(function() {
     // slider
-    var prevArrow = '<button type="button" class="slick-prev slick-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></button>';
-    var nextArrow = '<button type="button" class="slick-next slick-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></button>';
+    var prevArrow =
+    '<button type="button" aria-label="Left" class="slick-prev slick-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></button>';
+  var nextArrow =
+    '<button type="button" aria-label="Right" class="slick-next slick-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></button>';
     // slider news
     if ((jQuery('.news .news-list.slider').length)) {
         jQuery('.news .news-list.slider').slick({
@@ -337,6 +339,29 @@ jQuery(document).ready(function() {
             nextArrow: nextArrow,
             speed: 1000,
             autoplay: true,
+            slidesToShow: 3,
+            responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                },
+            ]
+        });
+    }
+    if ((jQuery('.secRoomRela .sliderInfo').length)) {
+        jQuery('.secRoomRela .sliderInfo').slick({
+            dots: false,
+            arrows: true,
+            prevArrow: prevArrow,
+            nextArrow: nextArrow,
             slidesToShow: 3,
             responsive: [{
                     breakpoint: 992,

@@ -1,9 +1,9 @@
-@import url("../lib/fontAwesome/css/font-awesome.min.css");
-@import url("../lib/slick/slick.css");
-@import url("../lib/slick/slick-theme.css");
-@import url("../scss/style1.css");
- //Bootstrap v3.4.1
-@import 'vendor/bootstrap.min';
+@import "vendor/slick";
+@import "vendor/slick-theme";
+@import "vendor/font-awesome.min";
+@import "style1";
+//Bootstrap v3.4.1
+@import "vendor/bootstrap.min";
 // 2. base
 @import "base/general";
 @import "base/reset";

@@ -1,7 +1,9 @@
-@import url("../lib/fontAwesome/css/font-awesome.min.css");
-@import url("../scss/style1.css");
-@import url("../lib/lightGallery/css/lightgallery.min.css");
-@import 'vendor/bootstrap.min';
+@import "vendor/font-awesome.min";
+@import "style1";
+@import "vendor/light-gallery";
+@import "vendor/slick";
+@import "vendor/slick-theme";
+@import "vendor/bootstrap.min";
 // 2. base
 @import "base/general";
 @import "base/reset";
@@ -17,7 +19,7 @@
 @import "layout/footer";
 @import "layout/booking";
 @import "layout/Photo";
-@import 'layout/wrapListProject';
+@import "layout/wrapListProject";
 @import "layout/generalRoom";
 @import "layout/textNewsDetail";
 @import "layout/wrapListNews";

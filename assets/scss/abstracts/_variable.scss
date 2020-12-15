@@ -1,23 +1,22 @@
-$body-fontfamily: 'Open Sans',
-sans-serif;
-$title-fontfamily: 'Open Sans',
-sans-serif;
+$body-fontfamily: "Open Sans", sans-serif;
+$title-fontfamily: "Open Sans", sans-serif;
 $color1: #a07743; // màu logo2
 $color2: #a78e72;
 $color3: lighten(saturate($color1, 4.27), 39.02);
 $color4: darken($color1, 20%);
 $color5: red;
 $color6: darken($color5, 20%);
-$color7:#ffff;
-$color8:#000;
-$color9:#ccc;
-$color10:#333;
+$color7: #ffff;
+$color8: #000;
+$color9: #ccc;
+$color10: #333;
+$colorTitleHover: #fac81e;
 $color-gray: #f2f2f2;
 $color-body-text: #333;
 $bg-light: #fbfbfb;
-$bg-gray: #f5f5f5;
+$bg-gray: #e4e4e4;
 $bg-light-oca: rgba(255, 255, 255, 0.8);
-$border-oca:rgba(148, 147, 147, 0.2);
+$border-oca: rgba(148, 147, 147, 0.2);
 // header color;
 $color-header: $color2;
 $color-header-hover: $color1;
@@ -27,8 +26,8 @@ $color-footer-link-hover: $color1;
 $color-copyright: $color1;
 $color-copyright-hover: #fff;
 // control button color
-$color-success: #4CAF50;
-$color-error: #F27474;
+$color-success: #4caf50;
+$color-error: #f27474;
 // $color-error: #dc3545;
 $color-warning: #ffc107;
 $color-cancel: #777;
