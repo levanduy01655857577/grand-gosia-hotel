@@ -15499,13 +15499,14 @@ select option {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(148, 147, 147, 0.2);
   margin-left: 15px;
-  flex: 0 0 calc(100% - 100px);
+  flex: 0 0 calc(100% - 130px);
 }
 
 .secService .news .item .content .wraptextService .title {
   font-size: 28px;
   line-height: 38px;
   height: 38px;
+  -webkit-line-clamp: 1;
   max-height: none;
   margin: 0 0 20px 0;
   text-transform: uppercase;
@@ -15561,6 +15562,9 @@ select option {
 }
 
 @media (max-width: 991.8px) {
+  .secService .news .item .content {
+    height: auto;
+  }
   .secService .news .item .content .iconService {
     width: 75px;
     height: 75px;
@@ -15572,12 +15576,13 @@ select option {
   }
   .secService .news .item .content .wraptextService {
     padding: 15px;
+    flex: 0 0 calc(100% - 105px);
   }
-  .secService .news .item .content .wraptextService .desc,
+  .secService .news .item .content .wraptextService .title {
+    height: 35px;
+  }
   .secService .news .item .content .wraptextService .title {
     margin: 0 0 15px 0;
-  }
-  .secService .news .item .content .wraptextService .title {
     font-size: 25px;
     line-height: 35px;
   }
@@ -15593,6 +15598,7 @@ select option {
   .secService .news .item .content .title {
     font-size: 22px;
     line-height: 32px;
+    height: 32px;
   }
   .secService .news .item .content .iconService {
     top: 60px;
@@ -15600,11 +15606,37 @@ select option {
 }
 
 @media (max-width: 575.8px) {
+  .secService .news .item {
+    margin-top: 30px;
+  }
+  .secService .news .item .content {
+    height: auto;
+  }
   .secService .news .item .content .wraptextService {
     padding: 15px;
+    margin-left: 0;
+    flex: 0 0 calc(100% - 65px);
   }
-  .secService .news .item .content .wraptextService .desc,
-  .secService .news .item .content .wraptextService .title {
+  .secService .news .item .content .wraptextService .desc, .secService .news .item .content .wraptextService .title {
     margin-bottom: 10px;
+  }
+  .secService .news .item .content .wraptextService .title {
+    font-size: 18px;
+    line-height: 28px;
+    height: 28px;
+  }
+  .secService .news .item .content .wraptextService .desc {
+    font-size: 0.8em;
+    line-height: 1.6em;
+    height: 4.8em;
+  }
+  .secService .news .item .content .iconService {
+    top: 45px;
+    width: 50px;
+    height: 50px;
+    flex: 0 0 50px;
+  }
+  .secService .news .item .content .iconService img {
+    padding: 15px;
   }
 }
