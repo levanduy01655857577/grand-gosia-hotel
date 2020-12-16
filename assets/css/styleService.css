@@ -12871,12 +12871,6 @@ a,
   -o-transform: translateX(-50%);
 }
 
-.news .item .content .title, .promo .item .title, .promo .item .desc, .news .item .title, .news .item .desc, .testi .item .content .title, .testi .item .desc {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-}
-
 .blink-me {
   animation: blinker 1s linear infinite;
   -webkit-animation: blinker 1s linear infinite;
@@ -14867,6 +14861,9 @@ select option {
   line-height: 24px;
   -webkit-line-clamp: 2;
   max-height: 48px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .news .item .content .desc {
@@ -15164,6 +15161,9 @@ select option {
   line-height: 30px;
   -webkit-line-clamp: 2;
   max-height: 60px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
   transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
@@ -15181,6 +15181,9 @@ select option {
   line-height: 1.8em;
   -webkit-line-clamp: 3;
   max-height: 5.4em;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (min-width: 768px) {
@@ -15312,6 +15315,9 @@ select option {
   line-height: 28px;
   -webkit-line-clamp: 2;
   max-height: 56px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
   transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
@@ -15329,6 +15335,9 @@ select option {
   line-height: 1.8em;
   -webkit-line-clamp: 3;
   max-height: 5.4em;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .news .news-list .slick-next {
@@ -15390,6 +15399,9 @@ select option {
   line-height: 1.4em;
   -webkit-line-clamp: 2;
   max-height: 2.8em;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .testi .item .content .author {
@@ -15413,6 +15425,9 @@ select option {
   line-height: 1.6em;
   -webkit-line-clamp: 3;
   max-height: 4.8em;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .testi .item .btn-more {
@@ -15474,22 +15489,25 @@ select option {
   margin: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-top: -60px;
+  height: 250px;
 }
 
 .secService .news .item .content .wraptextService {
   padding: 30px;
-  width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(148, 147, 147, 0.2);
   margin-left: 15px;
+  flex: 0 0 calc(100% - 100px);
 }
 
 .secService .news .item .content .wraptextService .title {
   font-size: 28px;
+  line-height: 38px;
+  height: 38px;
+  max-height: none;
   margin: 0 0 20px 0;
-  height: auto;
   text-transform: uppercase;
 }
 
@@ -15498,14 +15516,19 @@ select option {
 }
 
 .secService .news .item .content .iconService {
+  position: relative;
   width: 100px;
-  height: auto;
-  margin: 66px 15px 36px 0;
+  height: 100px;
+  margin-right: 15px;
   background-color: #a07743;
+  top: 90px;
+  bottom: 60px;
+  flex: 0 0 100px;
+  max-width: 100px;
 }
 
 .secService .news .item .content .iconService img {
-  padding: 20px;
+  padding: 30px;
 }
 
 .secService .news .item .content .bgnocolor {
@@ -15538,11 +15561,25 @@ select option {
 }
 
 @media (max-width: 991.8px) {
-  .secService .news .item .content .wraptextService .desc {
-    margin: 0;
+  .secService .news .item .content .iconService {
+    width: 75px;
+    height: 75px;
+    flex: 0 0 75px;
+    max-width: 75px;
+  }
+  .secService .news .item .content .iconService img {
+    padding: 22.5px;
+  }
+  .secService .news .item .content .wraptextService {
+    padding: 15px;
+  }
+  .secService .news .item .content .wraptextService .desc,
+  .secService .news .item .content .wraptextService .title {
+    margin: 0 0 15px 0;
   }
   .secService .news .item .content .wraptextService .title {
-    height: 30px;
+    font-size: 25px;
+    line-height: 35px;
   }
 }
 
@@ -15553,14 +15590,21 @@ select option {
   .secService .news .item .content {
     margin-top: -30px;
   }
+  .secService .news .item .content .title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .secService .news .item .content .iconService {
+    top: 60px;
+  }
 }
 
 @media (max-width: 575.8px) {
   .secService .news .item .content .wraptextService {
     padding: 15px;
-    margin-left: 0;
   }
-  .secService .news .item .content .iconService {
-    margin: 21px 15px 36px 0;
+  .secService .news .item .content .wraptextService .desc,
+  .secService .news .item .content .wraptextService .title {
+    margin-bottom: 10px;
   }
 }

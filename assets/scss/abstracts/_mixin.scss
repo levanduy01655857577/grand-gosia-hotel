@@ -84,14 +84,18 @@
     line-height: $height;
     text-overflow: ellipsis;
     overflow: hidden;
+    -webkit-box-orient: vertical;
 }
 
 @mixin lineclamp-n($font-size, $line-height, $lines-to-show) {
-    @extend %lineclamp-n;
     font-size: $font-size;
     line-height: $line-height;
     -webkit-line-clamp: $lines-to-show;
     max-height: $line-height*$lines-to-show;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @mixin lineclamp-n-media($font-size, $line-height, $lines-to-show) {

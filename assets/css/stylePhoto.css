@@ -14570,12 +14570,6 @@ a,
   -o-transform: translateX(-50%);
 }
 
-.news .item .content .title, .promo .item .title, .promo .item .desc, .news .item .title, .news .item .desc, .testi .item .content .title, .testi .item .desc {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-}
-
 .blink-me {
   animation: blinker 1s linear infinite;
   -webkit-animation: blinker 1s linear infinite;
@@ -17199,6 +17193,9 @@ select option {
   line-height: 24px;
   -webkit-line-clamp: 2;
   max-height: 48px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .news .item .content .desc {
@@ -17496,6 +17493,9 @@ select option {
   line-height: 30px;
   -webkit-line-clamp: 2;
   max-height: 60px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
   transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
@@ -17513,6 +17513,9 @@ select option {
   line-height: 1.8em;
   -webkit-line-clamp: 3;
   max-height: 5.4em;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (min-width: 768px) {
@@ -17644,6 +17647,9 @@ select option {
   line-height: 28px;
   -webkit-line-clamp: 2;
   max-height: 56px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
   transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
@@ -17661,6 +17667,9 @@ select option {
   line-height: 1.8em;
   -webkit-line-clamp: 3;
   max-height: 5.4em;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .news .news-list .slick-next {
@@ -17722,6 +17731,9 @@ select option {
   line-height: 1.4em;
   -webkit-line-clamp: 2;
   max-height: 2.8em;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .testi .item .content .author {
@@ -17745,6 +17757,9 @@ select option {
   line-height: 1.6em;
   -webkit-line-clamp: 3;
   max-height: 4.8em;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .testi .item .btn-more {
@@ -17843,6 +17858,9 @@ select option {
   line-height: 24px;
   -webkit-line-clamp: 2;
   max-height: 48px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .news .item .content .desc {
