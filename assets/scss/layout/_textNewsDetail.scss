@@ -56,13 +56,11 @@
         margin-bottom: 15px;
     }
     .wrapcontentServiceDetail {
-        .listService {
-            margin: 0;
-            left: 50%;
+        .ul {
             li {
                 position: relative;
                 list-style: none;
-                left: 20px;
+                left: 30px;
                 margin: 10px 0 0 15px;
                 &::after {
                     position: absolute;
@@ -106,6 +104,10 @@
             }
         }
     }
+}
+.left15px{
+    position: relative;
+    left: 15px;
 }
 
 // list news others

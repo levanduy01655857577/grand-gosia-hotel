@@ -13150,6 +13150,13 @@ button.close {
   }
 }
 
+@media (max-width: 767.8px) {
+  .sec .news .item .content .title {
+    height: auto;
+    -webkit-line-clamp: 1;
+  }
+}
+
 /* end section */
 /* form */
 label {
@@ -14878,7 +14885,7 @@ select option {
     padding: 0;
   }
   .wrapContact .colTextContact .bgImgage .wrapContentContact {
-    padding: 30px;
+    padding: 15px;
   }
   .wrapContact .wrapTexInfoContact {
     font-size: 15px;
@@ -14892,13 +14899,13 @@ select option {
     padding-top: 5px;
   }
   .wrapContact .colTextMap .bgLocation .wrapTextLocation {
-    padding: 30px;
+    padding: 15px;
   }
   .wrapContact .colFrmContact .wrapsendMessage .btnSendMessageContact {
     padding: 0 25px;
   }
   .wrapContact .wrapContactus {
-    padding: 30px;
+    padding: 15px;
   }
 }
 

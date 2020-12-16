@@ -13441,6 +13441,13 @@ a[href^="mailto"] {
   }
 }
 
+@media (max-width: 767.8px) {
+  .sec .news .item .content .title {
+    height: auto;
+    -webkit-line-clamp: 1;
+  }
+}
+
 /* end section */
 /* form */
 label {
@@ -14541,19 +14548,14 @@ select option {
   margin-bottom: 15px;
 }
 
-.showTextPostNewsDetail .wrapcontentServiceDetail .listService, .showTextPostNewsDetail .wrapcontentServiceDetail .listService .listNews, .showTextPostNewsDetail .wrapcontentServiceDetail .listNews {
-  margin: 0;
-  left: 50%;
-}
-
-.showTextPostNewsDetail .wrapcontentServiceDetail .listService li, .showTextPostNewsDetail .wrapcontentServiceDetail .listService .listNews li, .showTextPostNewsDetail .wrapcontentServiceDetail .listNews li {
+.showTextPostNewsDetail .wrapcontentServiceDetail .ul li {
   position: relative;
   list-style: none;
-  left: 20px;
+  left: 30px;
   margin: 10px 0 0 15px;
 }
 
-.showTextPostNewsDetail .wrapcontentServiceDetail .listService li::after, .showTextPostNewsDetail .wrapcontentServiceDetail .listService .listNews li::after, .showTextPostNewsDetail .wrapcontentServiceDetail .listNews li::after {
+.showTextPostNewsDetail .wrapcontentServiceDetail .ul li::after {
   position: absolute;
   font-size: 7px;
   line-height: 24.8px;
@@ -14565,11 +14567,11 @@ select option {
   color: #a07743;
 }
 
-.showTextPostNewsDetail .wrapcontentServiceDetail .listService li:first-child, .showTextPostNewsDetail .wrapcontentServiceDetail .listNews li:first-child {
+.showTextPostNewsDetail .wrapcontentServiceDetail .ul li:first-child {
   margin-top: 0;
 }
 
-.showTextPostNewsDetail .wrapcontentServiceDetail .listService .desc, .showTextPostNewsDetail .wrapcontentServiceDetail .listNews .desc {
+.showTextPostNewsDetail .wrapcontentServiceDetail .ul .desc {
   margin-bottom: 15px;
 }
 
@@ -14594,6 +14596,11 @@ select option {
   z-index: 0;
 }
 
+.left15px {
+  position: relative;
+  left: 15px;
+}
+
 .elementSlideLatestNews {
   margin-top: 15px;
   padding: 0;
@@ -14611,7 +14618,7 @@ select option {
   .showTextPostNewsDetail .titlePostServiceDetail {
     padding-top: 30px;
   }
-  .showTextPostNewsDetail .wrapcontentServiceDetail .listService li, .showTextPostNewsDetail .wrapcontentServiceDetail .listService .listNews li, .showTextPostNewsDetail .wrapcontentServiceDetail .listNews li {
+  .showTextPostNewsDetail .wrapcontentServiceDetail .listService li, .showTextPostNewsDetail .wrapcontentServiceDetail .ul .listNews li, .showTextPostNewsDetail .wrapcontentServiceDetail .listNews li {
     left: 15px;
     margin-left: 0;
     margin-top: 5px;
@@ -14660,7 +14667,7 @@ select option {
   .showTextPostNewsDetail .sliderService, .showTextPostNewsDetail .sliderNews {
     margin: 0 15px 15px 0;
   }
-  .showTextPostNewsDetail .wrapcontentServiceDetail .listService li, .showTextPostNewsDetail .wrapcontentServiceDetail .listService .listNews li, .showTextPostNewsDetail .wrapcontentServiceDetail .listNews li {
+  .showTextPostNewsDetail .wrapcontentServiceDetail .listService li, .showTextPostNewsDetail .wrapcontentServiceDetail .ul .listNews li, .showTextPostNewsDetail .wrapcontentServiceDetail .listNews li {
     left: 15px;
     margin-left: 0;
     margin-top: 5px;
@@ -14694,7 +14701,7 @@ select option {
   .showTextPostNewsDetail .sliderService, .showTextPostNewsDetail .sliderNews {
     margin: 0 15px 15px 0;
   }
-  .showTextPostNewsDetail .wrapcontentServiceDetail .listService li, .showTextPostNewsDetail .wrapcontentServiceDetail .listService .listNews li, .showTextPostNewsDetail .wrapcontentServiceDetail .listNews li {
+  .showTextPostNewsDetail .wrapcontentServiceDetail .listService li, .showTextPostNewsDetail .wrapcontentServiceDetail .ul .listNews li, .showTextPostNewsDetail .wrapcontentServiceDetail .listNews li {
     left: 15px;
     margin-left: 0;
     margin-top: 5px;
@@ -14716,11 +14723,11 @@ select option {
   .showTextPostNewsDetail #ShareofNews {
     margin: 5px 0px 0 0;
   }
-  .showTextPostNewsDetail .wrapcontentServiceDetail .listService li, .showTextPostNewsDetail .wrapcontentServiceDetail .listService .listNews li, .showTextPostNewsDetail .wrapcontentServiceDetail .listNews li {
+  .showTextPostNewsDetail .wrapcontentServiceDetail .listService li, .showTextPostNewsDetail .wrapcontentServiceDetail .ul .listNews li, .showTextPostNewsDetail .wrapcontentServiceDetail .listNews li {
     left: 0;
     padding-left: 15px;
   }
-  .showTextPostNewsDetail .wrapcontentServiceDetail .listService li::after, .showTextPostNewsDetail .wrapcontentServiceDetail .listService .listNews li::after, .showTextPostNewsDetail .wrapcontentServiceDetail .listNews li::after {
+  .showTextPostNewsDetail .wrapcontentServiceDetail .listService li::after, .showTextPostNewsDetail .wrapcontentServiceDetail .ul .listNews li::after, .showTextPostNewsDetail .wrapcontentServiceDetail .listNews li::after {
     left: 0;
     line-height: 20.8px;
   }
@@ -15529,7 +15536,13 @@ select option {
 }
 
 .secService .news .item .content .iconService img {
-  padding: 30px;
+  position: absolute;
+  display: block;
+  height: 40px;
+  width: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .secService .news .item .content .bgnocolor {
@@ -15570,9 +15583,6 @@ select option {
     height: 75px;
     flex: 0 0 75px;
     max-width: 75px;
-  }
-  .secService .news .item .content .iconService img {
-    padding: 22.5px;
   }
   .secService .news .item .content .wraptextService {
     padding: 15px;
@@ -15625,11 +15635,6 @@ select option {
     line-height: 28px;
     height: 28px;
   }
-  .secService .news .item .content .wraptextService .desc {
-    font-size: 0.8em;
-    line-height: 1.6em;
-    height: 4.8em;
-  }
   .secService .news .item .content .iconService {
     top: 45px;
     width: 50px;
@@ -15637,6 +15642,7 @@ select option {
     flex: 0 0 50px;
   }
   .secService .news .item .content .iconService img {
-    padding: 15px;
+    width: 30px;
+    height: 30px;
   }
 }

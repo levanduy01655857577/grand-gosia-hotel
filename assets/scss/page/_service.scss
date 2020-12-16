@@ -43,7 +43,13 @@
           flex: 0 0 100px;
           max-width: 100px;
           img {
-            padding: 30px;
+            position: absolute;
+            display: block;
+            height: 40px;
+            width: 40px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
           }
         }
         .bgnocolor {
@@ -84,9 +90,6 @@
             -ms-flex: 0 0 75px;
             flex: 0 0 75px;
             max-width: 75px;
-            img {
-              padding: 22.5px;
-            }
           }
           .wraptextService {
             padding: 15px;
@@ -148,11 +151,6 @@
               line-height: 28px;
               height: 28px;
             }
-            .desc{
-              font-size: 0.8em;
-              line-height: 1.6em;
-              height: 4.8em;
-            }
           }
           .iconService{
             top: 45px;
@@ -161,7 +159,8 @@
             -ms-flex: 0 0 50px;
             flex: 0 0 50px;
             img{
-              padding: 15px;
+              width: 30px;
+              height: 30px;
             }
           }
         }

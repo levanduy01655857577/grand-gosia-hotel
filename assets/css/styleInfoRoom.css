@@ -13441,6 +13441,13 @@ a[href^="mailto"] {
   }
 }
 
+@media (max-width: 767.8px) {
+  .sec .news .item .content .title {
+    height: auto;
+    -webkit-line-clamp: 1;
+  }
+}
+
 /* end section */
 /* form */
 label {
